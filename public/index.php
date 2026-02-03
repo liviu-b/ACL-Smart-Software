@@ -25,6 +25,7 @@ $routes = [
   '/' => fn() => render('cine-suntem', ['services' => $services]),
   '/ce-putem-oferi' => fn() => render('ce-putem-oferi', ['services' => $services]),
   '/servicii' => fn() => render('servicii', ['services' => $services]),
+  '/portofoliu' => fn() => render('portofoliu', ['services' => $services]),
   '/contact' => fn() => render('contact', ['services' => $services]),
 ];
 

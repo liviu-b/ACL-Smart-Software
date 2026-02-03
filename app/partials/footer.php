@@ -14,6 +14,7 @@
           <a class="footer-link" href="/">Cine suntem</a>
           <a class="footer-link" href="/ce-putem-oferi">Ce putem oferi</a>
           <a class="footer-link" href="/servicii">Servicii</a>
+          <a class="footer-link" href="/portofoliu">Portofoliu</a>
           <a class="footer-link" href="/contact">Contact</a>
         </div>
 

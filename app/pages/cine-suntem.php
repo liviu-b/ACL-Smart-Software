@@ -1,13 +1,11 @@
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-left">
-      <div class="pill">Software • Web • SaaS • eCommerce</div>
+      <div class="matrix-badge font-tech">Creștere prin tehnologie</div>
       <h1 class="hero-title">
-        Construim produse digitale care cresc business-uri.
+        Nu scriem doar cod. Construim produse care cresc business-uri.
       </h1>
-      <p class="hero-clarifier font-tech">
-        Inginerie de produs pentru echipe care vor lansări rapide și scalare sigură.
-      </p>
+      <br></br>
       <p class="hero-sub">
         <span class="font-tech">ACL-Smart Software</span> proiectează și livrează platforme digitale orientate pe
         rezultate — timp de lansare mai mic, conversie mai bună și operațiuni stabile.
@@ -23,41 +21,101 @@
         <a class="btn btn-ghost" href="/servicii">Vezi cum lucrăm</a>
       </div>
 
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-nr font-tech">-40% Timp de lansare</div>
-          <div class="stat-txt muted">Lansări mai rapide</div>
-        </div>
-        <div class="stat">
-          <div class="stat-nr font-tech">-55% Rată bug-uri</div>
-          <div class="stat-txt muted">Stabilitate în producție</div>
-        </div>
-        <div class="stat">
-          <div class="stat-nr font-tech">Scalabil prin design</div>
-          <div class="stat-txt muted">Arhitectură pregătită de creștere</div>
-        </div>
-      </div>
-
       <div class="hero-trust muted">Încredere din partea fondatorilor și echipelor în creștere</div>
     </div>
-
-    <div class="hero-card" data-reveal>
-      <div class="hero-card-top">
-        <div class="chip font-tech">aclsmart@build</div>
-        <div class="chip">v1.0</div>
+    
+    <div class="capability-matrix" data-reveal>
+      <div class="matrix-header">
+        <div class="matrix-badge font-tech">Matrice de Capabilități</div>
+        <div class="matrix-subtitle muted">Execuție tehnică end-to-end</div>
       </div>
 
-      <div class="service-grid">
-        <?php foreach ($services as $slug => $s): ?>
-          <a class="service-card" href="/servicii/<?= htmlspecialchars($slug) ?>">
-            <div class="service-ic"><?= htmlspecialchars($s['icon']) ?></div>
-            <div class="service-meta">
-              <div class="service-title"><?= htmlspecialchars($s['title']) ?></div>
-              <div class="service-short muted"><?= htmlspecialchars($s['short']) ?></div>
+      <div class="matrix-grid">
+        <!-- Column 1: STRATEGY -->
+        <div class="matrix-col">
+          <div class="matrix-col-header">
+            <div class="matrix-pill font-tech">STRATEGIE</div>
+          </div>
+          <div class="matrix-items">
+            <div class="matrix-item">
+              <span class="matrix-icon">📋</span>
+              <span>Audit Tehnic</span>
             </div>
-            <div class="service-arrow">→</div>
-          </a>
-        <?php endforeach; ?>
+            <div class="matrix-item">
+              <span class="matrix-icon">🏗️</span>
+              <span>Design Arhitectură</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">🗺️</span>
+              <span>Roadmap Produs</span>
+            </div>
+          </div>
+          <div class="matrix-desc muted">
+            Reducerea riscului tehnic înainte de dezvoltare.
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="matrix-divider"></div>
+
+        <!-- Column 2: ENGINEERING -->
+        <div class="matrix-col">
+          <div class="matrix-col-header">
+            <div class="matrix-pill font-tech">INGINERIE</div>
+          </div>
+          <div class="matrix-items">
+            <div class="matrix-item">
+              <span class="matrix-icon">💻</span>
+              <span>Aplicații Web</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">☁️</span>
+              <span>Platforme SaaS</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">🔗</span>
+              <span>Integrări API</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">🤖</span>
+              <span>Sisteme AI</span>
+            </div>
+          </div>
+          <div class="matrix-desc muted">
+            Construim sisteme scalabile, pregătite pentru producție.
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="matrix-divider"></div>
+
+        <!-- Column 3: SCALE -->
+        <div class="matrix-col">
+          <div class="matrix-col-header">
+            <div class="matrix-pill font-tech">SCALARE</div>
+          </div>
+          <div class="matrix-items">
+            <div class="matrix-item">
+              <span class="matrix-icon">✓</span>
+              <span>Automatizare QA</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">⚙️</span>
+              <span>DevOps & CI/CD</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">⚡</span>
+              <span>Optimizare Performanță</span>
+            </div>
+            <div class="matrix-item">
+              <span class="matrix-icon">📊</span>
+              <span>Analiză & Monitorizare</span>
+            </div>
+          </div>
+          <div class="matrix-desc muted">
+            Asigurăm stabilitate și creștere sustenabilă.
+          </div>
+        </div>
       </div>
     </div>
   </div>
