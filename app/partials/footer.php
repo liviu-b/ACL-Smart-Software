@@ -11,8 +11,7 @@
 
         <div>
           <div class="footer-title">Pagini</div>
-          <a class="footer-link" href="/">Acasă</a>
-          <a class="footer-link" href="/cine-suntem">Cine suntem</a>
+          <a class="footer-link" href="/">Cine suntem</a>
           <a class="footer-link" href="/ce-putem-oferi">Ce putem oferi</a>
           <a class="footer-link" href="/servicii">Servicii</a>
           <a class="footer-link" href="/contact">Contact</a>
@@ -34,6 +33,6 @@
     </footer>
   </div>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/main.js?v=20260203"></script>
 </body>
 </html>
