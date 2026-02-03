@@ -133,21 +133,47 @@ body{
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   gap:10px;
-  padding:12px 16px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.12);
+  padding:14px 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(96,165,250,.25);
   text-decoration:none;
-  color:var(--text);
-  background: rgba(255,255,255,.04);
+  color: #60a5fa;
+  background: rgba(96,165,250,.12);
   font-weight:600;
+  font-size: 15px;
+  letter-spacing: .4px;
+  transition: all .3s ease;
+  box-shadow: 0 4px 12px rgba(96,165,250,.15);
 }
-.btn:hover{ background: rgba(255,255,255,.06); }
-.btn-primary{
+.btn:hover{ 
+  background: rgba(96,165,250,.18);
   border-color: rgba(96,165,250,.35);
-  background: linear-gradient(135deg, rgba(96,165,250,.22), rgba(167,139,250,.18));
+  box-shadow: 0 6px 20px rgba(96,165,250,.25);
+  transform: translateY(-1px);
 }
-.btn-primary:hover{ filter: brightness(1.06); }
-.btn-ghost{ background: transparent; }
+.btn-primary{
+  border-color: rgba(96,165,250,.4);
+  background: rgba(96,165,250,.16);
+  color: #60a5fa;
+  box-shadow: 0 4px 16px rgba(96,165,250,.2);
+}
+.btn-primary:hover{ 
+  background: rgba(96,165,250,.22);
+  border-color: rgba(96,165,250,.5);
+  box-shadow: 0 8px 24px rgba(96,165,250,.3);
+  transform: translateY(-2px);
+}
+.btn-ghost{ 
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.12);
+  color: var(--text);
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.btn-ghost:hover{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(96,165,250,.2);
+  box-shadow: 0 4px 16px rgba(96,165,250,.12);
+}
 .btn.small{ padding:10px 12px; border-radius: 12px; font-size:14px; }
 
 .burger{
