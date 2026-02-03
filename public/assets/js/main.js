@@ -1,6 +1,13 @@
 // Mobile menu
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
+const header = document.querySelector(".header");
+
+if (header) {
+  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 4);
+  onScroll();
+  window.addEventListener("scroll", onScroll, { passive: true });
+}
 
 if (burger && nav) {
   burger.addEventListener("click", () => nav.classList.toggle("open"));
