@@ -22,7 +22,7 @@ function renderService(string $serviceView, array $data = []): void {
 }
 
 $routes = [
-  '/' => fn() => render('home', ['services' => $services]),
+  '/' => fn() => render('cine-suntem', ['services' => $services]),
   '/ce-putem-oferi' => fn() => render('ce-putem-oferi', ['services' => $services]),
   '/servicii' => fn() => render('servicii', ['services' => $services]),
   '/contact' => fn() => render('contact', ['services' => $services]),
@@ -37,7 +37,7 @@ if (preg_match('#^/servicii/([a-z0-9\-]+)$#', $uri, $m)) {
     exit;
   }
   http_response_code(404);
-  render('home', ['services' => $services]); // fallback
+  render('cine-suntem', ['services' => $services]); // fallback
   exit;
 }
 
@@ -47,4 +47,4 @@ if (isset($routes[$uri])) {
 }
 
 http_response_code(404);
-render('home', ['services' => $services]);
+render('cine-suntem', ['services' => $services]);
