@@ -213,7 +213,7 @@
         Contactează-ne pentru o discuție despre provocările tale și cum te putem ajuta să le rezolvi.
       </p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="/contact">Programează un apel →</a>
+        <button class="btn btn-primary" data-modal-trigger>Scrie-mi →</button>
         <a class="btn btn-ghost" href="/#serviciile-noastre">Vezi serviciile</a>
       </div>
     </div>

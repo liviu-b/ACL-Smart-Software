@@ -10,10 +10,7 @@ $current = $current === '' ? '/' : $current;
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ACL-Smart Software</title>
   <meta name="description" content="ACL-Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=202602064" />
 </head>
 <body>
   <div class="bg">
@@ -22,8 +19,8 @@ $current = $current === '' ? '/' : $current;
     <header class="header">
       <div class="container header-inner">
         <a class="brand" href="/">
-          <span class="brand-mark font-tech">&lt;/&gt;</span>
-          <span class="brand-title font-tech">ACL-Smart Software</span>
+          <span class="brand-mark">&lt;/&gt;</span>
+          <span class="brand-title">ACL-Smart Software</span>
         </a>
 
         <nav class="nav" id="nav">
@@ -45,7 +42,6 @@ $current = $current === '' ? '/' : $current;
           </div>
 
           <a class="nav-link <?= $current==='/portofoliu'?'active':'' ?>" href="/portofoliu">Portofoliu</a>
-          <a class="nav-link <?= $current==='/contact'?'active':'' ?>" href="/contact">Contact</a>
         </nav>
 
         <button class="burger" id="burger" aria-label="Deschide meniul" type="button">

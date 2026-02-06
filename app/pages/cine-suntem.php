@@ -17,7 +17,7 @@
       </div>
 
       <div class="hero-ctas">
-        <a class="btn btn-primary" href="/contact">Haide să discutăm→</a>
+        <button class="btn btn-primary" data-modal-trigger>Haide să discutăm →</button>
         <a class="btn btn-ghost" href="/servicii">Vezi cum lucrăm</a>
       </div>
     </div>
@@ -132,7 +132,7 @@
       </p>
       
       <div class="hero-ctas" style="margin-top: 2.5rem; display: flex; gap: 1rem;">
-        <a class="btn btn-primary" href="/contact">Haide să discutăm→</a>
+        <button class="btn btn-primary" data-modal-trigger>Haide să discutăm →</button>
         <a class="btn btn-ghost" href="/portofoliu">Vezi Portofoliu</a>
       </div>
     </div>

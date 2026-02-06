@@ -303,7 +303,7 @@ $fit    = $extras[$viewKey]['fit']    ?? [];
 <section class="section">
   <div class="container cta-simple" data-reveal>
     <h2>Pret personalizat in functie de nevoie</h2>
-    <p class="muted">Spune-ne scope-ul, iar noi propunem o estimare clara.</p>
-    <a class="btn btn-primary" href="/contact">Solicita oferta</a>
+    <br></br>
+    <button class="btn btn-primary" data-modal-trigger>Solicita oferta →</button>
   </div>
 </section>

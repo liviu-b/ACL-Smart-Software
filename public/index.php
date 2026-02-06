@@ -26,7 +26,8 @@ $routes = [
   '/ce-putem-oferi' => fn() => render('ce-putem-oferi', ['services' => $services]),
   '/servicii' => fn() => render('servicii', ['services' => $services]),
   '/portofoliu' => fn() => render('portofoliu', ['services' => $services]),
-  '/contact' => fn() => render('contact', ['services' => $services]),
+  '/termeni-si-conditii' => fn() => render('termeni-si-conditii', ['services' => $services]),
+  '/gdpr' => fn() => render('gdpr', ['services' => $services]),
 ];
 
 // Service routes: /servicii/{slug}

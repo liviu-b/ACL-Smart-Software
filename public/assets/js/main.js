@@ -29,16 +29,32 @@ if (burger && nav) {
   });
 }
 
-// Dropdown (desktop + mobile)
+// Dropdown – hover on desktop, click on mobile
+const isMobile = () => window.innerWidth <= 980;
+
 document.querySelectorAll("[data-dropdown]").forEach((wrap) => {
   const btn = wrap.querySelector("button");
   if (!btn) return;
+  let closeTimer = null;
 
+  const open = () => {
+    clearTimeout(closeTimer);
+    document.querySelectorAll("[data-dropdown].open").forEach((w) => { if (w !== wrap) w.classList.remove("open"); });
+    wrap.classList.add("open");
+  };
+  const close = () => {
+    closeTimer = setTimeout(() => wrap.classList.remove("open"), 0);
+  };
+
+  // Desktop: hover
+  wrap.addEventListener("mouseenter", () => { if (!isMobile()) open(); });
+  wrap.addEventListener("mouseleave", () => { if (!isMobile()) close(); });
+
+  // Mobile: click
   btn.addEventListener("click", (e) => {
+    if (!isMobile()) return;
     e.stopPropagation();
-    const isOpen = wrap.classList.contains("open");
-    document.querySelectorAll("[data-dropdown].open").forEach((w) => w.classList.remove("open"));
-    wrap.classList.toggle("open", !isOpen);
+    wrap.classList.toggle("open");
   });
 });
 
@@ -139,3 +155,63 @@ if (rotateEl) {
     setWord(words[0]);
   }
 }
+
+// WhatsApp tooltip - show after 3 seconds
+const waTooltip = document.getElementById("waTooltip");
+if (waTooltip) {
+  setTimeout(() => {
+    waTooltip.classList.add("show");
+    // Auto-hide after 8 seconds
+    setTimeout(() => {
+      waTooltip.classList.remove("show");
+    }, 8000);
+  }, 3000);
+}
+
+// Contact Modal
+const contactModal = document.getElementById("contactModal");
+const modalClose = document.getElementById("modalClose");
+
+// Open modal on CTA button clicks
+document.addEventListener("click", (e) => {
+  const trigger = e.target.closest("[data-modal-trigger]");
+  if (trigger) {
+    e.preventDefault();
+    // Calculate scrollbar width and add padding to prevent layout shift
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    document.body.style.paddingRight = scrollbarWidth + 'px';
+    document.body.style.overflow = "hidden";
+    contactModal.classList.add("show");
+  }
+});
+
+// Close modal on clicking the red dot
+if (modalClose) {
+  modalClose.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    contactModal.classList.remove("show");
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  });
+}
+
+// Close modal on clicking overlay (outside modal)
+if (contactModal) {
+  contactModal.addEventListener("click", (e) => {
+    if (e.target === contactModal) {
+      contactModal.classList.remove("show");
+      document.body.style.overflow = "";
+      document.body.style.paddingRight = "";
+    }
+  });
+}
+
+// Close modal on Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && contactModal.classList.contains("show")) {
+    contactModal.classList.remove("show");
+    document.body.style.overflow = "";
+    document.body.style.paddingRight = "";
+  }
+});
