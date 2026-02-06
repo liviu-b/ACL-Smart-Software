@@ -20,8 +20,6 @@
         <a class="btn btn-primary" href="/contact">Programează un apel →</a>
         <a class="btn btn-ghost" href="/servicii">Vezi cum lucrăm</a>
       </div>
-
-      <div class="hero-trust muted">Încredere din partea fondatorilor și echipelor în creștere</div>
     </div>
     
     <div class="capability-matrix" data-reveal>
@@ -123,17 +121,15 @@
 
 <section class="page-head" id="cine-suntem">
   <div class="container">
-    <h1>Cine suntem</h1>
-    <p class="muted">O echipă orientată pe produs, calitate și livrare predictibilă.</p>
+    <div class="matrix-badge font-tech">Cine suntem</div>
   </div>
 </section>
 
 <section class="section">
   <div class="container split">
     <div>
-      <h2>Povestea ACL-Smart Software</h2>
-        <p class="muted">
-        (Editează aici) Spune pe scurt cine ești, ce probleme rezolvi și pentru cine.
+      <p class="muted">
+        ACL-Smart Software activează în sectorul IT din Romania, cu focus pe dezvoltarea de soluții software personalizate, scalabile și orientate pe performanță. Livrăm produse digitale complete – de la analiză și arhitectură, până la implementare, testare și suport post-lansare – utilizând tehnologii moderne și metodologii Agile.
       </p>
 
       <div class="bullets">
@@ -152,7 +148,14 @@
           <span class="t-dot"></span><span class="t-dot"></span><span class="t-dot"></span>
           <span class="terminal-title font-tech">about.php</span>
         </div>
-        <pre class="terminal-body"><code id="typewriter"></code></pre>
+        <pre class="terminal-body"><code id="typewriter">class ACL_Software {
+  public $focus = "Performance";
+  public $style = "Agile";
+
+  function build() {
+    return "Scalable Solutions";
+  }
+}</code></pre>
       </div>
     </div>
   </div>
@@ -182,30 +185,3 @@
   </div>
 </section>
 
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Ce facem, pe scurt</h2>
-      <p class="muted">Poți edita ulterior textele și structura, dar ai deja layout complet.</p>
-    </div>
-
-    <div class="cards-3">
-      <div class="card" data-reveal>
-        <div class="card-kicker font-tech">Descoperire</div>
-        <h3>Clarificăm obiectivele</h3>
-        <p class="muted">Arie, riscuri, estimări, calendar și plan de livrare.</p>
-      </div>
-      <div class="card" data-reveal>
-        <div class="card-kicker font-tech">Construcție</div>
-        <h3>Dezvoltăm rapid și curat</h3>
-        <p class="muted">Implementare iterativă, feedback constant, transparență.</p>
-      </div>
-      <div class="card" data-reveal>
-        <div class="card-kicker font-tech">Scalare</div>
-        <h3>Stabilizăm și optimizăm</h3>
-        <p class="muted">QA, performanță, observabilitate, îmbunătățiri.</p>
-      </div>
-    </div>
-  </div>
-</section>
