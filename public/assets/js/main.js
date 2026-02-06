@@ -1,3 +1,15 @@
+// ─── Page Transition ───
+document.addEventListener("click", (e) => {
+  const link = e.target.closest("a[href]");
+  if (!link) return;
+  const href = link.getAttribute("href");
+  if (!href || href.startsWith("#") || href.startsWith("mailto:") || href.startsWith("tel:") || link.target === "_blank") return;
+  if (href === window.location.pathname) return;
+  e.preventDefault();
+  document.body.classList.add("page-leaving");
+  setTimeout(() => { window.location.href = href; }, 300);
+});
+
 // Mobile menu
 const burger = document.getElementById("burger");
 const nav = document.getElementById("nav");
@@ -59,6 +71,22 @@ if ("IntersectionObserver" in window) {
   revealEls.forEach((el) => io.observe(el));
 } else {
   revealEls.forEach((el) => el.classList.add("show"));
+}
+
+// Staggered reveal for service detail blocks
+const staggerEls = Array.from(document.querySelectorAll("[data-reveal-stagger]"));
+if (staggerEls.length && "IntersectionObserver" in window) {
+  const sio = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (en.isIntersecting) {
+        en.target.classList.add("show");
+        sio.unobserve(en.target);
+      }
+    });
+  }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
+  staggerEls.forEach((el) => sio.observe(el));
+} else {
+  staggerEls.forEach((el) => el.classList.add("show"));
 }
 
 // Typewriter effect on Cine suntem page
