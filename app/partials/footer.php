@@ -5,7 +5,7 @@
         <div>
           <div class="footer-brand font-tech">ACL-Smart Software</div>
           <p class="muted">
-            Construim produse digitale: aplicații personalizate, aplicații web, SaaS, eCommerce, QA și integrări.
+          Nu scriem doar cod. Construim produse care cresc business-uri.
           </p>
         </div>
 
@@ -29,7 +29,6 @@
 
       <div class="container footer-bottom">
         <span class="muted">© <?= date('Y') ?> ACL-Smart Software. Toate drepturile rezervate.</span>
-        <span class="muted">Realizat cu PHP • HTML • CSS • JS</span>
       </div>
     </footer>
   </div>
