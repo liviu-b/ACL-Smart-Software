@@ -22,6 +22,7 @@ $current = $current === '' ? '/' : $current;
     <header class="header">
       <div class="container header-inner">
         <a class="brand" href="/">
+          <span class="brand-mark font-tech">&lt;/&gt;</span>
           <span class="brand-title font-tech">ACL-Smart Software</span>
         </a>
 

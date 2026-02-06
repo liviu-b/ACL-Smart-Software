@@ -191,26 +191,290 @@
   </div>
 </section>
 
-<section class="section" id="sectiunea-1">
+<section class="section" id="serviciile-noastre">
   <div class="container">
     <div class="section-head">
-      <h2>Secțiunea 1 (o vei edita)</h2>
-      <p class="muted">Text provizoriu - poți adăuga orice: valori, calendar, tehnologii, etc.</p>
+      <div class="matrix-badge font-tech">Servicii &amp; expertiză</div>
+      <p class="muted">
+        De la aplicații custom și platforme SaaS la integrare API și chatboți AI, acoperim cap‑coadă
+        ciclul de dezvoltare software.
+      </p>
     </div>
-    <div class="card" data-reveal>
-      <p class="muted">(Editează aici)</p>
-    </div>
-  </div>
-</section>
 
-<section class="section" id="sectiunea-2">
-  <div class="container">
-    <div class="section-head">
-      <h2>Secțiunea 2 (o vei edita)</h2>
-      <p class="muted">Text provizoriu - testimonial, studiu de caz, echipă, etc.</p>
+    <div class="cards-3">
+      <a class="card card-link" data-reveal href="/servicii/custom-software-dev">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['custom-software-dev']['icon']) ?></span>
+          <span>Dezvoltare software personalizată</span>
+        </div>
+        <p class="muted">
+          Proiectăm și dezvoltăm aplicații custom adaptate proceselor interne și obiectivelor de business.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Analiză funcțională și definire clară a cerințelor</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Arhitectură scalabilă și securizată</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Dezvoltare backend &amp; frontend</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Modernizare și refactorizare aplicații existente</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/custom-web-app">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['custom-web-app']['icon']) ?></span>
+          <span>Aplicații web personalizate</span>
+        </div>
+        <p class="muted">
+          Construim aplicații web rapide, scalabile și optimizate pentru conversie.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Platforme web complexe: dashboard-uri, sisteme interne, portaluri clienți</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Aplicații orientate pe UX și performanță</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Arhitecturi moderne (SPA, API-first)</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Optimizare pentru viteză și scalare</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/website-build">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['website-build']['icon']) ?></span>
+          <span>Dezvoltare site web</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill most">Most Requested</span>
+        </div>
+        <p class="muted">
+          Creăm site-uri moderne, responsive și ușor de administrat.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Website-uri de prezentare și pagini corporate</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Landing page-uri optimizate pentru conversie</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>CMS personalizat sau integrare cu soluții existente</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Optimizare SEO tehnică și performanță</span>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="card" data-reveal>
-      <p class="muted">(Editează aici)</p>
+
+    <div class="cards-3">
+      <a class="card card-link" data-reveal href="/servicii/ecommerce-store">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['ecommerce-store']['icon']) ?></span>
+          <span>Creare magazine online</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill popular">Popular</span>
+        </div>
+        <p class="muted">
+          Dezvoltăm magazine online optimizate pentru vânzări și vizibilitate.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Implementare platforme e-commerce</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Integrare plăți online și procesatori de plăți</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Automatizări pentru stocuri, livrare și facturare</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Optimizare UX pentru creșterea ratei de conversie</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/saas-app-development">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['saas-app-development']['icon']) ?></span>
+          <span>Aplicații SaaS</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill most">Most Requested</span>
+        </div>
+        <p class="muted">
+          Transformăm idei în produse SaaS scalabile, de la MVP la platforme mature.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Arhitectură multi-tenant și infrastructură cloud</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Sisteme de abonamente și facturare recurentă</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Panouri de administrare și analitice</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Securitate, scalare și mentenanță continuă</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/qa-testing">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['qa-testing']['icon']) ?></span>
+          <span>Testare QA</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill new">New</span>
+        </div>
+        <p class="muted">
+          Asigurăm calitate constantă prin procese riguroase de testare manuală și automată.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Testare funcțională și de regresie</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Automatizare teste (unit, integrare, end‑to‑end)</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Testare de performanță și securitate</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Documentare și raportare detaliată</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="cards-3">
+      <a class="card card-link" data-reveal href="/servicii/api-integration">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['api-integration']['icon']) ?></span>
+          <span>Integrare API</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill new">New</span>
+        </div>
+        <p class="muted">
+          Conectăm aplicațiile tale cu ecosisteme externe pentru eficiență operațională.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Integrare cu sisteme de plăți</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>CRM, ERP și platforme de marketing</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Integrare servicii AI și automatizări</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Sincronizare logistică și procesare date</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/consulting-architecture">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['consulting-architecture']['icon']) ?></span>
+          <span>Consultanță &amp; arhitectură</span>
+        </div>
+        <p class="muted">
+          Oferim direcție tehnică solidă pentru proiecte noi sau existente.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Audit tehnic și evaluare infrastructură</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Design arhitectural și alegere stack tehnologic</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Definire roadmap de produs</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Optimizare performanță și costuri</span>
+          </div>
+        </div>
+      </a>
+
+      <a class="card card-link" data-reveal href="/servicii/ai-chatbots">
+        <div class="card-kicker font-tech">
+          <span><?= htmlspecialchars($services['ai-chatbots']['icon']) ?></span>
+          <span>Chatboți AI</span>
+        </div>
+        <div class="service-badges">
+          <span class="badge-pill most">Most Requested</span>
+        </div>
+        <p class="muted">
+          Dezvoltăm chatboți inteligenți pentru suport, vânzări și automatizare procese.
+        </p>
+        <div class="bullets">
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Implementare chatboți conversaționali personalizați</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Integrare cu website-uri, aplicații și CRM</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Automatizare suport clienți și procese interne</span>
+          </div>
+          <div class="bullet">
+            <span class="dot"></span>
+            <span>Antrenare modele și optimizare fluxuri conversaționale</span>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 </section>
