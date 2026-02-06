@@ -214,7 +214,7 @@
       </p>
       <div class="hero-ctas">
         <a class="btn btn-primary" href="/contact">Programează un apel →</a>
-        <a class="btn btn-ghost" href="/servicii">Vezi serviciile</a>
+        <a class="btn btn-ghost" href="/#serviciile-noastre">Vezi serviciile</a>
       </div>
     </div>
   </div>

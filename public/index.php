@@ -17,7 +17,7 @@ function render(string $view, array $data = []): void {
 function renderService(string $serviceView, array $data = []): void {
   extract($data, EXTR_SKIP);
   require __DIR__ . '/../app/partials/header.php';
-  require __DIR__ . '/../app/services/' . $serviceView . '.php';
+  require __DIR__ . '/../app/services/service_pages.php';
   require __DIR__ . '/../app/partials/footer.php';
 }
 

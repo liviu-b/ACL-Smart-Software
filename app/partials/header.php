@@ -30,7 +30,7 @@ $current = $current === '' ? '/' : $current;
           <a class="nav-link <?= $current==='/'?'active':'' ?>" href="/" id="homeLink">Cine suntem?</a>
 
           <div class="nav-dropdown" data-dropdown>
-            <button class="nav-link nav-btn <?= str_starts_with($current,'/servicii') || $current==='/ce-putem-oferi' ? 'active':'' ?>" type="button">
+            <button class="nav-link nav-btn <?= $current==='/ce-putem-oferi' ? 'active':'' ?>" type="button">
               Ce putem oferii?
               <span class="chev">▾</span>
             </button>

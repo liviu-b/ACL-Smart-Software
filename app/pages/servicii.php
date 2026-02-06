@@ -1,6 +1,6 @@
-<section class="page-head">
-  <div class="container">
-    <h1>Servicii</h1>
+<section class="page-head page-head-center">
+  <div class="container page-head-center-inner">
+    <div class="matrix-badge font-tech approach-badge">Abordarea noastră</div>
     <p class="muted">Flux de lucru și abordare pentru fiecare serviciu.</p>
   </div>
 </section>

@@ -207,7 +207,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['custom-software-dev']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Dezvoltare software personalizată</h3>
+            <h3 class="svc-title font-tech">Dezvoltare software la comandă</h3>
           </div>
           <p class="svc-desc">Proiectăm și dezvoltăm aplicații custom adaptate proceselor interne și obiectivelor de business.</p>
           <div class="svc-bullets">

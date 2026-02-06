@@ -1,7 +1,7 @@
 <?php
 return [
   'custom-software-dev' => [
-    'title' => 'Dezvoltare software personalizată',
+    'title' => 'Dezvoltare software la comandă',
     'short' => 'Aplicații personalizate pentru procesele tale interne.',
     'icon'  => '🧩',
     'view'  => 'custom-software-dev',
