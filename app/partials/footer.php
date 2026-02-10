@@ -51,9 +51,9 @@
 
         <div>
           <div class="footer-title">Contact</div>
-          <a class="footer-link footer-contact" href="mailto:liviu.bancila95@gmail.com"><span class="footer-contact-ic">✉️</span>liviu.bancila95@gmail.com</a>
+          <a class="footer-link footer-contact" href="mailto:acl-smartsoftware@outlook.com"><span class="footer-contact-ic">✉️</span>acl-smartsoftware@outlook.com</a>
           <a class="footer-link footer-contact" href="tel:0758154490"><span class="footer-contact-ic">📞</span>0758 154 490</a>
-          <span class="footer-link footer-contact"><span class="footer-contact-ic">📍</span>Str. Horea Cod 332014, Petrosani, Hunedoara</span>
+          <span class="footer-link footer-contact"><span class="footer-contact-ic">📍</span>Str. Horea 2/31, Cod 332014, Petrosani, Hunedoara</span>
           <span class="footer-link footer-contact"><span class="footer-contact-ic">🧾</span>CUI: 51219715</span>
           <span class="footer-link footer-contact"><span class="footer-contact-ic">🏢</span>Nr. Reg. Com.: J2025007081009</span>
         </div>
@@ -128,13 +128,13 @@
           <div class="modal-option-arrow">→</div>
         </a>
 
-        <a href="mailto:liviu.bancila95@gmail.com" class="modal-option">
+        <a href="mailto:acl-smartsoftware@outlook.com" class="modal-option">
           <div class="modal-option-icon" style="background: linear-gradient(135deg, #a78bfa, #8b5cf6);">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>
           </div>
           <div class="modal-option-body">
             <div class="modal-option-title">Email</div>
-            <div class="modal-option-desc">liviu.bancila95@gmail.com</div>
+            <div class="modal-option-desc">acl-smartsoftware@outlook.com</div>
           </div>
           <div class="modal-option-arrow">→</div>
         </a>

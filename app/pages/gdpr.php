@@ -14,7 +14,7 @@
       <p>Prezenta informare are scopul de a vă aduce la cunoștință aspectele privind prelucrarea datelor dumneavoastră cu caracter personal și drepturile pe care le aveți în conformitate cu Regulamentul (UE) 2016/679 privind protecția datelor (GDPR) și legislația națională în vigoare.</p>
 
       <h2 style="margin-top:32px;">1. Informații generale</h2>
-      <p>Website-ul ACL-Smart Software este administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a>.</p>
+      <p>Website-ul ACL-Smart Software este administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>.</p>
       
       <p>În conformitate cu Regulamentul (UE) 679/2016, BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ are calitatea de operator de date cu caracter personal.</p>
       
@@ -67,7 +67,7 @@
       <p>Conform GDPR, beneficiați de următoarele drepturi:</p>
 
       <h3 style="margin-top:24px;">Dreptul de retragere a consimțământului</h3>
-      <p>În cazul în care prelucrarea se bazează pe consimțământ, acesta poate fi retras oricând, gratuit, prin transmiterea unui e-mail la <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a>, cu subiectul "Retragere consimțământ".</p>
+      <p>În cazul în care prelucrarea se bazează pe consimțământ, acesta poate fi retras oricând, gratuit, prin transmiterea unui e-mail la <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>, cu subiectul "Retragere consimțământ".</p>
 
       <h3 style="margin-top:24px;">Dreptul de a depune o plângere</h3>
       <p>Aveți dreptul de a depune o plângere la <a href="https://www.dataprotection.ro/" target="_blank" rel="nofollow" style="color:var(--primary);">Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</a>.</p>
@@ -110,7 +110,7 @@
       
       <div style="padding:20px; border-radius:12px; background:rgba(96,165,250,.08); border:1px solid rgba(96,165,250,.2); margin-top:16px;">
         <p style="margin:0 0 8px;"><strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong></p>
-        <p style="margin:0 0 4px;">Email: <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a></p>
+        <p style="margin:0 0 4px;">Email: <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a></p>
         <p style="margin:0 0 4px;">Telefon: <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a></p>
         <p style="margin:0 0 4px;">Adresă: Str. Horea, Petrosani, Hunedoara, cod poștal 332014, România</p>
         <p style="margin:0;">CUI: RO51219715 | Nr. Reg. Com.: J2025007081009</p>

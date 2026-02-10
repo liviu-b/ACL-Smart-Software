@@ -13,7 +13,7 @@
       <h2 style="margin-top:32px;">Informații generale</h2>
       <p>Prezentul document stabilește condițiile în care poate fi utilizat website-ul ACL-Smart Software. Prin accesarea sau utilizarea acestui website, sunteți de acord cu termenii și condițiile de mai jos.</p>
       
-      <p>Acest website este deținut și administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a>.</p>
+      <p>Acest website este deținut și administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>.</p>
 
       <h2 style="margin-top:32px;">Introducere</h2>
       <p>Utilizarea serviciilor sau informațiilor oferite pe acest website echivalează cu acceptarea de către utilizator a termenilor și condițiilor de mai jos.</p>
@@ -71,7 +71,7 @@
       <p>Pentru orice întrebări privind exercitarea drepturilor referitoare la utilizarea site-ului și protecția datelor, ne puteți contacta la:</p>
       
       <ul style="margin-left:20px; line-height:1.8;">
-        <li>Email: <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a></li>
+        <li>Email: <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a></li>
         <li>Telefon: <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a></li>
         <li>Adresă: România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014</li>
       </ul>
@@ -86,7 +86,7 @@
       
       <div style="padding:20px; border-radius:12px; background:rgba(96,165,250,.08); border:1px solid rgba(96,165,250,.2); margin-top:16px;">
         <p style="margin:0 0 8px;"><strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong></p>
-        <p style="margin:0 0 4px;">Email: <a href="mailto:liviu.bancila95@gmail.com" style="color:var(--primary);">liviu.bancila95@gmail.com</a></p>
+        <p style="margin:0 0 4px;">Email: <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a></p>
         <p style="margin:0 0 4px;">Telefon: <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a></p>
         <p style="margin:0 0 4px;">Adresă: Str. Horea, Petrosani, Hunedoara, cod poștal 332014, România</p>
         <p style="margin:0;">CUI: RO51219715 | Nr. Reg. Com.: J2025007081009</p>

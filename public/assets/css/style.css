@@ -116,7 +116,7 @@ body{
 .nav-link.active::after{ transform: scaleX(1); }
 
 .nav-dropdown{ position:relative; }
-.nav-btn{ cursor:pointer; background:transparent; }
+.nav-btn{ cursor:pointer; background:transparent; font-family:inherit; }
 
 .dropdown-panel{
   position:absolute; right:0; top:46px;

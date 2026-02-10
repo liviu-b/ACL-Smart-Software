@@ -1,4 +1,13 @@
 // ─── Page Transition ───
+// Remove page-leaving class when navigating back (bfcache restore)
+window.addEventListener("pageshow", (e) => {
+  if (e.persisted) {
+    document.body.classList.remove("page-leaving");
+  }
+});
+// Also remove on normal page load (fallback)
+document.body.classList.remove("page-leaving");
+
 document.addEventListener("click", (e) => {
   const link = e.target.closest("a[href]");
   if (!link) return;
