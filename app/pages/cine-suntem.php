@@ -126,8 +126,8 @@
       <h1 style="font-size: 3rem; margin: 0; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em;">
         Software Scalabil.<br>Arhitectură Robustă.
       </h1>
-      <p class="muted" style="margin-top: 1.5rem; font-size: 1.125rem; line-height: 1.6; max-width: 90%;">
-        ACL-Smart Software construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
+      <p class="hero-sub" style="color: var(--muted);">
+        <span class="font-tech">ACL-Smart Software</span> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
         Livrăm soluții end-to-end — de la discovery și arhitectură, la execuție, testare și mentenanță — folosind tehnologii moderne și procese Agile.
       </p>
       
