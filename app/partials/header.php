@@ -9,6 +9,7 @@ $current = $current === '' ? '/' : $current;
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ACL-Smart Software</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="description" content="ACL-Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
   <link rel="stylesheet" href="/assets/css/style.css?v=202602064" />
 </head>
