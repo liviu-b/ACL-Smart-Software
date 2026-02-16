@@ -236,7 +236,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['custom-software-dev']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Dezvoltare software la comandă</h3>
+            <h3 class="svc-title font-tech">Dezvoltare <span class="acl-orange">software</span> la comandă</h3>
           </div>
           <p class="svc-desc">Proiectăm și dezvoltăm aplicații custom adaptate proceselor interne și obiectivelor de business.</p>
           <div class="svc-bullets">
@@ -252,7 +252,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['custom-web-app']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Aplicații web personalizate</h3>
+            <h3 class="svc-title font-tech">Aplicații <span class="acl-orange">web</span> personalizate</h3>
           </div>
           <p class="svc-desc">Construim aplicații web rapide, scalabile și optimizate pentru conversie.</p>
           <div class="svc-bullets">
@@ -268,7 +268,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['website-build']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Dezvoltare site web</h3>
+            <h3 class="svc-title font-tech">Dezvoltare site <span class="acl-orange">web</span></h3>
             <span class="badge-pill most">Most Requested</span>
           </div>
           <p class="svc-desc">Creăm site-uri moderne, responsive și ușor de administrat.</p>
@@ -285,7 +285,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['ecommerce-store']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Creare magazine online</h3>
+            <h3 class="svc-title font-tech">Creare magazine <span class="acl-orange">online</span></h3>
             <span class="badge-pill popular">Popular</span>
           </div>
           <p class="svc-desc">Dezvoltăm magazine online optimizate pentru vânzări și vizibilitate.</p>
@@ -302,7 +302,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['saas-app-development']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Aplicații SaaS</h3>
+            <h3 class="svc-title font-tech">Aplicații <span class="acl-orange">SaaS</span></h3>
             <span class="badge-pill most">Most Requested</span>
           </div>
           <p class="svc-desc">Transformăm idei în produse SaaS scalabile, de la MVP la platforme mature.</p>
@@ -319,7 +319,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['qa-testing']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Testare QA</h3>
+            <h3 class="svc-title font-tech">Testare <span class="acl-orange">QA</span></h3>
             <span class="badge-pill new">New</span>
           </div>
           <p class="svc-desc">Asigurăm calitate constantă prin procese riguroase de testare manuală și automată.</p>
@@ -336,7 +336,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['api-integration']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Integrare API</h3>
+            <h3 class="svc-title font-tech">Integrare <span class="acl-orange">API</span></h3>
             <span class="badge-pill new">New</span>
           </div>
           <p class="svc-desc">Conectăm aplicațiile tale cu ecosisteme externe pentru eficiență operațională.</p>
@@ -353,7 +353,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['consulting-architecture']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Consultanță &amp; arhitectură</h3>
+            <h3 class="svc-title font-tech">Consultanță &amp; <span class="acl-orange">arhitectură</span></h3>
           </div>
           <p class="svc-desc">Oferim direcție tehnică solidă pentru proiecte noi sau existente.</p>
           <div class="svc-bullets">
@@ -369,7 +369,7 @@
         <div class="svc-icon"><?= htmlspecialchars($services['ai-chatbots']['icon']) ?></div>
         <div class="svc-body">
           <div class="svc-head">
-            <h3 class="svc-title font-tech">Chatboți AI</h3>
+            <h3 class="svc-title font-tech">Chatboți <span class="acl-orange">AI</span></h3>
             <span class="badge-pill most">Most Requested</span>
           </div>
           <p class="svc-desc">Dezvoltăm chatboți inteligenți pentru suport, vânzări și automatizare procese.</p>

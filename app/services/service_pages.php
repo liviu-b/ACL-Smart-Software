@@ -255,12 +255,17 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
     <div class="svc-detail-head" data-reveal>
       <div class="service-pill service-pill-center">Cum livrăm</div>
     </div>
-    <div class="svc-detail-grid">
+    <div class="svc-steps">
       <?php $n = 1; foreach ($blocks as $b): ?>
-        <div class="svc-detail-block" data-reveal-stagger>
-          <div class="svc-detail-num"><?= sprintf('%02d', $n++) ?></div>
-          <h3><?= htmlspecialchars($b['heading']) ?></h3>
-          <p><?= htmlspecialchars($b['text']) ?></p>
+        <div class="svc-step" data-reveal-stagger>
+          <div class="svc-step-marker">
+            <span class="svc-step-num"><?= sprintf('%02d', $n++) ?></span>
+            <span class="svc-step-line"></span>
+          </div>
+          <div class="svc-step-content">
+            <h3><?= htmlspecialchars($b['heading']) ?></h3>
+            <p><?= htmlspecialchars($b['text']) ?></p>
+          </div>
         </div>
       <?php endforeach; ?>
     </div>
@@ -274,15 +279,15 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
     <div class="section-head" style="text-align:center;" data-reveal>
       <div class="service-pill service-pill-center">Potrivit pentru</div>
     </div>
-    <div class="svc-fit-grid">
+    <div class="svc-fit-list">
       <?php foreach ($fit as $i => $f): ?>
-        <div class="svc-fit-card" data-reveal-stagger>
-          <div class="svc-fit-icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.58l7.3-7.3a1 1 0 0 1 1.4 0Z" fill="#60a5fa"/></svg>
+        <div class="svc-fit-row" data-reveal-stagger>
+          <div class="svc-fit-check">
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.58l7.3-7.3a1 1 0 0 1 1.4 0Z" fill="#60a5fa"/></svg>
           </div>
-          <div class="svc-fit-body">
-            <div class="svc-fit-title"><?= htmlspecialchars($f[0]) ?></div>
-            <div class="svc-fit-desc"><?= htmlspecialchars($f[1]) ?></div>
+          <div class="svc-fit-info">
+            <strong><?= htmlspecialchars($f[0]) ?></strong>
+            <span class="muted"> &mdash; <?= htmlspecialchars($f[1]) ?></span>
           </div>
         </div>
       <?php endforeach; ?>
@@ -291,9 +296,7 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
 </section>
 <?php endif; ?>
 
-<section class="section">
-  <div class="container cta-simple service-cta-redesign" data-reveal>
+<div class="container cta-simple service-cta-redesign" data-reveal>
     <h2>Preț personalizat în funcție de nevoie</h2>
     <button class="btn btn-primary" data-modal-trigger>Solicită ofertă →</button>
   </div>
-</section>
