@@ -1,4 +1,11 @@
 <section class="hero">
+  <div class="hero-video-wrap">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/assets/video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+  </div>
+  <canvas class="hero-particles-canvas" id="heroParticles"></canvas>
   <div class="container">
     <div class="hero-left">
       <div class="matrix-badge font-tech">Portofoliu</div>

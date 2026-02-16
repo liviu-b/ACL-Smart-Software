@@ -11,8 +11,8 @@ $current = $current === '' ? '/' : $current;
   <title>ACL Smart Software - Soluții Digitale Personalizate</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="google-site-verification" content="googlebf9aba8281af9a2c.html" />
-  <link rel="stylesheet" href="/assets/css/style.css?v=202602166" />
-  <link rel="stylesheet" href="/assets/css/responsive.css?v=202602166" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=202602171" />
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=202602171" />
 </head>
 <body>
   <div class="bg">

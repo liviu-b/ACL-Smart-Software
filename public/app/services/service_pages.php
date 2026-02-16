@@ -230,7 +230,14 @@ $fit    = $extras[$viewKey]['fit']    ?? [];
 $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch', 'Suport continuu'];
 ?>
 
-<section class="service-hero service-hero-redesign" data-reveal>
+<section class="service-hero service-hero-redesign hero" data-reveal>
+  <div class="hero-video-wrap">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="/assets/video/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+  </div>
+  <canvas class="hero-particles-canvas" id="heroParticles"></canvas>
   <div class="container">
     <div class="service-hero-center">
       <div class="service-pill service-pill-center">Servicii</div>
@@ -283,7 +290,7 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
       <?php foreach ($fit as $i => $f): ?>
         <div class="svc-fit-row" data-reveal-stagger>
           <div class="svc-fit-check">
-            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.58l7.3-7.3a1 1 0 0 1 1.4 0Z" fill="#60a5fa"/></svg>
+            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.58l7.3-7.3a1 1 0 0 1 1.4 0Z" fill="#0a0a0a"/></svg>
           </div>
           <div class="svc-fit-info">
             <strong><?= htmlspecialchars($f[0]) ?></strong>
