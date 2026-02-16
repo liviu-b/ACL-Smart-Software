@@ -8,10 +8,10 @@ $current = $current === '' ? '/' : $current;
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ACL-Smart Software</title>
+  <title>ACL Smart Software</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="description" content="ACL-Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
-  <link rel="stylesheet" href="/assets/css/style.css?v=202602165" />
+  <meta name="description" content="ACL Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
+  <link rel="stylesheet" href="/assets/css/style.css?v=202602171" />
 </head>
 <body>
   <div class="bg">
@@ -21,7 +21,7 @@ $current = $current === '' ? '/' : $current;
       <div class="container header-inner">
         <a class="brand" href="/">
           <span class="brand-mark">&lt;/&gt;</span>
-          <span class="brand-title"><span class="acl-orange">ACL</span>-Smart Software</span>
+          <span class="brand-title"><span class="acl-orange">ACL</span> Smart Software</span>
         </a>
 
         <nav class="nav" id="nav">

@@ -7,7 +7,7 @@
       </h1>
       <br></br>
       <p class="hero-sub">
-        <span class="font-tech"><span class="acl-orange">ACL</span>-Smart Software</span> proiectează și livrează platforme digitale orientate pe
+        <span class="font-tech"><span class="acl-orange">ACL</span> Smart Software</span> proiectează și livrează platforme digitale orientate pe
         rezultate — timp de lansare mai mic, conversie mai bună și operațiuni stabile.
       </p>
 
@@ -127,7 +127,7 @@
         Software Scalabil.<br>Arhitectură Robustă.
       </h1>
       <p class="hero-sub" style="color: var(--muted);">
-        <span class="font-tech"><span class="acl-orange">ACL</span>-Smart Software</span> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
+        <span class="font-tech"><span class="acl-orange">ACL</span> Smart Software</span> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
         Livrăm soluții end-to-end — de la discovery și arhitectură, la execuție, testare și mentenanță — folosind tehnologii moderne și procese Agile.
       </p>
       
@@ -187,6 +187,35 @@
 }
 </code></pre>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-section" aria-label="Ce ne recomandă">
+  <div class="container">
+    <div class="trust-head" data-reveal>
+      <div class="matrix-badge font-tech">Ce ne recomandă</div>
+      <h2>Rezultatele livrate și felul în care lucrăm</h2>
+      <p class="muted">Combinăm execuție tehnică solidă cu comunicare clară, termene asumate și focus pe impact real în business.</p>
+    </div>
+
+    <div class="trust-grid">
+      <article class="trust-card" data-reveal-stagger>
+        <div class="trust-value">95%+</div>
+        <div class="trust-label">Scor de satisfacție la predare</div>
+      </article>
+      <article class="trust-card" data-reveal-stagger>
+        <div class="trust-value">24h</div>
+        <div class="trust-label">Timp mediu de răspuns la solicitări</div>
+      </article>
+      <article class="trust-card" data-reveal-stagger>
+        <div class="trust-value">100%</div>
+        <div class="trust-label">Cod predat cu documentație și handover</div>
+      </article>
+      <article class="trust-card" data-reveal-stagger>
+        <div class="trust-value">End-to-end</div>
+        <div class="trust-label">De la analiză la lansare și suport</div>
+      </article>
     </div>
   </div>
 </section>

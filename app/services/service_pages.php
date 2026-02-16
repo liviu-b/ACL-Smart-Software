@@ -3,6 +3,7 @@ $viewKey = $service['view'] ?? '';
 $extras = [
   'custom-software-dev' => [
     'intro' => 'Aplicatii interne care reduc costurile si cresc controlul operational.',
+    'pills' => ['Discovery & Analiza', 'Arhitectura modulara', 'Livrare iterativa'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -26,6 +27,7 @@ $extras = [
   ],
   'custom-web-app' => [
     'intro' => 'Aplicatii web rapide, sigure si usor de extins.',
+    'pills' => ['UX & Design', 'Frontend & Backend', 'Securitate & Scalare'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -49,6 +51,7 @@ $extras = [
   ],
   'website-build' => [
     'intro' => 'Site-uri moderne, rapide si optimizate pentru conversie.',
+    'pills' => ['Design responsiv', 'SEO & Performanta', 'Mentenanta inclusa'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -73,6 +76,7 @@ $extras = [
   ],
   'ecommerce-store' => [
     'intro' => 'Magazine online optimizate pentru conversie si operatiuni.',
+    'pills' => ['Catalog & Checkout', 'Plati & Livrare', 'Optimizare conversie'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -97,6 +101,7 @@ $extras = [
   ],
   'saas-app-development' => [
     'intro' => 'Platforme SaaS scalabile, de la MVP la produs matur.',
+    'pills' => ['MVP rapid', 'Multi-tenant', 'Billing & Analytics'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -120,6 +125,7 @@ $extras = [
   ],
   'qa-testing' => [
     'intro' => 'Testare manuala si automata pentru stabilitate si incredere.',
+    'pills' => ['Testare manuala', 'Automatizare E2E', 'Integrare CI/CD'],
     'blocks' => [
       [
         'heading' => 'Ce oferim',
@@ -144,6 +150,7 @@ $extras = [
   ],
   'api-integration' => [
     'intro' => 'Integrari sigure si reziliente intre sisteme.',
+    'pills' => ['Plati & CRM', 'Rezilienta & Logging', 'Migrare API'],
     'blocks' => [
       [
         'heading' => 'Ce conectam',
@@ -168,6 +175,7 @@ $extras = [
   ],
   'consulting-architecture' => [
     'intro' => 'Decizii tehnice solide: audit, arhitectura, roadmap.',
+    'pills' => ['Audit de cod', 'Design arhitectura', 'Roadmap tehnic'],
     'blocks' => [
       [
         'heading' => 'Ce oferim',
@@ -191,6 +199,7 @@ $extras = [
   ],
   'ai-chatbots' => [
     'intro' => 'Chatboti orientati pe suport si vanzari, cu integrare completa.',
+    'pills' => ['RAG & LLM', 'Integrare multicanal', 'Monitorizare & Optimizare'],
     'blocks' => [
       [
         'heading' => 'Ce construim',
@@ -218,22 +227,28 @@ $extras = [
 $intro  = $extras[$viewKey]['intro']  ?? '';
 $blocks = $extras[$viewKey]['blocks'] ?? [];
 $fit    = $extras[$viewKey]['fit']    ?? [];
+$pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch', 'Suport continuu'];
 ?>
 
-<section class="service-hero" data-reveal>
+<section class="service-hero service-hero-redesign" data-reveal>
   <div class="container service-hero-grid">
-    <div class="service-hero-left">
-      <div class="service-pill service-pill-center">Servicii</div>
+    <div class="service-hero-left service-hero-left-redesign">
+      <div class="service-pill">Servicii</div>
       <h1><?= htmlspecialchars($service['title']) ?></h1>
       <p class="service-hero-text">
         <?= htmlspecialchars($service['short']) ?>
         <?= $intro ? ' ' . htmlspecialchars($intro) : '' ?>
       </p>
-      <div class="service-hero-ctas">
+      <div class="service-pills-row">
+        <?php $pillClasses = ['most', 'popular', 'new']; ?>
+        <?php foreach ($pills as $i => $pill): ?>
+          <span class="badge-pill <?= $pillClasses[$i] ?? 'most' ?>"><?= htmlspecialchars($pill) ?></span>
+        <?php endforeach; ?>
       </div>
     </div>
-    <div class="service-hero-right">
-      <div class="service-mockup">
+
+    <div class="service-hero-right service-hero-right-redesign">
+      <div class="service-mockup service-window-only">
         <div class="mockup-card mockup-main">
           <div class="mockup-bar"><span></span><span></span><span></span></div>
           <pre class="mockup-code"><code>
@@ -251,20 +266,18 @@ $fit    = $extras[$viewKey]['fit']    ?? [];
 ];
           </code></pre>
         </div>
-        <div class="mockup-card mockup-side">
-          <div class="mockup-line"></div>
-          <div class="mockup-line"></div>
-          <div class="mockup-line short"></div>
-        </div>
       </div>
     </div>
   </div>
 </section>
 
 <?php if ($blocks): ?>
-<section class="svc-detail">
+<section class="svc-detail svc-detail-redesign">
   <div class="container">
-    <div class="svc-detail-inner">
+    <div class="svc-detail-head" data-reveal>
+      <div class="service-pill service-pill-center">Cum livrăm</div>
+    </div>
+    <div class="svc-detail-grid">
       <?php $n = 1; foreach ($blocks as $b): ?>
         <div class="svc-detail-block" data-reveal-stagger>
           <div class="svc-detail-num"><?= sprintf('%02d', $n++) ?></div>
@@ -301,9 +314,8 @@ $fit    = $extras[$viewKey]['fit']    ?? [];
 <?php endif; ?>
 
 <section class="section">
-  <div class="container cta-simple" data-reveal>
-    <h2>Pret personalizat in functie de nevoie</h2>
-    <br></br>
-    <button class="btn btn-primary" data-modal-trigger>Solicita oferta →</button>
+  <div class="container cta-simple service-cta-redesign" data-reveal>
+    <h2>Preț personalizat în funcție de nevoie</h2>
+    <button class="btn btn-primary" data-modal-trigger>Solicită ofertă →</button>
   </div>
 </section>

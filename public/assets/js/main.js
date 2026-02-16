@@ -119,7 +119,7 @@ const tw = document.getElementById("typewriter");
 if (tw) {
   const lines = [
     "<?php",
-    "  // ACL-Smart Software",
+    "  // ACL Smart Software",
     "  $focus = ['aplicații personalizate', 'SaaS', 'eCommerce', 'QA', 'API'];",
     "  echo 'Livram predictibil, curat, scalabil.';",
     "?>"
