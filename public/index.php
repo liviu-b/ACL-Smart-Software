@@ -5,20 +5,20 @@ $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?? '/';
 $uri = rtrim($uri, '/');
 $uri = $uri === '' ? '/' : $uri;
 
-$services = require __DIR__ . '/../app/config/services.php';
+$services = require __DIR__ . '/app/config/services.php';
 
 function render(string $view, array $data = []): void {
   extract($data, EXTR_SKIP);
-  require __DIR__ . '/../app/partials/header.php';
-  require __DIR__ . '/../app/pages/' . $view . '.php';
-  require __DIR__ . '/../app/partials/footer.php';
+  require __DIR__ . '/app/partials/header.php';
+  require __DIR__ . '/app/pages/' . $view . '.php';
+  require __DIR__ . '/app/partials/footer.php';
 }
 
 function renderService(string $serviceView, array $data = []): void {
   extract($data, EXTR_SKIP);
-  require __DIR__ . '/../app/partials/header.php';
-  require __DIR__ . '/../app/services/service_pages.php';
-  require __DIR__ . '/../app/partials/footer.php';
+  require __DIR__ . '/app/partials/header.php';
+  require __DIR__ . '/app/services/service_pages.php';
+  require __DIR__ . '/app/partials/footer.php';
 }
 
 $routes = [
