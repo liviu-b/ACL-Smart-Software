@@ -12,6 +12,7 @@ $current = $current === '' ? '/' : $current;
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="google-site-verification" content="googlebf9aba8281af9a2c.html" />
   <link rel="stylesheet" href="/assets/css/style.css?v=202602166" />
+  <link rel="stylesheet" href="/assets/css/responsive.css?v=202602166" />
 </head>
 <body>
   <div class="bg">
