@@ -7,7 +7,7 @@
       </h1>
       <br></br>
       <p class="hero-sub">
-        <span class="font-tech">ACL-Smart Software</span> proiectează și livrează platforme digitale orientate pe
+        <span class="font-tech"><span class="acl-orange">ACL</span>-Smart Software</span> proiectează și livrează platforme digitale orientate pe
         rezultate — timp de lansare mai mic, conversie mai bună și operațiuni stabile.
       </p>
 
@@ -127,7 +127,7 @@
         Software Scalabil.<br>Arhitectură Robustă.
       </h1>
       <p class="hero-sub" style="color: var(--muted);">
-        <span class="font-tech">ACL-Smart Software</span> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
+        <span class="font-tech"><span class="acl-orange">ACL</span>-Smart Software</span> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
         Livrăm soluții end-to-end — de la discovery și arhitectură, la execuție, testare și mentenanță — folosind tehnologii moderne și procese Agile.
       </p>
       

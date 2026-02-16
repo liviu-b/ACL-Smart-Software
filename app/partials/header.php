@@ -11,7 +11,7 @@ $current = $current === '' ? '/' : $current;
   <title>ACL-Smart Software</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="description" content="ACL-Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
-  <link rel="stylesheet" href="/assets/css/style.css?v=202602064" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=202602165" />
 </head>
 <body>
   <div class="bg">
@@ -21,7 +21,7 @@ $current = $current === '' ? '/' : $current;
       <div class="container header-inner">
         <a class="brand" href="/">
           <span class="brand-mark">&lt;/&gt;</span>
-          <span class="brand-title">ACL-Smart Software</span>
+          <span class="brand-title"><span class="acl-orange">ACL</span>-Smart Software</span>
         </a>
 
         <nav class="nav" id="nav">

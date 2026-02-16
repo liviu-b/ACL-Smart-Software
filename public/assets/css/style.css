@@ -6,11 +6,14 @@
   --card: rgba(255,255,255,.05);
   --card2: rgba(255,255,255,.07);
   --stroke: rgba(255,255,255,.12);
+  --accent-orange:#ea580c; /* orange-600 */
   --primary: #60a5fa; /* blue-400 */
   --primary2:#a78bfa; /* purple-400 */
   --shadow: 0 18px 60px rgba(0,0,0,.55);
   --radius: 18px;
 }
+
+.acl-orange{ color:var(--accent-orange); }
 
 /* Sticky header offset when jumping to anchors */
 :target { scroll-margin-top: 90px; }

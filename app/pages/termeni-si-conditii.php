@@ -2,7 +2,7 @@
   <div class="container page-head-center-inner">
     <div class="matrix-badge font-tech">Legal</div>
     <h1>Termeni și Condiții</h1>
-    <p class="muted">Condițiile de utilizare a serviciilor ACL-Smart Software</p>
+    <p class="muted">Condițiile de utilizare a serviciilor <span class="acl-orange">ACL</span>-Smart Software</p>
   </div>
 </section>
 
@@ -11,7 +11,7 @@
     <div style="max-width: 820px; margin: 0 auto;">
       
       <h2 style="margin-top:32px;">Informații generale</h2>
-      <p>Prezentul document stabilește condițiile în care poate fi utilizat website-ul ACL-Smart Software. Prin accesarea sau utilizarea acestui website, sunteți de acord cu termenii și condițiile de mai jos.</p>
+      <p>Prezentul document stabilește condițiile în care poate fi utilizat website-ul <span class="acl-orange">ACL</span>-Smart Software. Prin accesarea sau utilizarea acestui website, sunteți de acord cu termenii și condițiile de mai jos.</p>
       
       <p>Acest website este deținut și administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>.</p>
 

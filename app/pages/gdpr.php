@@ -14,7 +14,7 @@
       <p>Prezenta informare are scopul de a vă aduce la cunoștință aspectele privind prelucrarea datelor dumneavoastră cu caracter personal și drepturile pe care le aveți în conformitate cu Regulamentul (UE) 2016/679 privind protecția datelor (GDPR) și legislația națională în vigoare.</p>
 
       <h2 style="margin-top:32px;">1. Informații generale</h2>
-      <p>Website-ul ACL-Smart Software este administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>.</p>
+      <p>Website-ul <span class="acl-orange">ACL</span>-Smart Software este administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490" style="color:var(--primary);">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com" style="color:var(--primary);">acl-smartsoftware@outlook.com</a>.</p>
       
       <p>În conformitate cu Regulamentul (UE) 679/2016, BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ are calitatea de operator de date cu caracter personal.</p>
       

@@ -35,7 +35,7 @@
         <div>
           <div class="footer-brand-wrap">
             <span class="brand-mark">&lt;/&gt;</span>
-            <span class="footer-brand-text">ACL-Smart Software</span>
+            <span class="footer-brand-text"><span class="acl-orange">ACL</span>-Smart Software</span>
           </div>
           <p class="muted">
           Nu scriem doar cod. Construim produse care cresc business-uri.
@@ -75,7 +75,7 @@
       </div>
 
       <div class="container footer-bottom">
-        <span class="muted">© <?= date('Y') ?> ACL-Smart Software. Toate drepturile rezervate.</span>
+        <span class="muted">© <?= date('Y') ?> <span class="acl-orange">ACL</span>-Smart Software. Toate drepturile rezervate.</span>
       </div>
     </footer>
   </div>
