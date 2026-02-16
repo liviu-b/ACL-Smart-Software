@@ -31,50 +31,26 @@ if (header) {
 }
 
 if (burger && nav) {
-  const toggleMenu = (forceClose) => {
-    const willClose = forceClose === true || nav.classList.contains("open");
-    nav.classList.toggle("open", !willClose);
-    burger.classList.toggle("active", !willClose);
-    burger.setAttribute("aria-expanded", !willClose);
-    // Lock / unlock body scroll
-    if (!willClose) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-  };
-
-  burger.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggleMenu();
+  burger.addEventListener("click", () => {
+    const isOpen = nav.classList.toggle("open");
+    burger.classList.toggle("active", isOpen);
+    burger.setAttribute("aria-expanded", isOpen);
   });
-
-  // Close menu when clicking outside
+  // Close when clicking outside
   document.addEventListener("click", (e) => {
     if (!nav.contains(e.target) && !burger.contains(e.target)) {
-      toggleMenu(true);
+      nav.classList.remove("open");
+      burger.classList.remove("active");
+      burger.setAttribute("aria-expanded", "false");
     }
   });
-
-  // Close menu when a nav link is clicked (not dropdown button)
+  // Close when a link is clicked
   nav.querySelectorAll("a.nav-link, .dropdown-item").forEach((link) => {
     link.addEventListener("click", () => {
-      toggleMenu(true);
+      nav.classList.remove("open");
+      burger.classList.remove("active");
+      burger.setAttribute("aria-expanded", "false");
     });
-  });
-
-  // Close menu on Escape key
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && nav.classList.contains("open")) {
-      toggleMenu(true);
-    }
-  });
-
-  // Close menu on resize to desktop
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 980 && nav.classList.contains("open")) {
-      toggleMenu(true);
-    }
   });
 }
 

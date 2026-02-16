@@ -225,44 +225,26 @@ body{
 .burger{
   display:none;
   width:44px; height:44px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.05);
+  background: rgba(255,255,255,.04);
   cursor: pointer;
-  position: relative;
-  z-index: 102;
-  transition: background .2s ease, border-color .2s ease;
-}
-.burger:hover{
-  background: rgba(255,255,255,.08);
-  border-color: rgba(96,165,250,.25);
 }
 .burger span{
-  display:block;
-  height:2px;
-  width:20px;
-  background: rgba(255,255,255,.9);
+  display:block; height:2px; width:20px;
+  background: rgba(255,255,255,.85);
+  margin:5px auto;
   border-radius:999px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: all .3s cubic-bezier(.4,0,.2,1);
+  transition: transform .25s ease, opacity .25s ease;
 }
-.burger span:nth-child(1){ top: 13px; }
-.burger span:nth-child(2){ top: 21px; }
-.burger span:nth-child(3){ top: 29px; }
-/* Burger → X animation when nav is open */
 .burger.active span:nth-child(1){
-  top: 21px;
-  transform: translateX(-50%) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .burger.active span:nth-child(2){
   opacity: 0;
-  transform: translateX(-50%) scaleX(0);
 }
 .burger.active span:nth-child(3){
-  top: 21px;
-  transform: translateX(-50%) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ─── Page Transition ─── */
@@ -2832,85 +2814,73 @@ input:focus, textarea:focus{
     font-size: 13px;
   }
   
-  /* ── Mobile Navigation – Full Overlay ── */
+  /* ── Mobile Navigation ── */
   .nav{
     position: fixed;
-    inset: 0;
-    z-index: 101;
-    background: rgba(10,15,28,.97);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 90px 24px 32px;
+    top: 62px;
+    left: 12px;
+    right: 12px;
+    z-index: 100;
+    background: rgba(17,24,39,.96);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 18px;
+    padding: 8px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.6);
     flex-direction: column;
     align-items: stretch;
-    gap: 4px;
+    gap: 2px;
+    max-height: calc(100vh - 80px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     /* Hidden by default */
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-12px);
-    transition: opacity .3s cubic-bezier(.4,0,.2,1),
-                transform .3s cubic-bezier(.4,0,.2,1),
-                visibility .3s;
-    pointer-events: none;
+    display: none;
   }
   .nav.open{
     display: flex;
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-    pointer-events: auto;
   }
   .burger{ display: block; }
   .dropdown-panel{
     position: static;
     width: 100%;
-    margin-top: 4px;
+    margin-top: 2px;
     transform-origin: top center;
     border-radius: 14px;
-    background: rgba(255,255,255,.04);
+    background: rgba(255,255,255,.03);
     border: 1px solid rgba(255,255,255,.06);
+    box-shadow: none;
   }
 
-  /* Nav links in overlay */
+  /* Nav links – clean, big touch targets */
   .nav .nav-link{
-    font-size: 18px;
-    padding: 16px 18px;
-    border-radius: 14px;
+    font-size: 16px;
+    padding: 14px 16px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    min-height: 52px;
+    min-height: 48px;
     border: 1px solid transparent;
-    transition: background .2s ease, border-color .2s ease;
-  }
-  .nav .nav-link:hover,
-  .nav .nav-link:active{
-    background: rgba(255,255,255,.05);
-    border-color: rgba(96,165,250,.15);
-  }
-  .nav .nav-link.active{
-    background: rgba(96,165,250,.08);
-    border-color: rgba(96,165,250,.2);
-  }
-  .nav .nav-link.active::after{
-    display: none;
+    transition: background .15s ease;
   }
   .nav .nav-link::after{
     display: none;
   }
-
-  /* Dropdown items inside overlay */
-  .nav .dropdown-item{
-    padding: 14px 16px;
-    font-size: 16px;
-    min-height: 48px;
-    border-radius: 12px;
+  .nav .nav-link:hover,
+  .nav .nav-link:active{
+    background: rgba(255,255,255,.05);
+  }
+  .nav .nav-link.active{
+    background: rgba(96,165,250,.10);
+    border-color: rgba(96,165,250,.18);
   }
 
-  /* Header stays above the overlay */
-  .header{
-    z-index: 103;
+  /* Dropdown items */
+  .nav .dropdown-item{
+    padding: 12px 14px;
+    font-size: 15px;
+    min-height: 44px;
+    border-radius: 10px;
   }
   
   /* Hero adjustments */
@@ -3197,13 +3167,8 @@ input:focus, textarea:focus{
   .select{ min-width: 100%; }
   .service-picker{ flex-direction: column; }
 
-  /* Header – compact on mobile */
+  /* Header */
   .header-inner{ padding: 10px 0; }
-  .header.scrolled{
-    background: rgba(10,15,28,.85);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-  }
   .brand-title{ font-size: 18px; }
   .brand-mark{ font-size: 15px; }
 
@@ -3238,21 +3203,25 @@ input:focus, textarea:focus{
 
   /* Mobile nav polish (640px) */
   .nav{
-    padding: 80px 18px 28px;
+    top: 56px;
+    left: 10px;
+    right: 10px;
+    padding: 6px;
+    border-radius: 16px;
+    max-height: calc(100vh - 70px);
   }
   .nav .nav-link{
-    font-size: 17px;
-    padding: 15px 16px;
-    min-height: 50px;
-  }
-  .nav .dropdown-item{
-    padding: 13px 14px;
     font-size: 15px;
+    padding: 13px 14px;
     min-height: 46px;
   }
+  .nav .dropdown-item{
+    padding: 11px 12px;
+    font-size: 14px;
+    min-height: 42px;
+  }
   .dropdown-panel{
-    padding: 6px;
-    margin-top: 4px;
+    padding: 4px;
   }
 
   /* Footer overflow – email & long text */
