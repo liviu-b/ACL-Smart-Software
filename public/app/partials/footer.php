@@ -55,7 +55,7 @@
   <!-- WhatsApp floating button with tooltip -->
   <div class="whatsapp-wrapper">
     <div class="whatsapp-tooltip" id="waTooltip">
-      Salut, eu sunt Smart AI, scrie-mi direct aici
+      Hai să vorbim! Scrie-ne pe WhatsApp 💬
     </div>
     <a href="https://wa.me/40758154490" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contact pe WhatsApp">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -2796,9 +2796,9 @@ input:focus, textarea:focus{
   .diagram-node::before{ display:none; }
   .diagram-steps{ grid-template-columns: 1fr; }
   
-  /* Capability Matrix Responsive */
+  /* Capability Matrix – hide on tablet/mobile, desktop only */
   .capability-matrix{
-    padding: 20px;
+    display: none;
   }
   
   .matrix-grid{
