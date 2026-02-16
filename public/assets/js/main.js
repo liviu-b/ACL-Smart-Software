@@ -236,16 +236,27 @@ document.addEventListener("keydown", (e) => {
   let interval = null;
 
   function showItem(index) {
-    items.forEach((el) => el.classList.remove("active"));
+    items.forEach((el) => {
+      el.classList.remove("active");
+      el.classList.remove("exit");
+    });
     items[index].classList.add("active");
+  }
+
+  function cycleNext() {
+    const prev = current;
+    current = (current + 1) % items.length;
+    items[prev].classList.remove("active");
+    items[prev].classList.add("exit");
+    setTimeout(() => {
+      items[prev].classList.remove("exit");
+      items[current].classList.add("active");
+    }, 350);
   }
 
   function startCycle() {
     showItem(current);
-    interval = setInterval(() => {
-      current = (current + 1) % items.length;
-      showItem(current);
-    }, 5000);
+    interval = setInterval(cycleNext, 5000);
   }
 
   function stopCycle() {
