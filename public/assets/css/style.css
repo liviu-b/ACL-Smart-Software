@@ -225,15 +225,44 @@ body{
 .burger{
   display:none;
   width:44px; height:44px;
-  border-radius: 14px;
+  border-radius: 12px;
   border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.04);
+  background: rgba(255,255,255,.05);
+  cursor: pointer;
+  position: relative;
+  z-index: 102;
+  transition: background .2s ease, border-color .2s ease;
+}
+.burger:hover{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(96,165,250,.25);
 }
 .burger span{
-  display:block; height:2px; width:20px;
-  background: rgba(255,255,255,.85);
-  margin:5px auto;
+  display:block;
+  height:2px;
+  width:20px;
+  background: rgba(255,255,255,.9);
   border-radius:999px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+}
+.burger span:nth-child(1){ top: 13px; }
+.burger span:nth-child(2){ top: 21px; }
+.burger span:nth-child(3){ top: 29px; }
+/* Burger → X animation when nav is open */
+.burger.active span:nth-child(1){
+  top: 21px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.burger.active span:nth-child(2){
+  opacity: 0;
+  transform: translateX(-50%) scaleX(0);
+}
+.burger.active span:nth-child(3){
+  top: 21px;
+  transform: translateX(-50%) rotate(-45deg);
 }
 
 /* ─── Page Transition ─── */
@@ -2803,22 +2832,86 @@ input:focus, textarea:focus{
     font-size: 13px;
   }
   
-  /* Navigation */
+  /* ── Mobile Navigation – Full Overlay ── */
   .nav{
-    position:fixed;
-    inset: 74px 14px auto 14px;
-    background: rgba(17,24,39,.92);
-    border: 1px solid rgba(255,255,255,.10);
-    border-radius: 18px;
-    padding: 12px;
-    box-shadow: var(--shadow);
-    display:none;
-    flex-direction:column;
-    align-items:stretch;
+    position: fixed;
+    inset: 0;
+    z-index: 101;
+    background: rgba(10,15,28,.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 90px 24px 32px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity .3s cubic-bezier(.4,0,.2,1),
+                transform .3s cubic-bezier(.4,0,.2,1),
+                visibility .3s;
+    pointer-events: none;
   }
-  .nav.open{ display:flex; }
-  .burger{ display:block; }
-  .dropdown-panel{ position:static; width:100%; margin-top:8px; transform-origin: top center; }
+  .nav.open{
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .burger{ display: block; }
+  .dropdown-panel{
+    position: static;
+    width: 100%;
+    margin-top: 4px;
+    transform-origin: top center;
+    border-radius: 14px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.06);
+  }
+
+  /* Nav links in overlay */
+  .nav .nav-link{
+    font-size: 18px;
+    padding: 16px 18px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    min-height: 52px;
+    border: 1px solid transparent;
+    transition: background .2s ease, border-color .2s ease;
+  }
+  .nav .nav-link:hover,
+  .nav .nav-link:active{
+    background: rgba(255,255,255,.05);
+    border-color: rgba(96,165,250,.15);
+  }
+  .nav .nav-link.active{
+    background: rgba(96,165,250,.08);
+    border-color: rgba(96,165,250,.2);
+  }
+  .nav .nav-link.active::after{
+    display: none;
+  }
+  .nav .nav-link::after{
+    display: none;
+  }
+
+  /* Dropdown items inside overlay */
+  .nav .dropdown-item{
+    padding: 14px 16px;
+    font-size: 16px;
+    min-height: 48px;
+    border-radius: 12px;
+  }
+
+  /* Header stays above the overlay */
+  .header{
+    z-index: 103;
+  }
   
   /* Hero adjustments */
   .hero{ padding: 40px 0 20px; }
@@ -3104,8 +3197,13 @@ input:focus, textarea:focus{
   .select{ min-width: 100%; }
   .service-picker{ flex-direction: column; }
 
-  /* Header */
+  /* Header – compact on mobile */
   .header-inner{ padding: 10px 0; }
+  .header.scrolled{
+    background: rgba(10,15,28,.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
   .brand-title{ font-size: 18px; }
   .brand-mark{ font-size: 15px; }
 
@@ -3138,11 +3236,24 @@ input:focus, textarea:focus{
   .service-cta-redesign{ padding: 0; }
   .service-cta-redesign h2{ font-size: 20px; margin-bottom: 10px; }
 
-  /* Mobile nav polish */
-  .nav{ padding: 16px; gap: 4px; }
-  .nav-link{ font-size: 16px; padding: 14px 16px; min-height: 48px; display: flex; align-items: center; }
-  .dropdown-item{ padding: 12px 14px; font-size: 15px; min-height: 44px; }
-  .dropdown-panel{ padding: 8px; margin-top: 4px; }
+  /* Mobile nav polish (640px) */
+  .nav{
+    padding: 80px 18px 28px;
+  }
+  .nav .nav-link{
+    font-size: 17px;
+    padding: 15px 16px;
+    min-height: 50px;
+  }
+  .nav .dropdown-item{
+    padding: 13px 14px;
+    font-size: 15px;
+    min-height: 46px;
+  }
+  .dropdown-panel{
+    padding: 6px;
+    margin-top: 4px;
+  }
 
   /* Footer overflow – email & long text */
   .footer-contact{ word-break: break-word; overflow-wrap: break-word; font-size: 13px; }
@@ -3305,4 +3416,280 @@ input:focus, textarea:focus{
 body{
   overflow-wrap: break-word;
   word-wrap: break-word;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Cine Suntem – Mobile Polish (ONLY mobile, no desktop change)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Tablet & Mobile (≤ 768px) ─── */
+@media (max-width: 768px){
+
+  /* Remove the <br> spacer between hero title and subtitle */
+  .hero-left > br{
+    display: none;
+  }
+
+  /* Hero badge – bigger tap target, more readable */
+  .hero-left .matrix-badge{
+    padding: 10px 20px;
+    font-size: 12px;
+    letter-spacing: .08em;
+    margin-bottom: 14px;
+  }
+
+  /* Hero title – tighter line height, clear spacing */
+  .hero-title{
+    line-height: 1.15;
+    margin: 10px 0 16px;
+  }
+
+  /* Hero subtitle – full width, good line height */
+  .hero-sub{
+    max-width: 100%;
+    line-height: 1.75;
+    font-size: 15px;
+  }
+
+  /* Hero rotating text – card treatment so it doesn't float loose */
+  .hero-rotate{
+    margin-top: 18px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.10);
+    border-radius: 12px;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  /* ── CTA Buttons – prominent, full-width, big enough to tap ── */
+  .hero-ctas{
+    margin-top: 24px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .hero-ctas .btn{
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    border-radius: 14px;
+  }
+  .hero-ctas .btn-primary{
+    background: rgba(96,165,250,.18);
+    border-color: rgba(96,165,250,.40);
+    box-shadow: 0 6px 24px rgba(96,165,250,.22);
+  }
+  .hero-ctas .btn-ghost{
+    background: rgba(255,255,255,.05);
+    border-color: rgba(255,255,255,.15);
+  }
+
+  /* ── Capability Matrix – card-per-column layout ── */
+  .capability-matrix{
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 12px;
+  }
+  .matrix-header{
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .matrix-header .matrix-badge{
+    font-size: 11px;
+    padding: 6px 14px;
+  }
+  .matrix-subtitle{
+    font-size: 13px;
+    margin-top: 4px;
+  }
+
+  /* Hide the vertical/horizontal dividers – cards do the separation */
+  .matrix-divider{
+    display: none;
+  }
+
+  .matrix-grid{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Each capability column becomes its own card */
+  .matrix-col{
+    background: rgba(255,255,255,.035);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 16px;
+    padding: 18px 16px;
+    gap: 12px;
+  }
+
+  .matrix-col-header{
+    margin-bottom: 2px;
+  }
+  .matrix-pill{
+    font-size: 10px;
+    padding: 5px 12px;
+    letter-spacing: .1em;
+  }
+  .matrix-items{
+    gap: 6px;
+  }
+  .matrix-item{
+    font-size: 14px;
+    padding: 7px 0;
+    gap: 10px;
+  }
+  .matrix-icon{
+    font-size: 16px;
+    width: 22px;
+  }
+  .matrix-desc{
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 1.6;
+  }
+
+  /* ── About Section (second block on Cine suntem) ── */
+  .about-section{
+    padding: 2.5rem 0;
+  }
+  .about-grid{
+    gap: 2rem;
+  }
+  .about-badge{
+    margin-bottom: 1rem;
+  }
+  .about-title{
+    margin-bottom: 14px;
+  }
+  .about-section .hero-sub{
+    font-size: 14px;
+    line-height: 1.75;
+  }
+  .about-ctas{
+    margin-top: 1.8rem;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .about-ctas .btn{
+    width: 100%;
+    justify-content: center;
+    padding: 16px 24px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 14px;
+  }
+  .about-anim{
+    min-height: auto;
+  }
+  .about-terminal{
+    border-radius: 14px;
+  }
+  .about-terminal-body{
+    height: 240px;
+    padding: 16px;
+    font-size: .78rem;
+    line-height: 1.55;
+  }
+
+  /* ── Trust section polish ── */
+  .trust-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+  }
+  .trust-card{
+    padding: 16px 14px;
+    text-align: center;
+  }
+  .trust-value{
+    font-size: clamp(20px, 5.5vw, 28px);
+  }
+  .trust-label{
+    font-size: 13px;
+    line-height: 1.4;
+  }
+}
+
+/* ─── Phone-only extra polish (≤ 480px) ─── */
+@media (max-width: 480px){
+
+  /* Hero – even tighter on small phones */
+  .hero{ padding: 24px 0 14px; }
+  .hero-left .matrix-badge{
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+  .hero-title{
+    font-size: clamp(24px, 7.5vw, 34px);
+    line-height: 1.12;
+    margin: 8px 0 12px;
+  }
+  .hero-sub{
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .hero-rotate{
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+  .hero-ctas .btn{
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  /* Matrix – tighter on very small screens */
+  .capability-matrix{
+    padding: 14px;
+    border-radius: 16px;
+  }
+  .matrix-col{
+    padding: 14px 12px;
+    border-radius: 14px;
+  }
+  .matrix-item{
+    font-size: 13px;
+  }
+  .matrix-desc{
+    font-size: 11px;
+  }
+  .matrix-pill{
+    font-size: 9px;
+  }
+
+  /* About section */
+  .about-title{
+    font-size: clamp(1.35rem, 6.5vw, 2rem);
+  }
+  .about-terminal-body{
+    height: 200px;
+    padding: 12px;
+    font-size: .7rem;
+  }
+  .about-ctas .btn{
+    padding: 14px 20px;
+    font-size: 14px;
+  }
+
+  /* Trust – stack to 1 column on very small screens */
+  .trust-grid{
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .trust-card{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-align: left;
+    padding: 14px 16px;
+  }
+  .trust-value{
+    font-size: 20px;
+    min-width: 68px;
+    flex-shrink: 0;
+  }
+  .trust-label{
+    font-size: 13px;
+  }
 }

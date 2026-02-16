@@ -31,10 +31,50 @@ if (header) {
 }
 
 if (burger && nav) {
-  burger.addEventListener("click", () => nav.classList.toggle("open"));
+  const toggleMenu = (forceClose) => {
+    const willClose = forceClose === true || nav.classList.contains("open");
+    nav.classList.toggle("open", !willClose);
+    burger.classList.toggle("active", !willClose);
+    burger.setAttribute("aria-expanded", !willClose);
+    // Lock / unlock body scroll
+    if (!willClose) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  };
+
+  burger.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleMenu();
+  });
+
+  // Close menu when clicking outside
   document.addEventListener("click", (e) => {
-    const isClickInside = nav.contains(e.target) || burger.contains(e.target);
-    if (!isClickInside) nav.classList.remove("open");
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+      toggleMenu(true);
+    }
+  });
+
+  // Close menu when a nav link is clicked (not dropdown button)
+  nav.querySelectorAll("a.nav-link, .dropdown-item").forEach((link) => {
+    link.addEventListener("click", () => {
+      toggleMenu(true);
+    });
+  });
+
+  // Close menu on Escape key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && nav.classList.contains("open")) {
+      toggleMenu(true);
+    }
+  });
+
+  // Close menu on resize to desktop
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 980 && nav.classList.contains("open")) {
+      toggleMenu(true);
+    }
   });
 }
 

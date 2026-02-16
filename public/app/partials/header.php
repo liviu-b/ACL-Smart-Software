@@ -45,7 +45,7 @@ $current = $current === '' ? '/' : $current;
           <a class="nav-link <?= $current==='/portofoliu'?'active':'' ?>" href="/portofoliu">Portofoliu</a>
         </nav>
 
-        <button class="burger" id="burger" aria-label="Deschide meniul" type="button">
+        <button class="burger" id="burger" aria-label="Deschide meniul" aria-expanded="false" type="button">
           <span></span><span></span><span></span>
         </button>
       </div>
