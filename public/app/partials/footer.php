@@ -39,9 +39,9 @@
             <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="nofollow">
               <img src="https://wpfitness.eu/wp-content/uploads/2022/10/anpc-sol.png" alt="Soluționarea Online a Litigiilor" width="200">
             </a>
-            <a href="https://anpc.ro/" target="_blank" rel="nofollow" style="display:block; text-align:center; margin-top:10px; font-size:15px; font-weight:600; color:var(--primary); text-decoration:none;">ANPC</a>
-            <a href="/termeni-si-conditii" style="display:block; text-align:center; margin-top:8px; font-size:14px; color:var(--muted); text-decoration:none;">Termeni și Condiții</a>
-            <a href="/gdpr" style="display:block; text-align:center; margin-top:6px; font-size:14px; color:var(--muted); text-decoration:none;">GDPR</a>
+            <a href="https://anpc.ro/" target="_blank" rel="nofollow" class="footer-anpc-link">ANPC</a>
+            <a href="/termeni-si-conditii" class="footer-legal-link">Termeni și Condiții</a>
+            <a href="/gdpr" class="footer-legal-link">GDPR</a>
           </div>
         </div>
       </div>

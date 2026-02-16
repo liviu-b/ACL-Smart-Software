@@ -11,7 +11,7 @@ $current = $current === '' ? '/' : $current;
   <title>ACL Smart Software - Soluții Digitale Personalizate</title>
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="description" content="ACL Smart Software - software personalizat, aplicații web, eCommerce, SaaS, QA, integrări API, consultanță." />
-  <link rel="stylesheet" href="/assets/css/style.css?v=202602162" />
+  <link rel="stylesheet" href="/assets/css/style.css?v=202602163" />
 </head>
 <body>
   <div class="bg">
