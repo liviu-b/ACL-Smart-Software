@@ -119,11 +119,11 @@
   </div>
 </section>
 
-<section class="section" id="cine-suntem" style="padding: 6rem 0;">
-  <div class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+<section class="section about-section" id="cine-suntem">
+  <div class="container about-grid">
     <div class="hero-left">
-      <div class="matrix-badge font-tech" style="display: inline-block; margin-bottom: 1.5rem;">Partener Tehnic</div>
-      <h1 style="font-size: 3rem; margin: 0; line-height: 1.1; font-weight: 800; letter-spacing: -0.02em;">
+      <div class="matrix-badge font-tech about-badge">Partener Tehnic</div>
+      <h1 class="about-title">
         Software Scalabil.<br>Arhitectură Robustă.
       </h1>
       <p class="hero-sub" style="color: var(--muted);">
@@ -131,23 +131,23 @@
         Livrăm soluții end-to-end — de la discovery și arhitectură, la execuție, testare și mentenanță — folosind tehnologii moderne și procese Agile.
       </p>
       
-      <div class="hero-ctas" style="margin-top: 2.5rem; display: flex; gap: 1rem;">
+      <div class="hero-ctas about-ctas">
         <button class="btn btn-primary" data-modal-trigger>Haide să discutăm →</button>
         <a class="btn btn-ghost" href="/portofoliu">Vezi Portofoliu</a>
       </div>
     </div>
 
-    <div class="anim-wrap" aria-hidden="true" style="display: flex; align-items: center; justify-content: center; position: relative;">
-      <div class="orb" style="background: var(--primary); opacity: 0.2; filter: blur(90px); width: 300px; height: 300px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1;"></div>
+    <div class="anim-wrap about-anim" aria-hidden="true">
+      <div class="about-orb"></div>
       
-      <div class="terminal" data-reveal style="width: 100%; border: 1px solid var(--stroke); background: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); box-shadow: var(--shadow); border-radius: 12px; overflow: hidden;">
-        <div class="terminal-bar" style="border-bottom: 1px solid var(--stroke); padding: 12px 16px; background: rgba(255,255,255,0.03); display: flex; align-items: center;">
-          <div style="display: flex; gap: 8px;">
-            <span style="width:12px; height:12px; border-radius:50%; background:#ef4444"></span>
-            <span style="width:12px; height:12px; border-radius:50%; background:#eab308"></span>
-            <span style="width:12px; height:12px; border-radius:50%; background:#22c55e"></span>
+      <div class="about-terminal" data-reveal>
+        <div class="about-terminal-bar">
+          <div class="about-terminal-dots">
+            <span class="about-dot about-dot-red"></span>
+            <span class="about-dot about-dot-yellow"></span>
+            <span class="about-dot about-dot-green"></span>
           </div>
-          <span class="terminal-title font-tech muted" style="margin-left: auto; font-size: 0.85rem; letter-spacing: 0.05em;">Architecture.ts</span>
+          <span class="terminal-title font-tech muted about-terminal-title">Architecture.ts</span>
         </div>
         
         <style>
@@ -161,7 +161,7 @@
           }
         </style>
 
-        <pre class="terminal-body" style="padding: 24px; font-size: 0.95rem; line-height: 1.6; margin: 0; overflow: hidden; height: 300px;"><code class="font-tech scrolling-content" style="color: #e5e7eb; display: block; tab-size: 2;">
+        <pre class="terminal-body about-terminal-body"><code class="font-tech scrolling-content" style="color: #e5e7eb; display: block; tab-size: 2;">
 <span style="color: #c084fc;">interface</span> <span style="color: #fbbf24;">ScalableSystem</span> {
   security: <span style="color: #60a5fa;">SecurityLevel</span>;
   performance: <span style="color: #60a5fa;">Metric</span>[];
@@ -190,6 +190,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="trust-section" aria-label="Ce ne recomandă">
   <div class="container">
