@@ -269,7 +269,7 @@
         <div class="svc-body">
           <div class="svc-head">
             <h3 class="svc-title font-tech">Dezvoltare site <span class="acl-orange">web</span></h3>
-            <span class="badge-pill most">Most Requested</span>
+            <span class="badge-pill most">Cel mai solicitat</span>
           </div>
           <p class="svc-desc">Creăm site-uri moderne, responsive și ușor de administrat.</p>
           <div class="svc-bullets">
@@ -303,7 +303,7 @@
         <div class="svc-body">
           <div class="svc-head">
             <h3 class="svc-title font-tech">Aplicații <span class="acl-orange">SaaS</span></h3>
-            <span class="badge-pill most">Most Requested</span>
+            <span class="badge-pill most">Cel mai solicitat</span>
           </div>
           <p class="svc-desc">Transformăm idei în produse SaaS scalabile, de la MVP la platforme mature.</p>
           <div class="svc-bullets">
@@ -320,7 +320,7 @@
         <div class="svc-body">
           <div class="svc-head">
             <h3 class="svc-title font-tech">Testare <span class="acl-orange">QA</span></h3>
-            <span class="badge-pill new">New</span>
+            <span class="badge-pill new">Nou</span>
           </div>
           <p class="svc-desc">Asigurăm calitate constantă prin procese riguroase de testare manuală și automată.</p>
           <div class="svc-bullets">
@@ -337,7 +337,7 @@
         <div class="svc-body">
           <div class="svc-head">
             <h3 class="svc-title font-tech">Integrare <span class="acl-orange">API</span></h3>
-            <span class="badge-pill new">New</span>
+            <span class="badge-pill new">Nou</span>
           </div>
           <p class="svc-desc">Conectăm aplicațiile tale cu ecosisteme externe pentru eficiență operațională.</p>
           <div class="svc-bullets">
@@ -370,7 +370,7 @@
         <div class="svc-body">
           <div class="svc-head">
             <h3 class="svc-title font-tech">Chatboți <span class="acl-orange">AI</span></h3>
-            <span class="badge-pill most">Most Requested</span>
+            <span class="badge-pill most">Cel mai solicitat</span>
           </div>
           <p class="svc-desc">Dezvoltăm chatboți inteligenți pentru suport, vânzări și automatizare procese.</p>
           <div class="svc-bullets">
