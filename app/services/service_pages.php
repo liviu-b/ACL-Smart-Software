@@ -231,9 +231,9 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
 ?>
 
 <section class="service-hero service-hero-redesign" data-reveal>
-  <div class="container service-hero-grid">
-    <div class="service-hero-left service-hero-left-redesign">
-      <div class="service-pill">Servicii</div>
+  <div class="container">
+    <div class="service-hero-center">
+      <div class="service-pill service-pill-center">Servicii</div>
       <h1><?= htmlspecialchars($service['title']) ?></h1>
       <p class="service-hero-text">
         <?= htmlspecialchars($service['short']) ?>
@@ -244,28 +244,6 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch',
         <?php foreach ($pills as $i => $pill): ?>
           <span class="badge-pill <?= $pillClasses[$i] ?? 'most' ?>"><?= htmlspecialchars($pill) ?></span>
         <?php endforeach; ?>
-      </div>
-    </div>
-
-    <div class="service-hero-right service-hero-right-redesign">
-      <div class="service-mockup service-window-only">
-        <div class="mockup-card mockup-main">
-          <div class="mockup-bar"><span></span><span></span><span></span></div>
-          <pre class="mockup-code"><code>
-<span class="code-k">interface</span> <span class="code-t">ServiceFlow</span> {
-  audit: <span class="code-t">Step</span>;
-  build: <span class="code-t">Step</span>;
-  scale: <span class="code-t">Step</span>;
-}
-
-<span class="code-k">const</span> <span class="code-v">workflow</span> = [
-  <span class="code-s">"Discovery"</span>,
-  <span class="code-s">"Design"</span>,
-  <span class="code-s">"Build"</span>,
-  <span class="code-s">"Launch"</span>
-];
-          </code></pre>
-        </div>
       </div>
     </div>
   </div>

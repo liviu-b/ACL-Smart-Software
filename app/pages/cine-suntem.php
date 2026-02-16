@@ -194,7 +194,7 @@
 <section class="trust-section" aria-label="Ce ne recomandă">
   <div class="container">
     <div class="trust-head" data-reveal>
-      <div class="matrix-badge font-tech">Ce ne recomandă</div>
+      <div class="service-pill service-pill-center">Ce ne recomandă</div>
       <h2>Rezultatele livrate și felul în care lucrăm</h2>
       <p class="muted">Combinăm execuție tehnică solidă cu comunicare clară, termene asumate și focus pe impact real în business.</p>
     </div>
@@ -222,8 +222,8 @@
 
 <section class="section" id="serviciile-noastre">
   <div class="container">
-    <div class="section-head">
-      <div class="matrix-badge font-tech">Servicii &amp; expertiză</div>
+    <div class="section-head" style="text-align: center;">
+      <div class="service-pill service-pill-center">Servicii &amp; expertiză</div>
       <p class="muted">
         De la aplicații custom și platforme SaaS la integrare API și chatboți AI, acoperim cap‑coadă
         ciclul de dezvoltare software.
