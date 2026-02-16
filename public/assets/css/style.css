@@ -2629,7 +2629,19 @@ input:focus, textarea:focus{
   .stats{ grid-template-columns: 1fr; }
   .cards-3{ grid-template-columns: 1fr; }
   .split{ grid-template-columns: 1fr; }
-  .footer-grid{ grid-template-columns: 1fr; }
+  .footer-grid{ grid-template-columns: 1fr; text-align: center; }
+  .footer-grid .footer-link{ justify-content: center; }
+  .footer-brand-wrap{ justify-content: center; }
+  .footer-bottom{ text-align: center; }
+  .footer-services-cycle .footer-svc-item{
+    display: none;
+    opacity: 0;
+    transition: opacity .5s ease;
+  }
+  .footer-services-cycle .footer-svc-item.active{
+    display: block;
+    opacity: 1;
+  }
   .row{ grid-template-columns: 1fr; }
   .portfolio-grid{ grid-template-columns: 1fr; }
   .services-diagram{ gap: 18px; }

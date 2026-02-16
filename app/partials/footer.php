@@ -14,9 +14,11 @@
 
         <div>
           <div class="footer-title">Servicii</div>
-          <?php foreach ($services as $slug => $s): ?>
-            <a class="footer-link" href="/servicii/<?= htmlspecialchars($slug) ?>"><?= htmlspecialchars($s['title']) ?></a>
-          <?php endforeach; ?>
+          <div class="footer-services-cycle">
+            <?php foreach ($services as $slug => $s): ?>
+              <a class="footer-link footer-svc-item" href="/servicii/<?= htmlspecialchars($slug) ?>"><?= htmlspecialchars($s['title']) ?></a>
+            <?php endforeach; ?>
+          </div>
         </div>
 
         <div>

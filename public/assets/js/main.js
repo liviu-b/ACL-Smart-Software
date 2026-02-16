@@ -224,3 +224,44 @@ document.addEventListener("keydown", (e) => {
     document.body.style.paddingRight = "";
   }
 });
+
+// Footer services cycle on mobile
+(function() {
+  const isMobile = () => window.innerWidth <= 980;
+  const container = document.querySelector(".footer-services-cycle");
+  if (!container) return;
+  const items = Array.from(container.querySelectorAll(".footer-svc-item"));
+  if (!items.length) return;
+  let current = 0;
+  let interval = null;
+
+  function showItem(index) {
+    items.forEach((el) => el.classList.remove("active"));
+    items[index].classList.add("active");
+  }
+
+  function startCycle() {
+    showItem(current);
+    interval = setInterval(() => {
+      current = (current + 1) % items.length;
+      showItem(current);
+    }, 5000);
+  }
+
+  function stopCycle() {
+    if (interval) clearInterval(interval);
+    items.forEach((el) => el.classList.remove("active"));
+  }
+
+  function check() {
+    if (isMobile()) {
+      if (!interval) startCycle();
+    } else {
+      stopCycle();
+      interval = null;
+    }
+  }
+
+  check();
+  window.addEventListener("resize", check);
+})();
