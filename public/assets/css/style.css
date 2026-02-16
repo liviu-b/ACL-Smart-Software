@@ -224,18 +224,29 @@ body{
 
 .burger{
   display:none;
-  width:44px; height:44px;
+  width:48px; height:48px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(96,165,250,.25);
+  background: linear-gradient(135deg, rgba(96,165,250,.10), rgba(167,139,250,.08));
   cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, box-shadow .2s ease;
+  backdrop-filter: blur(8px);
+}
+.burger:hover,
+.burger.active{
+  background: linear-gradient(135deg, rgba(96,165,250,.18), rgba(167,139,250,.14));
+  border-color: rgba(96,165,250,.40);
+  box-shadow: 0 4px 16px rgba(96,165,250,.20);
 }
 .burger span{
-  display:block; height:2px; width:20px;
-  background: rgba(255,255,255,.85);
+  display:block; height:2px; width:22px;
+  background: rgba(255,255,255,.90);
   margin:5px auto;
   border-radius:999px;
-  transition: transform .25s ease, opacity .25s ease;
+  transition: transform .25s ease, opacity .25s ease, background .25s ease;
+}
+.burger.active span{
+  background: #60a5fa;
 }
 .burger.active span:nth-child(1){
   transform: translateY(7px) rotate(45deg);
@@ -2817,21 +2828,21 @@ input:focus, textarea:focus{
   /* ── Mobile Navigation ── */
   .nav{
     position: fixed;
-    top: 62px;
+    top: 70px;
     left: 12px;
     right: 12px;
     z-index: 100;
-    background: rgba(17,24,39,.96);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: 1px solid rgba(255,255,255,.10);
-    border-radius: 18px;
-    padding: 8px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.6);
+    background: rgba(17,24,39,.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(96,165,250,.15);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.65), 0 0 0 1px rgba(96,165,250,.08) inset;
     flex-direction: column;
     align-items: stretch;
     gap: 2px;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 90px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     /* Hidden by default */
@@ -2847,8 +2858,8 @@ input:focus, textarea:focus{
     margin-top: 2px;
     transform-origin: top center;
     border-radius: 14px;
-    background: rgba(255,255,255,.03);
-    border: 1px solid rgba(255,255,255,.06);
+    background: rgba(96,165,250,.04);
+    border: 1px solid rgba(96,165,250,.10);
     box-shadow: none;
   }
 
@@ -2900,29 +2911,33 @@ input:focus, textarea:focus{
 
   /* Hero section */
   .hero{ padding: 28px 0 16px; }
-  .hero-title{ font-size: clamp(26px, 7vw, 36px); }
-  .hero-sub{ font-size: 14px; line-height: 1.65; }
+  .hero-title{ font-size: clamp(28px, 7.5vw, 38px); line-height: 1.12; letter-spacing: -.3px; }
+  .hero-sub{ font-size: 15px; line-height: 1.7; max-width: 100%; }
   .hero-ctas{
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
   }
   .hero-ctas .btn{
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
-    padding: 14px 20px;
+    padding: 12px 22px;
+    font-size: 14px;
+    border-radius: 14px;
   }
   .hero-rotate{ font-size: 12px; }
   .rotate-word{ min-width: 120px; }
   .hero-left::before{ inset: -15px -10px -20px -15px; }
 
-  /* Stats grid – 1 column on phone */
+  /* Stats grid – keep compact 3-column on phone */
   .stats{
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 8px;
   }
-  .stat{ padding: 12px; }
-  .stat-nr{ font-size: 16px; }
-  .stat-txt{ font-size: 12px; }
+  .stat{ padding: 10px 8px; text-align: center; }
+  .stat-nr{ font-size: 15px; }
+  .stat-txt{ font-size: 11px; }
 
   /* Capability Matrix */
   .capability-matrix{ padding: 16px; }
@@ -2940,11 +2955,13 @@ input:focus, textarea:focus{
   .about-title{ font-size: clamp(1.5rem, 6.5vw, 2.2rem); }
   .about-ctas{
     margin-top: 1.5rem;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
   }
   .about-ctas .btn{
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
   }
   .about-anim{ min-height: 220px; }
@@ -3014,11 +3031,13 @@ input:focus, textarea:focus{
   .service-hero-center h1{ font-size: clamp(24px, 6.5vw, 36px); }
   .service-hero-center .service-hero-text{ font-size: 14px; }
   .service-hero-ctas{
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
   }
   .service-hero-ctas .btn{
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
   }
   .service-pills-row{ gap: 6px; }
@@ -3127,28 +3146,27 @@ input:focus, textarea:focus{
   .rev-service{ font-size: 10px; }
   .rev-stars{ font-size: 16px; }
 
-  /* WhatsApp */
+  /* WhatsApp – keep tooltip on SAME LINE as icon */
   .whatsapp-wrapper{
     bottom: 16px;
     right: 16px;
-    flex-direction: column-reverse;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
   }
-  .whatsapp-float{ width: 52px; height: 52px; }
+  .whatsapp-float{ width: 52px; height: 52px; flex-shrink: 0; }
   .whatsapp-float svg{ width: 24px; height: 24px; }
   .whatsapp-tooltip{
     font-size: 12px;
     padding: 10px 14px;
-    white-space: normal;
-    max-width: 200px;
-    text-align: center;
+    white-space: nowrap;
+    max-width: none;
   }
   .whatsapp-tooltip::after{
-    right: 16px;
-    top: auto;
-    bottom: -7px;
-    transform: rotate(45deg);
+    right: -7px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%) rotate(45deg);
   }
 
   /* Contact Modal */
@@ -3167,10 +3185,11 @@ input:focus, textarea:focus{
   .select{ min-width: 100%; }
   .service-picker{ flex-direction: column; }
 
-  /* Header */
-  .header-inner{ padding: 10px 0; }
-  .brand-title{ font-size: 18px; }
-  .brand-mark{ font-size: 15px; }
+  /* Header – bigger brand on mobile */
+  .header-inner{ padding: 12px 0; }
+  .brand-title{ font-size: 22px; letter-spacing: .4px; }
+  .brand-mark{ font-size: 18px; }
+  .brand{ gap: 10px; }
 
   /* Radial glow – tone down on mobile for perf */
   .radial-glow{ opacity: .6; }
@@ -3203,12 +3222,12 @@ input:focus, textarea:focus{
 
   /* Mobile nav polish (640px) */
   .nav{
-    top: 56px;
+    top: 62px;
     left: 10px;
     right: 10px;
-    padding: 6px;
-    border-radius: 16px;
-    max-height: calc(100vh - 70px);
+    padding: 8px;
+    border-radius: 18px;
+    max-height: calc(100vh - 76px);
   }
   .nav .nav-link{
     font-size: 15px;
@@ -3250,8 +3269,8 @@ input:focus, textarea:focus{
   .hero-title{ font-size: clamp(22px, 7vw, 30px); }
   .hero-sub{ font-size: 13px; }
   .hero-ctas .btn{ padding: 12px 16px; font-size: 13px; }
-  .brand-title{ font-size: 16px; }
-  .brand-mark{ font-size: 14px; }
+  .brand-title{ font-size: 19px; }
+  .brand-mark{ font-size: 16px; }
   .capability-matrix{ padding: 12px; }
   .matrix-item{ font-size: 11px; }
   .matrix-desc{ font-size: 10px; }
@@ -3289,10 +3308,10 @@ input:focus, textarea:focus{
   .footer-bottom{ font-size: 11px; }
   .page-head h1{ font-size: clamp(20px, 6vw, 28px); }
   .page-head p{ font-size: 13px; }
-  .whatsapp-wrapper{ bottom: 12px; right: 12px; }
-  .whatsapp-float{ width: 48px; height: 48px; }
+  .whatsapp-wrapper{ bottom: 12px; right: 12px; flex-direction: row; align-items: center; gap: 8px; }
+  .whatsapp-float{ width: 48px; height: 48px; flex-shrink: 0; }
   .whatsapp-float svg{ width: 22px; height: 22px; }
-  .whatsapp-tooltip{ font-size: 11px; padding: 8px 10px; max-width: 160px; }
+  .whatsapp-tooltip{ font-size: 11px; padding: 8px 10px; max-width: none; white-space: nowrap; }
   .contact-modal{ margin: 0 4px; border-radius: 14px; }
   .modal-body{ padding: 14px 10px; }
   .modal-option{ padding: 10px; gap: 10px; }
@@ -3409,15 +3428,17 @@ body{
 
   /* Hero title – tighter line height, clear spacing */
   .hero-title{
-    line-height: 1.15;
+    line-height: 1.12;
     margin: 10px 0 16px;
+    font-size: clamp(28px, 7vw, 40px);
+    letter-spacing: -.4px;
   }
 
   /* Hero subtitle – full width, good line height */
   .hero-sub{
     max-width: 100%;
     line-height: 1.75;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   /* Hero rotating text – card treatment so it doesn't float loose */
@@ -3431,16 +3452,18 @@ body{
     font-size: 13px;
   }
 
-  /* ── CTA Buttons – prominent, full-width, big enough to tap ── */
+  /* ── CTA Buttons – side by side, not stretched ── */
   .hero-ctas{
     margin-top: 24px;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
   }
   .hero-ctas .btn{
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
-    padding: 16px 24px;
+    padding: 14px 26px;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: .02em;
@@ -3539,13 +3562,15 @@ body{
   }
   .about-ctas{
     margin-top: 1.8rem;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 12px;
   }
   .about-ctas .btn{
-    width: 100%;
+    width: auto;
+    flex: 0 0 auto;
     justify-content: center;
-    padding: 16px 24px;
+    padding: 14px 26px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 14px;
