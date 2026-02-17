@@ -34,49 +34,57 @@
       <p>Soluții software complete — de la site-uri web până la platforme SaaS complexe.</p>
     </header>
 
-    <div class="bento">
-      <a class="bento-featured" data-reveal href="/servicii/website-build">
-        <div class="bento-badge"><span class="badge badge-hot">Cel mai solicitat</span></div>
-        <div class="bento-featured-content">
-          <div class="bento-ico">🧱</div>
-          <h3>Site-uri <span class="accent">web</span></h3>
-          <p>Site-uri moderne, rapide și optimizate SEO care transformă vizitatorii în clienți. Design responsive, performanță excelentă și cod curat.</p>
-          <ul class="bento-tags">
-            <li>SEO optimizat</li>
-            <li>Responsive</li>
-            <li>Performanță 99+</li>
-          </ul>
-          <span class="bento-link">Află mai multe →</span>
+    <div class="zigzag">
+      <a class="zigzag-row" data-reveal href="/servicii/custom-web-app">
+        <div class="zigzag-visual">
+          <span class="zigzag-num">01</span>
+          <span class="zigzag-ico">🌐</span>
+        </div>
+        <div class="zigzag-body">
+          <div class="zigzag-label"><span class="badge badge-hot">Cel mai solicitat</span></div>
+          <h3>Aplicații <span class="accent">web</span> personalizate</h3>
+          <p>Dashboard-uri, portale client, platforme interne — rapide, sigure și construite exact pe nevoile business-ului tău. De la concept la produs funcțional.</p>
+          <span class="zigzag-link">Află mai multe →</span>
         </div>
       </a>
 
-      <a class="bento-card" data-reveal-stagger href="/servicii/ecommerce-store">
-        <div class="bento-card-top">
-          <div class="bento-ico-sm">🛒</div>
-          <span class="badge badge-pop">Popular</span>
+      <a class="zigzag-row" data-reveal href="/servicii/software-development">
+        <div class="zigzag-visual">
+          <span class="zigzag-num">02</span>
+          <span class="zigzag-ico">⚙️</span>
         </div>
-        <h3>Magazine <span class="accent">online</span></h3>
-        <p>Integrare plăți, stoc, facturare automată și optimizare conversie.</p>
-        <span class="bento-link">Detalii →</span>
+        <div class="zigzag-body">
+          <div class="zigzag-label"><span class="badge badge-pop">Popular</span></div>
+          <h3>Dezvoltare <span class="accent">software</span> la comandă</h3>
+          <p>Soluții software unice, construite de la zero pe specificațiile tale. Automatizări, integrări API și sisteme complexe adaptate proceselor tale de business.</p>
+          <span class="zigzag-link">Detalii →</span>
+        </div>
       </a>
 
-      <a class="bento-card" data-reveal-stagger href="/servicii/custom-web-app">
-        <div class="bento-card-top">
-          <div class="bento-ico-sm">🌐</div>
+      <a class="zigzag-row" data-reveal href="/servicii/saas-app-development">
+        <div class="zigzag-visual">
+          <span class="zigzag-num">03</span>
+          <span class="zigzag-ico">☁️</span>
         </div>
-        <h3>Aplicații <span class="accent">web</span></h3>
-        <p>Dashboard-uri, portale client, platforme interne — rapide și sigure.</p>
-        <span class="bento-link">Detalii →</span>
+        <div class="zigzag-body">
+          <div class="zigzag-label"><span class="badge badge-hot">Top</span></div>
+          <h3>Dezvoltare platforme <span class="accent">SaaS</span></h3>
+          <p>De la MVP la produs complet: abonamente, billing și scalare automată. Construim produse gata de piață, pregătite pentru creștere.</p>
+          <span class="zigzag-link">Detalii →</span>
+        </div>
       </a>
 
-      <a class="bento-card" data-reveal-stagger href="/servicii/saas-app-development">
-        <div class="bento-card-top">
-          <div class="bento-ico-sm">☁️</div>
-          <span class="badge badge-hot">Top</span>
+      <a class="zigzag-row" data-reveal href="/servicii/ai-chatbots">
+        <div class="zigzag-visual">
+          <span class="zigzag-num">04</span>
+          <span class="zigzag-ico">🤖</span>
         </div>
-        <h3>Platforme <span class="accent">SaaS</span></h3>
-        <p>De la MVP la produs complet: abonamente, billing și scalare automată.</p>
-        <span class="bento-link">Detalii →</span>
+        <div class="zigzag-body">
+          <div class="zigzag-label"><span class="badge badge-new">Nou</span></div>
+          <h3>Chatboți <span class="accent">AI</span></h3>
+          <p>Asistenți virtuali inteligenți pentru suport clienți, vânzări și automatizare. Integrare cu platformele tale existente, disponibili 24/7.</p>
+          <span class="zigzag-link">Detalii →</span>
+        </div>
       </a>
     </div>
 
@@ -137,11 +145,6 @@
         <div class="stat-label">De la analiză la lansare</div>
         <div class="stat-ctx">Un singur partener, tot procesul</div>
       </article>
-      <article class="stat" data-reveal-stagger>
-        <div class="stat-val">9</div>
-        <div class="stat-label">Servicii digitale</div>
-        <div class="stat-ctx">De la site-uri la SaaS complet</div>
-      </article>
     </div>
   </div>
 </section>
@@ -180,10 +183,6 @@
         <div class="faq-a"><p>Absolut. Lucrăm în sprint-uri scurte (1–2 săptămâni) cu demo-uri regulate. Ai acces la un mediu de staging unde poți testa funcționalitățile pe măsură ce le implementăm.</p></div>
       </details>
 
-      <details class="faq-item" data-reveal-stagger>
-        <summary class="faq-q">Lucrați și cu companii din afara României?</summary>
-        <div class="faq-a"><p>Da, avem experiență cu clienți din Europa și nu numai. Comunicăm fluent în română și engleză, iar procesul de lucru este complet remote-friendly.</p></div>
-      </details>
     </div>
   </div>
 </section>
