@@ -77,13 +77,6 @@
   });
   document.addEventListener('click', () => document.querySelectorAll('.dropdown.open').forEach(w => w.classList.remove('open')));
 
-  // ── Service select routing ──
-  const sel = document.getElementById('serviceSelect');
-  const go = document.getElementById('goService');
-  if(sel && go){
-    go.addEventListener('click', () => { if(sel.value) location.href = sel.value; });
-  }
-
   // ── Scroll reveal ──
   if('IntersectionObserver' in window){
     const io = new IntersectionObserver(entries => {

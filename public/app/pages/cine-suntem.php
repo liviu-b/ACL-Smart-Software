@@ -88,9 +88,14 @@
       </a>
     </div>
 
-    <div class="svc-all" data-reveal>
-      <a class="btn btn-ghost" href="/ce-putem-oferi">Vezi toate cele 9 servicii →</a>
-    </div>
+    <a class="svc-cta-card" data-reveal href="/ce-putem-oferi">
+      <div class="svc-cta-text">
+        <span class="svc-cta-badge">9 servicii digitale</span>
+        <h3>Descoperă tot ce putem construi pentru tine</h3>
+        <p>De la site-uri de prezentare la platforme SaaS complexe — explorează toate serviciile noastre.</p>
+      </div>
+      <span class="svc-cta-arrow">→</span>
+    </a>
   </div>
 </section>
 

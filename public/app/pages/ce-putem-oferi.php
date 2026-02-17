@@ -1,42 +1,36 @@
 <!-- Ce putem oferi — Hero -->
 <section class="offer-hero">
   <div class="wrap">
-    <div class="offer-top" data-reveal>
-      <div>
-        <h1>Soluții software create pentru creștere reală</h1>
-        <p class="muted">Alege un serviciu și intră direct în detalii. Fiecare flux e construit pentru rezultate clare, livrare predictibilă și scalare fără blocaje.</p>
-      </div>
-      <aside class="offer-picker">
-        <label class="muted" for="serviceSelect">Selectează serviciul</label>
-        <div class="offer-picker-row">
-          <select id="serviceSelect" class="offer-select">
-            <option value="">-- alege --</option>
-            <?php foreach($services as $slug=>$s): ?>
-            <option value="/servicii/<?= htmlspecialchars($slug) ?>"><?= htmlspecialchars($s['title']) ?></option>
-            <?php endforeach; ?>
-          </select>
-          <button class="btn btn-primary btn-sm" id="goService" type="button">Deschide</button>
-        </div>
-      </aside>
+    <div class="offer-intro" data-reveal>
+      <span class="offer-tag">Ce putem oferi</span>
+      <h1>Totul sub un singur acoperiș digital</h1>
+      <p class="muted">De la primele linii de cod la un produs complet — fiecare serviciu e construit pentru rezultate reale, livrare predictibilă și scalare fără blocaje.</p>
     </div>
   </div>
 </section>
 
-<!-- Services Grid -->
-<section>
+<!-- Services List -->
+<section class="offer-list-section">
   <div class="wrap">
-    <div class="offer-grid">
-      <?php foreach($services as $slug=>$s): ?>
-      <a class="offer-card" href="/servicii/<?= htmlspecialchars($slug) ?>" data-reveal-stagger>
-        <div class="offer-card-top">
-          <span class="offer-card-ico"><?= $s['icon'] ?></span>
-          <span class="badge badge-new">Serviciu</span>
-        </div>
+    <?php $n=1; foreach($services as $slug=>$s): ?>
+    <a class="offer-row" href="/servicii/<?= htmlspecialchars($slug) ?>" data-reveal>
+      <span class="offer-row-num"><?= sprintf('%02d',$n++) ?></span>
+      <span class="offer-row-ico"><?= $s['icon'] ?></span>
+      <div class="offer-row-body">
         <h3><?= htmlspecialchars($s['title']) ?></h3>
-        <p class="muted"><?= htmlspecialchars($s['short']) ?></p>
-        <div class="offer-card-foot">Vezi detalii →</div>
-      </a>
-      <?php endforeach; ?>
-    </div>
+        <p><?= htmlspecialchars($s['short']) ?></p>
+      </div>
+      <span class="offer-row-arrow">→</span>
+    </a>
+    <?php endforeach; ?>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap" data-reveal>
+    <h2>Nu știi exact ce ai nevoie?</h2>
+    <p>Spune-ne despre proiectul tău și te ghidăm spre soluția potrivită.</p>
+    <button class="btn btn-primary" data-modal-trigger>Hai să discutăm →</button>
   </div>
 </section>
