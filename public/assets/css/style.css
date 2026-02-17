@@ -689,22 +689,33 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
   right:5%;top:20%;
   min-width:220px;
   background:rgba(10,10,26,.88);backdrop-filter:blur(12px);
-  border:1px solid rgba(255,255,255,.1);
+  border:1px solid rgba(255,255,255,.06);
   border-radius:var(--r-lg);overflow:hidden;
-  box-shadow:0 12px 48px rgba(0,0,0,.45),0 0 80px rgba(232,120,10,.05);
-  animation:termAppear 2s cubic-bezier(.22,1,.36,1) forwards, termDrift 24s ease-in-out 2s infinite;
-  opacity:0;
-  transition:border-color .3s var(--ease),box-shadow .3s var(--ease);
+  box-shadow:0 8px 40px rgba(0,0,0,.3);
+  cursor:pointer;
+  /* bg state: small, blurred, faded */
+  opacity:.45;filter:blur(3px);
+  transform:scale(.75);
+  animation:termDrift 24s ease-in-out infinite;
+  transition:opacity .7s var(--ease),filter .7s var(--ease),transform .7s var(--spring),border-color .3s var(--ease),box-shadow .5s var(--ease);
 }
-@keyframes termAppear{
-  0%{opacity:0;transform:scale(.3) translateY(60px);filter:blur(12px)}
-  50%{opacity:.6;transform:scale(.85) translateY(10px);filter:blur(3px)}
-  100%{opacity:1;transform:scale(1) translateY(0);filter:blur(0)}
-}
-.hero-term:hover{
+/* emerged state */
+.hero-term.open{
+  opacity:1;filter:blur(0);
+  transform:scale(1);
   animation-play-state:paused;
-  border-color:rgba(232,120,10,.35);
-  box-shadow:0 16px 56px rgba(0,0,0,.5),0 0 30px var(--accent-glow);
+  border-color:rgba(232,120,10,.3);
+  box-shadow:0 16px 56px rgba(0,0,0,.5),0 0 40px var(--accent-glow);
+  cursor:default;
+}
+/* hover hint while in bg */
+.hero-term:not(.open):hover{
+  opacity:.6;filter:blur(1.5px);
+  transform:scale(.82);
+}
+/* hide links when in bg */
+.hero-term:not(.open) .hero-term-link{
+  pointer-events:none;
 }
 @keyframes termDrift{
   0%{transform:translate(0,0) rotate(-.6deg)}

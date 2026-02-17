@@ -254,12 +254,29 @@
     updateActive();
     window.addEventListener('scroll', updateActive, {passive:true});
 
-    // Smooth scroll on click
+    // Click terminal to emerge from bg
+    secNav.addEventListener('click', e => {
+      if(!secNav.classList.contains('open')){
+        e.stopPropagation();
+        secNav.classList.add('open');
+      }
+    });
+
+    // Click outside to sink back to bg
+    document.addEventListener('click', e => {
+      if(secNav.classList.contains('open') && !secNav.contains(e.target)){
+        secNav.classList.remove('open');
+      }
+    });
+
+    // Smooth scroll on link click
     items.forEach(item => {
       item.addEventListener('click', e => {
         e.preventDefault();
+        e.stopPropagation();
         const target = document.getElementById(item.dataset.section);
         if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+        secNav.classList.remove('open');
       });
     });
   }
