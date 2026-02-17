@@ -62,19 +62,6 @@
         </div>
       </a>
 
-      <a class="blog-card" href="/blog/mvp-ghid-complet" data-reveal-stagger>
-        <div class="blog-card-img">🚀</div>
-        <div class="blog-card-body">
-          <div class="blog-card-meta">
-            <span class="blog-date">10 Martie 2025</span>
-            <span class="badge badge-new">Ghid</span>
-          </div>
-          <h3>Ghid complet: Cum să lansezi un MVP în mai puțin de 2 săptămâni</h3>
-          <p>Pașii practici pentru a transforma o idee într-un produs funcțional — rapid, eficient și cu buget controlat.</p>
-          <span class="blog-read">Citește articolul →</span>
-        </div>
-      </a>
-
       <a class="blog-card" href="/blog/cum-alegi-firma-de-software" data-reveal-stagger>
         <div class="blog-card-img">🏗️</div>
         <div class="blog-card-body">
