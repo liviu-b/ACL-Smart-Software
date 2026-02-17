@@ -233,4 +233,46 @@
     btt.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
   }
 
+  // ── Section nav scroll-spy ──
+  const secNav = document.getElementById('secNav');
+  if(secNav){
+    const items = secNav.querySelectorAll('.sec-nav-item');
+    const sectionIds = Array.from(items).map(i => i.dataset.section);
+    const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+
+    // Show/hide based on scroll position (visible after hero)
+    const heroEl = document.querySelector('.hero');
+    const ctaBand = document.querySelector('.cta-band');
+
+    const updateNav = () => {
+      const sy = scrollY;
+      const heroBottom = heroEl ? heroEl.offsetTop + heroEl.offsetHeight - 200 : 300;
+      const ctaTop = ctaBand ? ctaBand.offsetTop - window.innerHeight / 2 : Infinity;
+
+      // Show only between hero and CTA
+      secNav.classList.toggle('visible', sy > heroBottom && sy < ctaTop);
+
+      // Find active section
+      let activeId = sectionIds[0];
+      for(const sec of sections){
+        if(sec.offsetTop - window.innerHeight * 0.4 <= sy) activeId = sec.id;
+      }
+      items.forEach(item => {
+        item.classList.toggle('active', item.dataset.section === activeId);
+      });
+    };
+
+    updateNav();
+    window.addEventListener('scroll', updateNav, {passive:true});
+
+    // Smooth scroll on click
+    items.forEach(item => {
+      item.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.getElementById(item.dataset.section);
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  }
+
 })();

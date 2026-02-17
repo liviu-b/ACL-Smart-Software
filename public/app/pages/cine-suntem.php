@@ -26,8 +26,28 @@
   </div>
 </section>
 
+<!-- SECTION NAV -->
+<nav class="sec-nav" id="secNav">
+  <a class="sec-nav-item" href="#ce-construim" data-section="ce-construim">
+    <span class="sec-nav-dot"></span>
+    <span class="sec-nav-label">Ce construim</span>
+  </a>
+  <a class="sec-nav-item" href="#cum-lucram" data-section="cum-lucram">
+    <span class="sec-nav-dot"></span>
+    <span class="sec-nav-label">Cum lucrăm</span>
+  </a>
+  <a class="sec-nav-item" href="#de-ce-noi" data-section="de-ce-noi">
+    <span class="sec-nav-dot"></span>
+    <span class="sec-nav-label">De ce noi</span>
+  </a>
+  <a class="sec-nav-item" href="#intrebari" data-section="intrebari">
+    <span class="sec-nav-dot"></span>
+    <span class="sec-nav-label">Întrebări</span>
+  </a>
+</nav>
+
 <!-- SERVICES (Bento Grid) -->
-<section>
+<section id="ce-construim">
   <div class="wrap">
     <header class="services-head" data-reveal>
       <h2>Ce construim</h2>
@@ -100,7 +120,7 @@
 </section>
 
 <!-- PROCESS -->
-<section class="process">
+<section id="cum-lucram" class="process">
   <div class="wrap">
     <header class="process-head" data-reveal>
       <h2>Cum lucrăm</h2>
@@ -128,7 +148,7 @@
 </section>
 
 <!-- STATS -->
-<section class="stats">
+<section id="de-ce-noi" class="stats">
   <div class="wrap">
     <header class="stats-head" data-reveal>
       <h2>De ce să lucrezi cu noi</h2>
@@ -155,7 +175,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="faq">
+<section id="intrebari" class="faq">
   <div class="wrap">
     <header class="faq-head" data-reveal>
       <h2>Întrebări frecvente</h2>

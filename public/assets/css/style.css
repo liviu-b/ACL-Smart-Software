@@ -680,6 +680,43 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 .faq-item[open] .faq-q::after{content:'−'}
 .faq-item[open] .faq-q{color:var(--accent)}
 .faq-a{padding:0 24px 20px;font-size:.9rem;color:var(--text-sub);line-height:1.7}
+
+/* ============================================================
+   SECTION NAV (floating side dots)
+   ============================================================ */
+.sec-nav{
+  position:fixed;right:24px;top:50%;transform:translateY(-50%);z-index:90;
+  display:flex;flex-direction:column;gap:20px;
+  opacity:0;pointer-events:none;transition:opacity .4s var(--ease);
+}
+.sec-nav.visible{opacity:1;pointer-events:auto}
+.sec-nav-item{
+  display:flex;align-items:center;gap:12px;justify-content:flex-end;
+  text-decoration:none;cursor:pointer;
+}
+.sec-nav-dot{
+  width:12px;height:12px;border-radius:50%;
+  border:2px solid var(--muted);background:transparent;
+  transition:all .3s var(--ease);flex-shrink:0;
+}
+.sec-nav-label{
+  font-size:.78rem;font-weight:600;letter-spacing:.03em;color:var(--muted);
+  white-space:nowrap;opacity:0;transform:translateX(8px);
+  transition:all .3s var(--ease);pointer-events:none;
+}
+.sec-nav-item:hover .sec-nav-label{
+  opacity:1;transform:translateX(0);
+}
+.sec-nav-item:hover .sec-nav-dot{
+  border-color:var(--accent);background:var(--accent-soft);
+}
+.sec-nav-item.active .sec-nav-dot{
+  border-color:var(--accent);background:var(--accent);
+  box-shadow:0 0 8px var(--accent-glow);
+}
+.sec-nav-item.active .sec-nav-label{
+  color:var(--accent);opacity:1;transform:translateX(0);
+}
 .faq-a p{margin:0}
 
 /* ============================================================
