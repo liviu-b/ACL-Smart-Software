@@ -1,0 +1,63 @@
+<!-- Blog Listing -->
+<section class="blog-hero">
+  <div class="wrap">
+    <h1 data-reveal>Blog</h1>
+    <p data-reveal>Articole despre dezvoltare software, tendințe digitale și sfaturi practice pentru afacerea ta.</p>
+  </div>
+</section>
+
+<section class="blog-listing">
+  <div class="wrap">
+    <div class="blog-grid">
+
+      <a class="blog-card" href="/blog/de-ce-ai-nevoie-de-un-site-profesional" data-reveal-stagger>
+        <div class="blog-card-img">🌐</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">15 Ianuarie 2025</span>
+            <span class="badge badge-hot">Popular</span>
+          </div>
+          <h3>De ce ai nevoie de un site web profesional în 2025</h3>
+          <p>Un site web nu mai este un lux — este fundația prezenței tale digitale. Află de ce contează și ce impact real are asupra business-ului tău.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="/blog/cum-alegi-firma-de-software" data-reveal-stagger>
+        <div class="blog-card-img">🏗️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">28 Februarie 2025</span>
+            <span class="badge badge-pop">Ghid</span>
+          </div>
+          <h3>Cum alegi firma potrivită de dezvoltare software</h3>
+          <p>Criterii clare pe care să le urmezi când evaluezi o firmă de software — de la portofoliu și tehnologii la comunicare și suport post-lansare.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="/blog/mvp-ghid-complet" data-reveal-stagger>
+        <div class="blog-card-img">🚀</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">10 Martie 2025</span>
+            <span class="badge badge-new">Nou</span>
+          </div>
+          <h3>Ghid complet: Cum să lansezi un MVP în mai puțin de 2 săptămâni</h3>
+          <p>Pașii practici pentru a transforma o idee într-un produs funcțional — rapid, eficient și cu buget controlat.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-band">
+  <div class="wrap" data-reveal>
+    <h2>Ai un proiect în minte?</h2>
+    <p>Contactează-ne și primești o estimare gratuită în 24 de ore.</p>
+    <button class="btn btn-primary" data-modal-trigger>Solicită estimare gratuită →</button>
+  </div>
+</section>

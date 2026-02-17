@@ -1,115 +1,44 @@
-<section class="page-head page-head-center">
-  <div class="container page-head-center-inner">
-    <div class="matrix-badge font-tech approach-badge">Abordarea noastră</div>
-    <p class="muted">Flux de lucru și abordare pentru fiecare serviciu.</p>
+<?php
+$workflow = [
+  'custom-software-dev'     => ['Discovery & audit procese','Arhitectură + prototipare','Dezvoltare, testare, lansare','Mentenanță & optimizări'],
+  'custom-web-app'          => ['Workshop nevoi & scope','UX/UI + arhitectură API','Implementare & QA automat','Scalare + monitorizare'],
+  'website-build'           => ['Structură + conținut','Design & dezvoltare','SEO tehnic + performanță','Lansare & mentenanță'],
+  'ecommerce-store'         => ['Analiză funnel & catalog','Integrare plăți + stoc','Automatizări & facturare','Optimizare conversie'],
+  'saas-app-development'    => ['Definire MVP & roadmap','Arhitectură multi-tenant','Build + billing + admin','Scalare & securitate'],
+  'qa-testing'              => ['Plan de testare','Testare funcțională','Automatizare E2E','Raportare & follow-up'],
+  'api-integration'         => ['Specificație & mapping','Implementare + retry','Observabilitate','Hardening & QA'],
+  'consulting-architecture' => ['Audit & diagnostic','Design arhitectural','Roadmap & prioritizare','Suport implementare'],
+  'ai-chatbots'             => ['Definire fluxuri','Integrare CRM & canale','Antrenare + optimizare','Monitorizare performanță'],
+];
+$default = ['Discovery & plan','Design & implementare','QA & lansare','Îmbunătățiri continue'];
+?>
+
+<!-- Header -->
+<section class="workflow-head">
+  <div class="wrap" data-reveal>
+    <h1>Flux de lucru pentru fiecare serviciu</h1>
+    <p class="muted">Pași clari de la idee la produs în producție.</p>
   </div>
 </section>
 
-<?php
-$workflow = [
-  'custom-software-dev' => [
-    'steps' => [
-      'Discovery & audit procese',
-      'Arhitectură + prototipare',
-      'Dezvoltare, testare, lansare',
-      'Mentenanță & optimizări continue',
-    ],
-  ],
-  'custom-web-app' => [
-    'steps' => [
-      'Workshop de nevoi & scope',
-      'UX/UI + arhitectură API',
-      'Implementare & QA automat',
-      'Scalare + monitorizare',
-    ],
-  ],
-  'website-build' => [
-    'steps' => [
-      'Structură + conținut',
-      'Design & dezvoltare',
-      'SEO tehnic + performanță',
-      'Lansare & mentenanță',
-    ],
-  ],
-  'ecommerce-store' => [
-    'steps' => [
-      'Analiză funnel & catalog',
-      'Integrare plăți + stoc',
-      'Automatizări & facturare',
-      'Optimizare conversie',
-    ],
-  ],
-  'saas-app-development' => [
-    'steps' => [
-      'Definire MVP & roadmap',
-      'Arhitectură multi‑tenant',
-      'Build + billing + admin',
-      'Scalare & securitate',
-    ],
-  ],
-  'qa-testing' => [
-    'steps' => [
-      'Plan de testare',
-      'Testare funcțională',
-      'Automatizare E2E',
-      'Raportare & follow‑up',
-    ],
-  ],
-  'api-integration' => [
-    'steps' => [
-      'Specificație & mapping',
-      'Implementare + retry',
-      'Observabilitate',
-      'Hardening & QA',
-    ],
-  ],
-  'consulting-architecture' => [
-    'steps' => [
-      'Audit & diagnostic',
-      'Design arhitectural',
-      'Roadmap & prioritizare',
-      'Suport implementare',
-    ],
-  ],
-  'ai-chatbots' => [
-    'steps' => [
-      'Definire fluxuri',
-      'Integrare CRM & canale',
-      'Antrenare + optimizare',
-      'Monitorizare performanță',
-    ],
-  ],
-];
-
-$defaultSteps = [
-  'Discovery & plan',
-  'Design & implementare',
-  'QA & lansare',
-  'Îmbunătățiri continue',
-];
-?>
-
-<section class="section">
-  <div class="container">
-    <div class="services-diagram" aria-label="Diagrame servicii">
-      <div class="diagram-line" aria-hidden="true"></div>
-      <?php foreach ($services as $slug => $s): ?>
-        <?php $steps = $workflow[$slug]['steps'] ?? $defaultSteps; ?>
-        <div class="diagram-node" data-reveal>
-          <a class="diagram-card" href="/servicii/<?= htmlspecialchars($slug) ?>">
-            <div class="diagram-icon"><?= htmlspecialchars($s['icon']) ?></div>
-            <div class="diagram-content">
-              <div class="diagram-title"><?= htmlspecialchars($s['title']) ?></div>
-              <div class="diagram-desc muted"><?= htmlspecialchars($s['short']) ?></div>
-              <div class="diagram-steps">
-                <?php foreach ($steps as $step): ?>
-                  <span class="diagram-step"><?= htmlspecialchars($step) ?></span>
-                <?php endforeach; ?>
-              </div>
-              <div class="diagram-link">Vezi detalii →</div>
-            </div>
-          </a>
+<!-- Workflow cards -->
+<section>
+  <div class="wrap">
+    <div class="workflow-list">
+      <?php foreach($services as $slug=>$s): $steps = $workflow[$slug] ?? $default; ?>
+      <a class="wf-card" href="/servicii/<?= htmlspecialchars($slug) ?>" data-reveal-stagger>
+        <div class="svc-icon"><?= $s['icon'] ?></div>
+        <div class="wf-body">
+          <h3><?= htmlspecialchars($s['title']) ?></h3>
+          <p class="muted"><?= htmlspecialchars($s['short']) ?></p>
+          <div class="wf-steps">
+            <?php foreach($steps as $st): ?>
+            <div class="wf-step"><?= htmlspecialchars($st) ?></div>
+            <?php endforeach; ?>
+          </div>
+          <div class="wf-link">Vezi detalii →</div>
         </div>
+      </a>
       <?php endforeach; ?>
     </div>
   </div>

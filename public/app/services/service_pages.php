@@ -2,224 +2,143 @@
 $viewKey = $service['view'] ?? '';
 $extras = [
   'custom-software-dev' => [
-    'intro' => 'Aplicatii interne care reduc costurile si cresc controlul operational.',
-    'pills' => ['Discovery & Analiza', 'Arhitectura modulara', 'Livrare iterativa'],
+    'intro' => 'Aplicații interne care reduc costurile și cresc controlul operațional.',
+    'pills' => ['Discovery & Analiză','Arhitectură modulară','Livrare iterativă'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Aplicatii software complet personalizate, adaptate exact pe procesele si nevoile afacerii tale. Sisteme interne de gestiune a comenzilor, dashboard-uri operationale pentru echipe distribuite, motoare de automatizare a fluxurilor repetitive — proiectam si livram solutii robuste, testate si pregatite de productie.',
-      ],
-      [
-        'heading' => 'Cum lucram',
-        'text' => 'Fiecare proiect incepe cu o faza de discovery in care analizam impreuna procesele existente, identificam punctele de frictiune si definim un scope clar. Construim arhitectura modulara, scalabila, cu API-uri bine definite si separare clara a responsabilitatilor. Dezvoltam iterativ, cu sprint-uri scurte, demo-uri frecvente si feedback constant.',
-      ],
-      [
-        'heading' => 'Ce primesti',
-        'text' => 'Testare automata (unit, integration, E2E) din prima zi, astfel incat fiecare release este stabil si predictibil. Lansare controlata cu monitorizare, alerting si suport post-launch. Optimizari continue bazate pe date reale, nu presupuneri.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Aplicații software complet personalizate, adaptate exact pe procesele și nevoile afacerii tale. Sisteme interne de gestiune a comenzilor, dashboard-uri operaționale, motoare de automatizare a fluxurilor repetitive — proiectăm și livrăm soluții robuste, testate și pregătite de producție.'],
+      ['heading'=>'Cum lucrăm','text'=>'Fiecare proiect începe cu o fază de discovery în care analizăm procesele existente, identificăm punctele de fricțiune și definim un scope clar. Construim arhitectura modulară, scalabilă, cu API-uri bine definite. Dezvoltăm iterativ, cu sprint-uri scurte, demo-uri frecvente și feedback constant.'],
+      ['heading'=>'Ce primești','text'=>'Testare automată din prima zi, astfel încât fiecare release este stabil și predictibil. Lansare controlată cu monitorizare, alerting și suport post-launch. Optimizări continue bazate pe date reale.'],
     ],
     'fit' => [
-      ['Companii cu procese interne complexe', 'Automatizare fluxuri, reducere erori manuale.'],
-      ['Echipe distribuite', 'Dashboard-uri si tools pentru coordonare la distanta.'],
-      ['Firme de logistica si productie', 'Gestiune comenzi, stocuri, flotte.'],
-      ['Business-uri in crestere rapida', 'Sisteme care scaleaza odata cu echipa.'],
+      ['Companii cu procese interne complexe','Automatizare fluxuri, reducere erori manuale.'],
+      ['Echipe distribuite','Dashboard-uri și tools pentru coordonare la distanță.'],
+      ['Firme de logistică și producție','Gestiune comenzi, stocuri, flotte.'],
+      ['Business-uri în creștere rapidă','Sisteme care scalează odată cu echipa.'],
     ],
   ],
   'custom-web-app' => [
-    'intro' => 'Aplicatii web rapide, sigure si usor de extins.',
-    'pills' => ['UX & Design', 'Frontend & Backend', 'Securitate & Scalare'],
+    'intro' => 'Aplicații web rapide, sigure și ușor de extins.',
+    'pills' => ['UX & Design','Frontend & Backend','Securitate & Scalare'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Aplicatii web moderne — de la panouri de administrare si platforme interne pana la produse publice cu mii de utilizatori. Folosim framework-uri dovedite, arhitectura API-first si componente reutilizabile pentru a livra rapid, fara compromisuri la calitate.',
-      ],
-      [
-        'heading' => 'Procesul complet',
-        'text' => 'UX research si wireframe-uri, design UI responsiv, implementare frontend si backend, integrare cu servicii externe (plati, email, analytics) si optimizare de performanta. Aplicatia incarca rapid, functioneaza impecabil pe orice dispozitiv si e pregatita sa creasca odata cu business-ul tau.',
-      ],
-      [
-        'heading' => 'Securitate si mentenabilitate',
-        'text' => 'Autentificare, autorizare, validare input, protectie CSRF/XSS. Observabilitate completa: logs structurate, metrici, health checks. Cod curat, documentat si usor de extins de orice echipa tehnica. Pregatit pentru audit si scalare.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Aplicații web moderne — de la panouri de administrare și platforme interne până la produse publice cu mii de utilizatori. Folosim framework-uri dovedite, arhitectură API-first și componente reutilizabile.'],
+      ['heading'=>'Procesul complet','text'=>'UX research și wireframe-uri, design UI responsiv, implementare frontend și backend, integrare cu servicii externe și optimizare de performanță. Aplicația încarcă rapid, funcționează impecabil pe orice dispozitiv.'],
+      ['heading'=>'Securitate și mentenabilitate','text'=>'Autentificare, autorizare, validare input, protecție CSRF/XSS. Observabilitate completă: logs structurate, metrici, health checks. Cod curat, documentat și ușor de extins.'],
     ],
     'fit' => [
-      ['Startup-uri cu MVP validat', 'Trecerea de la prototip la produs stabil.'],
-      ['Companii B2B', 'Portale client, panouri admin, rapoarte.'],
-      ['Echipe de produs', 'Platforme cu mii de utilizatori activi.'],
-      ['Agentii si firme de servicii', 'Aplicatii interne pentru operatiuni.'],
+      ['Startup-uri cu MVP validat','Trecerea de la prototip la produs stabil.'],
+      ['Companii B2B','Portale client, panouri admin, rapoarte.'],
+      ['Echipe de produs','Platforme cu mii de utilizatori activi.'],
+      ['Agenții și firme de servicii','Aplicații interne pentru operațiuni.'],
     ],
   ],
   'website-build' => [
-    'intro' => 'Site-uri moderne, rapide si optimizate pentru conversie.',
-    'pills' => ['Design responsiv', 'SEO & Performanta', 'Mentenanta inclusa'],
+    'intro' => 'Site-uri moderne, rapide și optimizate pentru conversie.',
+    'pills' => ['Design responsiv','SEO & Performanță','Mentenanță inclusă'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Site-uri web performante, cu design curat si navigare fara frictiune. Site de prezentare corporate, landing page pentru campanii sau blog optimizat SEO — livram solutii care arata profesionist si convertesc vizitatori in clienti.',
-      ],
-      [
-        'heading' => 'Totul inclus',
-        'text' => 'Structura informatiei, copywriting tehnic, design responsiv, implementare cu cod semantic, optimizare de viteza (Lighthouse 90+), configurare SEO tehnic (meta tags, sitemap, schema markup, Core Web Vitals) si integrare analytics.',
-      ],
-      [
-        'heading' => 'Extensibil si intretinut',
-        'text' => 'Baza modulara, usor de extins — poti adauga pagini, sectiuni sau functionalitati noi fara refactorizari majore. Mentenanta lunara: update-uri de securitate, backup, monitorizare uptime si suport tehnic dedicat.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Site-uri web performante, cu design curat și navigare fără fricțiune. Site de prezentare corporate, landing page pentru campanii sau blog optimizat SEO — livrăm soluții care arată profesionist și convertesc vizitatori în clienți.'],
+      ['heading'=>'Totul inclus','text'=>'Structura informației, copywriting tehnic, design responsiv, implementare cu cod semantic, optimizare de viteză (Lighthouse 90+), configurare SEO tehnic și integrare analytics.'],
+      ['heading'=>'Extensibil și întreținut','text'=>'Bază modulară, ușor de extins. Mentenanță lunară: update-uri de securitate, backup, monitorizare uptime și suport tehnic dedicat.'],
     ],
     'fit' => [
-      ['IMM-uri si freelanceri', 'Prezenta online profesionala, rapida.'],
-      ['Clinici si cabinete', 'Site cu programari, servicii, locatie.'],
-      ['Restaurante si HoReCa', 'Meniu, rezervari, galerie foto.'],
-      ['Agentii si consultanti', 'Landing page-uri de campanie si portofoliu.'],
-      ['ONG-uri si institutii', 'Site informativ, transparent, accesibil.'],
+      ['IMM-uri și freelanceri','Prezență online profesională, rapidă.'],
+      ['Clinici și cabinete','Site cu programări, servicii, locație.'],
+      ['Restaurante și HoReCa','Meniu, rezervări, galerie foto.'],
+      ['Agenții și consultanți','Landing page-uri și portofoliu.'],
+      ['ONG-uri și instituții','Site informativ, transparent, accesibil.'],
     ],
   ],
   'ecommerce-store' => [
-    'intro' => 'Magazine online optimizate pentru conversie si operatiuni.',
-    'pills' => ['Catalog & Checkout', 'Plati & Livrare', 'Optimizare conversie'],
+    'intro' => 'Magazine online optimizate pentru conversie și operațiuni.',
+    'pills' => ['Catalog & Checkout','Plăți & Livrare','Optimizare conversie'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Magazine online complete: catalog, cos de cumparaturi, checkout optimizat, integrari cu procesatori de plata (Stripe, Netopia, PayU) si sisteme de livrare (FAN Courier, Sameday, DPD). Fiecare magazin este gandit sa maximizeze rata de conversie si sa simplifice operatiunile zilnice.',
-      ],
-      [
-        'heading' => 'Automatizari si integrari',
-        'text' => 'Sincronizare stocuri, generare automata de facturi (SmartBill, Oblio), notificari de comanda, email-uri transactionale si rapoarte de vanzari. Feed-uri pentru marketplace-uri (eMAG, Google Shopping) si campanii de remarketing integrate.',
-      ],
-      [
-        'heading' => 'Optimizare conversie',
-        'text' => 'Filtrare avansata, pagini de produs rapide, checkout simplificat, guest checkout, upsell si cross-sell. Mai putine cosuri abandonate, operatiuni fluide si o experienta de cumparare care fidelizeaza clientii pe termen lung.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Magazine online complete: catalog, coș de cumpărături, checkout optimizat, integrări cu procesatori de plată (Stripe, Netopia, PayU) și sisteme de livrare. Fiecare magazin e gândit să maximizeze rata de conversie.'],
+      ['heading'=>'Automatizări și integrări','text'=>'Sincronizare stocuri, generare automată de facturi, notificări de comandă, email-uri tranzacționale și rapoarte de vânzări. Feed-uri pentru marketplace-uri și campanii de remarketing.'],
+      ['heading'=>'Optimizare conversie','text'=>'Filtrare avansată, pagini de produs rapide, checkout simplificat, guest checkout, upsell și cross-sell. Mai puține coșuri abandonate, operațiuni fluide.'],
     ],
     'fit' => [
-      ['Magazine fizice care vor sa vanda online', 'Digitalizare catalog si comenzi.'],
-      ['Branduri D2C (direct-to-consumer)', 'Control total pe experienta de cumparare.'],
-      ['Producatori locali si artizani', 'Magazin propriu, fara comisioane marketplace.'],
-      ['Business-uri cu catalog mare', 'Filtrare, variante, stocuri automate.'],
-      ['Firme cu vanzari B2B si B2C', 'Preturi diferentiate, conturi corporate.'],
+      ['Magazine fizice care vor online','Digitalizare catalog și comenzi.'],
+      ['Branduri D2C','Control total pe experiența de cumpărare.'],
+      ['Producători locali','Magazin propriu, fără comisioane.'],
+      ['Business-uri cu catalog mare','Filtrare, variante, stocuri automate.'],
+      ['Firme B2B și B2C','Prețuri diferențiate, conturi corporate.'],
     ],
   ],
   'saas-app-development' => [
     'intro' => 'Platforme SaaS scalabile, de la MVP la produs matur.',
-    'pills' => ['MVP rapid', 'Multi-tenant', 'Billing & Analytics'],
+    'pills' => ['MVP rapid','Multi-tenant','Billing & Analytics'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Platforme SaaS de la zero — de la validarea ideii si MVP pana la un produs matur, cu abonamente, facturare recurenta, administrare multi-tenant si analitice avansate. Lucram cu fondatori, startup-uri si echipe de produs care vor sa lanseze rapid si sa itereze pe baza feedback-ului real.',
-      ],
-      [
-        'heading' => 'Arhitectura SaaS completa',
-        'text' => 'Izolare date per tenant, sistem de roluri si permisiuni granulare, onboarding automatizat, billing flexibil (Stripe Billing, integrari locale), dashboard admin si rapoarte de utilizare. Totul pe o baza scalabila, pregatita sa sustina cresterea de la 10 la 10.000 de utilizatori fara refactorizari.',
-      ],
-      [
-        'heading' => 'Observabilitate si livrare',
-        'text' => 'Logs structurate, metrici de performanta, alerting si health checks din start. Sprint-uri scurte cu CI/CD automatizat — fiecare feature ajunge rapid in productie, testat si monitorizat. Zero surprize la deploy.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Platforme SaaS de la zero — de la validarea ideii și MVP până la un produs matur, cu abonamente, facturare recurentă, administrare multi-tenant și analitice avansate.'],
+      ['heading'=>'Arhitectură SaaS completă','text'=>'Izolare date per tenant, sistem de roluri și permisiuni granulare, onboarding automatizat, billing flexibil (Stripe Billing), dashboard admin și rapoarte de utilizare. Scalabilă de la 10 la 10.000 de utilizatori.'],
+      ['heading'=>'Observabilitate și livrare','text'=>'Logs structurate, metrici de performanță, alerting și health checks din start. Sprint-uri scurte cu CI/CD automatizat — fiecare feature ajunge rapid în producție, testat și monitorizat.'],
     ],
     'fit' => [
-      ['Fondatori cu o idee de produs', 'De la concept la MVP functional.'],
-      ['Startup-uri early-stage', 'Lansare rapida, iteratie pe feedback real.'],
-      ['Companii care vor sa productizeze un serviciu', 'Transformare serviciu in platforma.'],
-      ['Echipe de produs existente', 'Scalare, billing, multi-tenancy.'],
+      ['Fondatori cu o idee de produs','De la concept la MVP funcțional.'],
+      ['Startup-uri early-stage','Lansare rapidă, iterație pe feedback real.'],
+      ['Companii care vor să productizeze','Transformare serviciu în platformă.'],
+      ['Echipe de produs existente','Scalare, billing, multi-tenancy.'],
     ],
   ],
   'qa-testing' => [
-    'intro' => 'Testare manuala si automata pentru stabilitate si incredere.',
-    'pills' => ['Testare manuala', 'Automatizare E2E', 'Integrare CI/CD'],
+    'intro' => 'Testare manuală și automată pentru stabilitate și încredere.',
+    'pills' => ['Testare manuală','Automatizare E2E','Integrare CI/CD'],
     'blocks' => [
-      [
-        'heading' => 'Ce oferim',
-        'text' => 'Servicii complete de testare QA — de la testare manuala exploratorie si de regresie pana la automatizare completa cu Cypress, Playwright sau Selenium. Reducem defectele, crestem stabilitatea si iti dam incredere ca fiecare release functioneaza corect.',
-      ],
-      [
-        'heading' => 'Abordare structurata',
-        'text' => 'Plan de testare clar: scenarii critice, fluxuri de business, edge case-uri relevante. Testare functionala, compatibilitate (cross-browser, cross-device), testare de performanta si testare de securitate de baza. Nimic nu ajunge in productie fara validare.',
-      ],
-      [
-        'heading' => 'Automatizare CI/CD',
-        'text' => 'Suite de teste automate integrate in pipeline: unit tests, integration tests, end-to-end tests. Raportare clara, cu prioritizare pe severitate si impact. Lucram direct cu echipa de dezvoltare pentru a rezolva rapid problemele identificate.',
-      ],
+      ['heading'=>'Ce oferim','text'=>'Servicii complete de testare QA — de la testare manuală exploratorie și de regresie până la automatizare completă cu Cypress, Playwright sau Selenium. Reducem defectele și creștem stabilitatea.'],
+      ['heading'=>'Abordare structurată','text'=>'Plan de testare clar: scenarii critice, fluxuri de business, edge case-uri relevante. Testare funcțională, compatibilitate cross-browser, testare de performanță și securitate.'],
+      ['heading'=>'Automatizare CI/CD','text'=>'Suite de teste automate integrate în pipeline: unit tests, integration tests, end-to-end tests. Raportare clară, cu prioritizare pe severitate și impact.'],
     ],
     'fit' => [
-      ['Echipe fara QA dedicat', 'Externalizare testare, fara angajari.'],
-      ['Startup-uri pre-launch', 'Validare completa inainte de lansare.'],
-      ['Companii cu release-uri frecvente', 'Automatizare integrata in CI/CD.'],
-      ['Proiecte cu cerinte de conformitate', 'Testare documentata, audituri.'],
-      ['Echipe care vor sa reduca bug-urile', 'Regresie si smoke tests automate.'],
+      ['Echipe fără QA dedicat','Externalizare testare, fără angajări.'],
+      ['Startup-uri pre-launch','Validare completă înainte de lansare.'],
+      ['Companii cu release-uri frecvente','Automatizare integrată în CI/CD.'],
+      ['Proiecte cu cerințe de conformitate','Testare documentată, audituri.'],
+      ['Echipe care vor mai puține bug-uri','Regresie și smoke tests automate.'],
     ],
   ],
   'api-integration' => [
-    'intro' => 'Integrari sigure si reziliente intre sisteme.',
-    'pills' => ['Plati & CRM', 'Rezilienta & Logging', 'Migrare API'],
+    'intro' => 'Integrări sigure și reziliente între sisteme.',
+    'pills' => ['Plăți & CRM','Reziliență & Logging','Migrare API'],
     'blocks' => [
-      [
-        'heading' => 'Ce conectam',
-        'text' => 'Procesatori de plati (Stripe, PayPal, Netopia), CRM-uri (HubSpot, Salesforce), ERP-uri, platforme de email marketing (Mailchimp, SendGrid), servicii de logistica, API-uri AI (OpenAI, Anthropic) si orice alt serviciu extern relevant pentru business-ul tau.',
-      ],
-      [
-        'heading' => 'Rezilienta si fiabilitate',
-        'text' => 'Retry logic, circuit breaker, validare de date si logging detaliat — integrarea functioneaza stabil chiar si cand serviciile externe au probleme. Documentam fiecare flux, definim contracte clare intre sisteme si implementam webhook-uri si event-driven architecture.',
-      ],
-      [
-        'heading' => 'Consultanta si migrare',
-        'text' => 'Alegerea API-urilor potrivite, optimizarea costurilor de integrare si migrarea de la integrari vechi la solutii moderne. Un ecosistem de aplicatii conectat, fiabil si usor de monitorizat pe termen lung.',
-      ],
+      ['heading'=>'Ce conectăm','text'=>'Procesatori de plăți (Stripe, PayPal, Netopia), CRM-uri (HubSpot, Salesforce), ERP-uri, platforme de email marketing, servicii de logistică, API-uri AI (OpenAI, Anthropic).'],
+      ['heading'=>'Reziliență și fiabilitate','text'=>'Retry logic, circuit breaker, validare de date și logging detaliat. Documentăm fiecare flux, definim contracte clare între sisteme și implementăm webhook-uri.'],
+      ['heading'=>'Consultanță și migrare','text'=>'Alegerea API-urilor potrivite, optimizarea costurilor de integrare și migrarea de la integrări vechi la soluții moderne.'],
     ],
     'fit' => [
-      ['Companii cu mai multe sisteme interne', 'Sincronizare date intre aplicatii.'],
-      ['Magazine online cu integrari multiple', 'Plati, livrare, facturare, stocuri.'],
-      ['Echipe care migreaza de la legacy', 'Inlocuire integrari vechi cu API modern.'],
-      ['Fintech si plati', 'Integrari sigure cu procesatori.'],
-      ['Business-uri care vor automatizari', 'Conectare CRM, ERP, email, analytics.'],
+      ['Companii cu mai multe sisteme','Sincronizare date între aplicații.'],
+      ['Magazine online cu integrări multiple','Plăți, livrare, facturare, stocuri.'],
+      ['Echipe care migrează de la legacy','Înlocuire integrări vechi cu API modern.'],
+      ['Fintech și plăți','Integrări sigure cu procesatori.'],
+      ['Business-uri care vor automatizări','Conectare CRM, ERP, email, analytics.'],
     ],
   ],
   'consulting-architecture' => [
-    'intro' => 'Decizii tehnice solide: audit, arhitectura, roadmap.',
-    'pills' => ['Audit de cod', 'Design arhitectura', 'Roadmap tehnic'],
+    'intro' => 'Decizii tehnice solide: audit, arhitectură, roadmap.',
+    'pills' => ['Audit de cod','Design arhitectură','Roadmap tehnic'],
     'blocks' => [
-      [
-        'heading' => 'Ce oferim',
-        'text' => 'Consultanta tehnica pentru echipe si fondatori care au nevoie de claritate inainte de a incepe (sau continua) un proiect software. Audit de cod, evaluare arhitectura existenta, identificare riscuri tehnice si propuneri concrete, prioritizate si realiste.',
-      ],
-      [
-        'heading' => 'Review si design',
-        'text' => 'Review de arhitectura (monolith vs microservices, alegere tech stack, design patterns), audit de securitate de baza, evaluare de scalabilitate si performanta. Roadmap tehnic cu etape, estimari si dependente clare — nu documente vagi, ci planuri actionabile.',
-      ],
-      [
-        'heading' => 'Suport hands-on',
-        'text' => 'Lucram si cu echipe care au deja un produs in productie dar se confrunta cu probleme de performanta, datorii tehnice sau dificultati de scalare. Recomandari actionabile, documentatie clara si, la cerere, suport direct pentru implementarea schimbarilor.',
-      ],
+      ['heading'=>'Ce oferim','text'=>'Consultanță tehnică pentru echipe și fondatori care au nevoie de claritate înainte de a începe sau continua un proiect software. Audit de cod, evaluare arhitectură, identificare riscuri tehnice.'],
+      ['heading'=>'Review și design','text'=>'Review de arhitectură (monolith vs microservices, alegere tech stack, design patterns), audit de securitate, evaluare de scalabilitate. Roadmap tehnic cu etape, estimări și dependențe clare.'],
+      ['heading'=>'Suport hands-on','text'=>'Lucrăm și cu echipe cu produs în producție dar cu probleme de performanță, datorii tehnice sau dificultăți de scalare. Recomandări acționabile, documentație clară.'],
     ],
     'fit' => [
-      ['CTO-uri si tech leads', 'Second opinion pe decizii de arhitectura.'],
-      ['Fondatori non-tehnici', 'Claritate tehnica inainte de a investi.'],
-      ['Echipe care vor sa scaleze', 'Evaluare si plan de crestere.'],
-      ['Companii cu datorie tehnica', 'Audit, prioritizare si roadmap de refactorizare.'],
+      ['CTO-uri și tech leads','Second opinion pe decizii de arhitectură.'],
+      ['Fondatori non-tehnici','Claritate tehnică înainte de a investi.'],
+      ['Echipe care vor să scaleze','Evaluare și plan de creștere.'],
+      ['Companii cu datorie tehnică','Audit, prioritizare și roadmap de refactorizare.'],
     ],
   ],
   'ai-chatbots' => [
-    'intro' => 'Chatboti orientati pe suport si vanzari, cu integrare completa.',
-    'pills' => ['RAG & LLM', 'Integrare multicanal', 'Monitorizare & Optimizare'],
+    'intro' => 'Chatboți orientați pe suport și vânzări, cu integrare completă.',
+    'pills' => ['RAG & LLM','Integrare multicanal','Monitorizare & Optimizare'],
     'blocks' => [
-      [
-        'heading' => 'Ce construim',
-        'text' => 'Chatboti AI personalizati care automatizeaza suportul, califica lead-uri si reduc volumul de tichete. Integram cu website-ul tau, WhatsApp, Facebook Messenger sau alte canale — si conectam chatbot-ul cu CRM-ul, baza de cunostinte si sistemele interne existente.',
-      ],
-      [
-        'heading' => 'Tehnologie moderna',
-        'text' => 'RAG, embeddings, LLM-uri fine-tuned — chatboti care inteleg contextul, raspund natural si stiu cand sa escaladeze catre un agent uman. Antrenati pe documentatia, FAQ-urile si procesele tale specifice, astfel incat raspunsurile sa fie relevante si precise.',
-      ],
-      [
-        'heading' => 'Monitorizare si optimizare',
-        'text' => 'Analizam rata de rezolvare, identificam intrebarile frecvente fara raspuns si optimizam continuu. Costuri de suport reduse cu 40-60%, timp de raspuns instant 24/7 si o experienta de client superioara, masurabila din prima luna.',
-      ],
+      ['heading'=>'Ce construim','text'=>'Chatboți AI personalizați care automatizează suportul, califică lead-uri și reduc volumul de tichete. Integrăm cu website-ul, WhatsApp, Facebook Messenger sau alte canale.'],
+      ['heading'=>'Tehnologie modernă','text'=>'RAG, embeddings, LLM-uri fine-tuned — chatboți care înțeleg contextul, răspund natural și știu când să escaladeze către un agent uman. Antrenați pe documentația ta specifică.'],
+      ['heading'=>'Monitorizare și optimizare','text'=>'Analizăm rata de rezolvare, identificăm întrebările frecvente fără răspuns și optimizăm continuu. Costuri de suport reduse cu 40-60%, timp de răspuns instant 24/7.'],
     ],
     'fit' => [
-      ['Magazine online', 'Raspunsuri instant la intrebari despre produse, comenzi, retur.'],
-      ['Companii cu volum mare de suport', 'Reducere tichete cu 40-60%.'],
-      ['Agentii imobiliare', 'Calificare lead-uri si programare vizionari automat.'],
-      ['Clinici si centre medicale', 'Programari, informatii servicii, FAQ medical.'],
-      ['Business-uri cu FAQ complex', 'Raspunsuri precise, antrenate pe documentatia ta.'],
+      ['Magazine online','Răspunsuri instant la întrebări despre produse, comenzi, retur.'],
+      ['Companii cu volum mare de suport','Reducere tichete cu 40-60%.'],
+      ['Agenții imobiliare','Calificare lead-uri și programare vizionări automat.'],
+      ['Clinici și centre medicale','Programări, informații servicii, FAQ medical.'],
+      ['Business-uri cu FAQ complex','Răspunsuri precise, antrenate pe documentația ta.'],
     ],
   ],
 ];
@@ -227,83 +146,80 @@ $extras = [
 $intro  = $extras[$viewKey]['intro']  ?? '';
 $blocks = $extras[$viewKey]['blocks'] ?? [];
 $fit    = $extras[$viewKey]['fit']    ?? [];
-$pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery', 'Build & Launch', 'Suport continuu'];
+$pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery','Build & Launch','Suport continuu'];
 ?>
 
-<section class="service-hero service-hero-redesign hero" data-reveal>
-  <div class="hero-video-wrap">
-    <video class="hero-video" autoplay muted loop playsinline>
+<!-- Service Hero -->
+<section class="svc-hero hero">
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline>
       <source src="/assets/video/hero-bg.mp4" type="video/mp4">
     </video>
-    <div class="hero-video-overlay"></div>
   </div>
-  <canvas class="hero-particles-canvas" id="heroParticles"></canvas>
-  <div class="container">
-    <div class="service-hero-center">
-      <div class="service-pill service-pill-center">Servicii</div>
-      <h1><?= htmlspecialchars($service['title']) ?></h1>
-      <p class="service-hero-text">
-        <?= htmlspecialchars($service['short']) ?>
-        <?= $intro ? ' ' . htmlspecialchars($intro) : '' ?>
-      </p>
-      <div class="service-pills-row">
-        <?php $pillClasses = ['most', 'popular', 'new']; ?>
-        <?php foreach ($pills as $i => $pill): ?>
-          <span class="badge-pill <?= $pillClasses[$i] ?? 'most' ?>"><?= htmlspecialchars($pill) ?></span>
-        <?php endforeach; ?>
+  <canvas></canvas>
+
+  <div class="wrap" data-reveal>
+
+    <h1><?= htmlspecialchars($service['title']) ?></h1>
+    <p><?= htmlspecialchars($service['short']) ?><?= $intro ? ' ' . htmlspecialchars($intro) : '' ?></p>
+    <div class="svc-pills">
+      <?php $styles=['badge-hot','badge-pop','badge-new']; foreach($pills as $i=>$pill): ?>
+      <span class="badge <?= $styles[$i] ?? 'badge-hot' ?>"><?= htmlspecialchars($pill) ?></span>
+      <?php endforeach; ?>
+    </div>
+  </div>
+</section>
+
+<?php if($blocks): ?>
+<!-- Timeline -->
+<section class="timeline">
+  <div class="wrap">
+    <div class="timeline-head" data-reveal>
+
+    </div>
+    <div class="timeline-steps">
+      <?php $n=1; foreach($blocks as $b): ?>
+      <div class="step" data-reveal-stagger>
+        <div class="step-num"><?= sprintf('%02d',$n++) ?></div>
+        <div class="step-content">
+          <h3><?= htmlspecialchars($b['heading']) ?></h3>
+          <p><?= htmlspecialchars($b['text']) ?></p>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<?php if ($blocks): ?>
-<section class="svc-detail svc-detail-redesign">
-  <div class="container">
-    <div class="svc-detail-head" data-reveal>
-      <div class="service-pill service-pill-center">Cum livrăm</div>
-    </div>
-    <div class="svc-steps">
-      <?php $n = 1; foreach ($blocks as $b): ?>
-        <div class="svc-step" data-reveal-stagger>
-          <div class="svc-step-marker">
-            <span class="svc-step-num"><?= sprintf('%02d', $n++) ?></span>
-            <span class="svc-step-line"></span>
-          </div>
-          <div class="svc-step-content">
-            <h3><?= htmlspecialchars($b['heading']) ?></h3>
-            <p><?= htmlspecialchars($b['text']) ?></p>
-          </div>
-        </div>
       <?php endforeach; ?>
     </div>
   </div>
 </section>
 <?php endif; ?>
 
-<?php if ($fit): ?>
-<section class="section svc-fit-section">
-  <div class="container">
-    <div class="section-head" style="text-align:center;" data-reveal>
-      <div class="service-pill service-pill-center">Potrivit pentru</div>
+<?php if($fit): ?>
+<!-- Fit section -->
+<section>
+  <div class="wrap">
+    <div class="fit-head" data-reveal>
+
     </div>
-    <div class="svc-fit-list">
-      <?php foreach ($fit as $i => $f): ?>
-        <div class="svc-fit-row" data-reveal-stagger>
-          <div class="svc-fit-check">
-            <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 0 1 0 1.4l-8 8a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.4L8 12.58l7.3-7.3a1 1 0 0 1 1.4 0Z" fill="#0a0a0a"/></svg>
-          </div>
-          <div class="svc-fit-info">
-            <strong><?= htmlspecialchars($f[0]) ?></strong>
-            <span class="muted"> &mdash; <?= htmlspecialchars($f[1]) ?></span>
-          </div>
+    <div class="fit-list">
+      <?php foreach($fit as $f): ?>
+      <div class="fit-item" data-reveal-stagger>
+        <div class="fit-check">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><path d="M16.7 5.3a1 1 0 010 1.4l-8 8a1 1 0 01-1.4 0l-4-4a1 1 0 111.4-1.4L8 12.58l7.3-7.3a1 1 0 011.4 0Z" fill="currentColor"/></svg>
         </div>
+        <div class="fit-text">
+          <strong><?= htmlspecialchars($f[0]) ?></strong>
+          <span><?= htmlspecialchars($f[1]) ?></span>
+        </div>
+      </div>
       <?php endforeach; ?>
     </div>
   </div>
 </section>
 <?php endif; ?>
 
-<div class="container cta-simple service-cta-redesign" data-reveal>
+<!-- CTA -->
+<section class="cta-band" data-reveal>
+  <div class="wrap">
     <h2>Preț personalizat în funcție de nevoie</h2>
     <button class="btn btn-primary" data-modal-trigger>Solicită ofertă →</button>
   </div>
+</section>

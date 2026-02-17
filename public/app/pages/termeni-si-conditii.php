@@ -1,101 +1,90 @@
-<section class="page-head page-head-center">
-  <div class="container page-head-center-inner">
-    <div class="matrix-badge font-tech">Legal</div>
-    <h1>Termeni și Condiții</h1>
-    <p class="muted">Condițiile de utilizare a serviciilor <span class="acl-orange">ACL</span> Smart Software</p>
+<!-- Termeni și Condiții -->
+<section class="legal-head">
+  <div class="wrap" data-reveal>
+    <h1>Termeni și condiții de utilizare</h1>
+    <p>Condițiile generale care reglementează utilizarea site-ului și a serviciilor ACL-Smart Software SRL.</p>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="legal-content">
-      
-      <h2>Informații generale</h2>
-      <p>Prezentul document stabilește condițiile în care poate fi utilizat website-ul <span class="acl-orange">ACL</span> Smart Software. Prin accesarea sau utilizarea acestui website, sunteți de acord cu termenii și condițiile de mai jos.</p>
-      
-      <p>Acest website este deținut și administrat de <strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong>, cu sediul în România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014, înregistrată la Registrul Comerțului sub nr. <strong>J2025007081009</strong>, CUI <strong>RO51219715</strong>, telefon <a href="tel:0758154490">0758 154 490</a>, e-mail <a href="mailto:acl-smartsoftware@outlook.com">acl-smartsoftware@outlook.com</a>.</p>
+<section>
+  <div class="wrap">
+    <div class="legal-layout">
+      <article class="legal-body" data-reveal>
 
-      <h2>Introducere</h2>
-      <p>Utilizarea serviciilor sau informațiilor oferite pe acest website echivalează cu acceptarea de către utilizator a termenilor și condițiilor de mai jos.</p>
-      
-      <p>Termenii și condițiile pot fi actualizate periodic, iar utilizatorul are obligația de a verifica eventualele modificări de fiecare dată când accesează acest website.</p>
-      
-      <p>Utilizatorul are dreptul să vizualizeze site-ul într-un browser web, să tipărească părți din conținut pe suport hârtie și să salveze pagini în format electronic, exclusiv în scop personal și necomercial.</p>
+        <h2>1. Despre acest document</h2>
+        <p>Prezentul document stabilește termenii și condițiile de utilizare ale site-ului <strong>acl-smart.ro</strong> și ale serviciilor oferite de <strong>ACL-Smart Software SRL</strong>.</p>
+        <p>Prin accesarea și utilizarea acestui site, îți exprimi acordul față de acești termeni.</p>
 
-      <h2>Conținut și drepturi de autor</h2>
-      <p>Conținutul și designul site-ului aparțin în exclusivitate BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ și sunt protejate de legislația privind proprietatea intelectuală.</p>
-      
-      <p>Este interzisă reproducerea materialelor afișate pe site fără acordul scris prealabil, printr-un contract care să confere dreptul de a copia sau tipări anumite paragrafe sau pagini ale site-ului.</p>
-      
-      <p>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ nu își asumă răspunderea pentru eventualele prejudicii cauzate direct sau indirect ca urmare a utilizării sau întreruperii utilizării site-ului. Nu garantăm exactitatea, corectitudinea sau actualitatea informațiilor furnizate.</p>
+        <h2>2. Servicii oferite</h2>
+        <ul>
+          <li>Dezvoltare software custom (web, mobile, desktop)</li>
+          <li>Aplicații web (SaaS, platforme, aplicații de management)</li>
+          <li>Site-uri web și magazine online</li>
+          <li>Integrări API și consultanță tehnică</li>
+          <li>Soluții AI (chatboți, automatizări, machine learning)</li>
+          <li>Testing și asigurarea calității (QA)</li>
+        </ul>
+        <p>Toate serviciile sunt furnizate pe bază de contract individual.</p>
 
-      <h2>Modificarea termenilor și condițiilor de utilizare</h2>
-      <p>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ poate modifica termenii și condițiile de utilizare fără notificare prealabilă pe site. De aceea, vă recomandăm să recitiți termenii și condițiile de fiecare dată când accesați sau utilizați acest site.</p>
-      
-      <p>Utilizarea în continuare a site-ului după modificarea termenilor constituie acceptarea acestor modificări.</p>
-      
-      <p>Aceste reguli sunt în conformitate cu legislația română în vigoare. Încălcarea prevederilor prezentului document constituie o încălcare a drepturilor noastre și poate atrage răspunderea civilă, contravențională sau penală, după caz.</p>
-      
-      <p>Orice litigiu apărut în legătură cu termenii de utilizare ai site-ului va fi soluționat de instanțele competente din România.</p>
-      
-      <p>Acest site poate conține link-uri către alte site-uri. Accesând aceste site-uri, părăsiți website-ul nostru și aveți obligația de a respecta termenii și condițiile acestora.</p>
+        <h2>3. Drepturi de proprietate intelectuală</h2>
+        <p>Toate materialele de pe acest site — text, imagini, logo-uri, cod sursă, design — sunt protejate de legile privind drepturile de autor și aparțin exclusiv ACL-Smart Software SRL.</p>
+        <p>În cazul proiectelor dezvoltate pentru clienți, drepturile de proprietate intelectuală se negociază individual.</p>
 
-      <h2>Cereri de ofertă</h2>
-      <p>Cereri de ofertă pot fi transmise prin formularul de contact de pe site, prin e-mail, telefon sau la sediul nostru.</p>
-      
-      <p>Utilizatorul are obligația de a furniza informații corecte și cât mai detaliate privind proiectul solicitat.</p>
-      
-      <p>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ nu poate fi trasă la răspundere pentru eventualele inconveniente cauzate de furnizarea unor informații incorecte sau incomplete de către utilizator. În cazul în care o cerere este considerată incompletă sau incorectă, putem solicita informații suplimentare sau putem șterge cererea fără notificare prealabilă.</p>
+        <h2>4. Utilizare acceptabilă</h2>
+        <ul>
+          <li>Nu folosești site-ul în scopuri ilegale sau frauduloase</li>
+          <li>Nu faci spam, phishing sau alte activități dăunătoare</li>
+          <li>Nu încerci să obții acces neautorizat la infrastructura noastră</li>
+          <li>Nu transmiți conținut care încalcă drepturile altora</li>
+        </ul>
 
-      <h2>Termeni de utilizare a site-ului</h2>
-      <p>Conținutul acestui site nu poate fi copiat, reprodus, distribuit, republicat, descărcat, postat sau transmis sub nicio formă și prin niciun mijloc fără acordul scris prealabil.</p>
-      
-      <p>Distribuirea sau copierea conținutului paginilor acestui site către terți nu este permisă, inclusiv, dar fără a se limita la, stocarea în cache sau arhivarea conținutului fără autorizare.</p>
-      
-      <p>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ nu oferă nicio garanție privind acuratețea, caracterul complet sau adecvarea conținutului, îndrumărilor sau consultanței oferite și nu își asumă nicio obligație de rezultat sau diligență față de nicio persoană. Se exclude în mod expres orice răspundere pentru costuri, pierderi sau daune rezultate din utilizarea conținutului.</p>
+        <h2>5. Limitarea răspunderii</h2>
+        <ul>
+          <li>Nu garantăm că site-ul va fi disponibil neîntrerupt</li>
+          <li>Nu suntem responsabili pentru pierderi indirecte sau accidentale</li>
+          <li>Nu suntem răspunzători pentru link-uri externe</li>
+        </ul>
 
-      <h2>Informații oferite prin acest website</h2>
-      <p>Orice persoană care vizitează acest website și furnizează date personale sau informații prin intermediul acestuia își exprimă consimțământul expres și neechivoc pentru:</p>
-      
-      <ul>
-        <li>prelucrarea acestor date personale de către BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ;</li>
-        <li>transmiterea de materiale informative specifice operațiunilor de marketing direct;</li>
-        <li>soluționarea cererilor, întrebărilor și reclamațiilor adresate;</li>
-        <li>alte activități desfășurate și permise de lege.</li>
-      </ul>
-      
-      <p>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ va păstra confidențialitatea acestor informații în conformitate cu prevederile legale aplicabile.</p>
-      
-      <p>Utilizarea în continuare a site-ului constituie acordul dumneavoastră expres și neechivoc în conformitate cu Regulamentul (UE) 2016/679 (GDPR) și legislația română privind protecția datelor cu caracter personal și libera circulație a acestor date.</p>
-      
-      <p>Pentru orice întrebări privind exercitarea drepturilor referitoare la utilizarea site-ului și protecția datelor, ne puteți contacta la:</p>
-      
-      <ul>
-        <li>Email: <a href="mailto:acl-smartsoftware@outlook.com">acl-smartsoftware@outlook.com</a></li>
-        <li>Telefon: <a href="tel:0758154490">0758 154 490</a></li>
-        <li>Adresă: România, Str. Horea, Petrosani, Hunedoara, cod poștal 332014</li>
-      </ul>
+        <h2>6. Confidențialitatea datelor</h2>
+        <p>Colectăm și procesăm date personale conform <a href="/gdpr">Politicii GDPR</a>.</p>
 
-      <h2>Materiale transmise către acest site</h2>
-      <p>Orice material sau informație transmisă sau publicată pe acest site, prin orice mijloc, va fi tratată ca neconfidențială și neproprietară și poate fi utilizată de BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ în orice scop legal, inclusiv, dar fără a se limita la, dezvoltarea de produse sau activități de marketing.</p>
-      
-      <p>Este interzisă publicarea sau transmiterea către sau de pe acest site a oricărui material ilegal, amenințător, defăimător, obscen, pornografic sau care încalcă legislația aplicabilă.</p>
+        <h2>7. Condiții de livrare și garanții</h2>
+        <p>Proiectele sunt livrate conform termenelor din contract: deadline-uri, milestone-uri, specificații tehnice și suport post-lansare.</p>
 
-      <h2>Contact</h2>
-      <p>Pentru orice întrebări sau nelămuriri legate de acești termeni și condiții, vă rugăm să ne contactați:</p>
-      
-      <div class="legal-contact-box">
-        <p><strong>BÂNCILĂ LIVIU - INTREPRINDERE INDIVIDUALĂ</strong></p>
-        <p>Email: <a href="mailto:acl-smartsoftware@outlook.com">acl-smartsoftware@outlook.com</a></p>
-        <p>Telefon: <a href="tel:0758154490">0758 154 490</a></p>
-        <p>Adresă: Str. Horea, Petrosani, Hunedoara, cod poștal 332014, România</p>
-        <p>CUI: RO51219715 | Nr. Reg. Com.: J2025007081009</p>
-      </div>
+        <h2>8. Prețuri și facturare</h2>
+        <p>Prețurile depind de complexitatea proiectului și sunt comunicate printr-o ofertă detaliată. Sumele sunt exprimate în RON sau EUR.</p>
 
-      <p class="legal-update muted">
-        <strong>Ultima actualizare:</strong> Februarie 2026
-      </p>
+        <h2>9. Reziliere și returnări</h2>
+        <p>Un contract poate fi reziliat doar conform clauzelor specificate. Nu oferim returnarea sumelor pentru servicii deja livrate și acceptate.</p>
 
+        <h2>10. Legislație aplicabilă</h2>
+        <p>Acești termeni sunt guvernați de legea română. Litigiile vor fi soluționate de instanțele competente din România.</p>
+
+        <h2>11. Modificări ale termenilor</h2>
+        <p>Ne rezervăm dreptul de a actualiza acești termeni periodic. Continuarea utilizării site-ului semnifică acceptarea noilor termeni.</p>
+        <p><strong>Ultima actualizare:</strong> 10 ianuarie 2025</p>
+
+        <h2>12. Contact</h2>
+        <p>Pentru întrebări despre acești termeni, ne poți contacta:</p>
+      </article>
+
+      <aside class="legal-sidebar">
+        <div class="info-box">
+          <span class="info-box-ico">✉️</span>
+          <div><h4>Email</h4><p><a href="mailto:acl-smartsoftware@outlook.com">acl-smartsoftware@outlook.com</a></p></div>
+        </div>
+        <div class="info-box">
+          <span class="info-box-ico">📞</span>
+          <div><h4>Telefon</h4><p><a href="tel:0758154490">0758 154 490</a></p></div>
+        </div>
+        <div class="info-box">
+          <span class="info-box-ico">🏢</span>
+          <div>
+            <h4>Date companie</h4>
+            <p><strong>ACL-Smart Software SRL</strong><br>CUI: 51219715<br>J2025007081009<br>Petroșani, România</p>
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
 </section>

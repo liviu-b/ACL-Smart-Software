@@ -1,403 +1,198 @@
-<!-- Hero Section: Asymmetric, Modern Layout -->
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-video-wrap">
-    <video class="hero-video" id="heroVideo" autoplay muted loop playsinline>
+  <div class="hero-bg">
+    <video autoplay muted loop playsinline>
       <source src="/assets/video/hero-bg.mp4" type="video/mp4">
     </video>
-    <div class="hero-video-overlay"></div>
   </div>
-  <canvas class="hero-particles-canvas" id="heroParticles"></canvas>
-  
-  <div class="container hero-grid">
-    <!-- Left Column: Content -->
-    <div class="hero-left">
-      <div class="pill">Creștere prin tehnologie</div>
-      <h1 class="hero-title">
-        Nu scriem doar cod. Construim produse care cresc business-uri.
-      </h1>
-      
-      <p class="hero-sub">
-        <strong><span class="acl-orange">ACL</span> Smart Software</strong> proiectează și livrează platforme digitale orientate pe
-        rezultate — timp de lansare mai mic, conversie mai bună și operațiuni stabile.
-      </p>
+  <canvas></canvas>
 
-      <div class="hero-rotate font-tech" aria-live="polite">
-        <span class="muted">Construim:</span>
-        <span class="rotate-word" id="heroRotate">Software personalizat</span>
-      </div>
-
-      <div class="hero-ctas">
-        <button class="btn btn-primary" data-modal-trigger>Haide să discutăm →</button>
-        <a class="btn btn-ghost" href="/ce-putem-oferi">Vezi serviciile</a>
-      </div>
+  <div class="wrap">
+    <h1 data-reveal>Nu scriem doar cod. Construim produse care cresc business-uri.</h1>
+    <p data-reveal><strong><span class="accent">ACL</span> Smart Software</strong> livrează platforme digitale orientate pe rezultate — lansare rapidă, conversie mai bună, operațiuni stabile.</p>
+    <div class="hero-rotate" data-reveal>
+      <span class="muted">Construim:</span>
+      <span class="rotate-word" id="heroRotate">Software personalizat</span>
     </div>
-    
-    <!-- Right Column: Capability Matrix (Navy Card) -->
-    <div class="capability-matrix" data-reveal>
-      <div class="matrix-header">
-        <div class="matrix-badge font-tech">Matrice de Capabilități</div>
-        <div class="matrix-subtitle">Execuție tehnică end-to-end</div>
+    <div class="hero-ctas" data-reveal>
+      <button class="btn btn-primary" data-modal-trigger>Hai să discutăm →</button>
+      <a class="btn btn-ghost" href="/ce-putem-oferi">Vezi serviciile</a>
+    </div>
+    <div class="hero-proof" data-reveal>
+      <div class="hero-proof-item"><span class="hero-proof-val">&lt;2 săpt</span><span class="hero-proof-label">Timp lansare MVP</span></div>
+      <div class="hero-proof-item"><span class="hero-proof-val">100%</span><span class="hero-proof-label">Cod predat cu documentație</span></div>
+      <div class="hero-proof-item"><span class="hero-proof-val">End-to-end</span><span class="hero-proof-label">De la analiză la lansare</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES (Bento Grid) -->
+<section>
+  <div class="wrap">
+    <header class="services-head" data-reveal>
+      <h2>Ce construim</h2>
+      <p>Soluții software complete — de la site-uri web până la platforme SaaS complexe.</p>
+    </header>
+
+    <div class="bento">
+      <a class="bento-featured" data-reveal href="/servicii/website-build">
+        <div class="bento-badge"><span class="badge badge-hot">Cel mai solicitat</span></div>
+        <div class="bento-featured-content">
+          <div class="bento-ico">🧱</div>
+          <h3>Site-uri <span class="accent">web</span></h3>
+          <p>Site-uri moderne, rapide și optimizate SEO care transformă vizitatorii în clienți. Design responsive, performanță excelentă și cod curat.</p>
+          <ul class="bento-tags">
+            <li>SEO optimizat</li>
+            <li>Responsive</li>
+            <li>Performanță 99+</li>
+          </ul>
+          <span class="bento-link">Află mai multe →</span>
+        </div>
+      </a>
+
+      <a class="bento-card" data-reveal-stagger href="/servicii/ecommerce-store">
+        <div class="bento-card-top">
+          <div class="bento-ico-sm">🛒</div>
+          <span class="badge badge-pop">Popular</span>
+        </div>
+        <h3>Magazine <span class="accent">online</span></h3>
+        <p>Integrare plăți, stoc, facturare automată și optimizare conversie.</p>
+        <span class="bento-link">Detalii →</span>
+      </a>
+
+      <a class="bento-card" data-reveal-stagger href="/servicii/custom-web-app">
+        <div class="bento-card-top">
+          <div class="bento-ico-sm">🌐</div>
+        </div>
+        <h3>Aplicații <span class="accent">web</span></h3>
+        <p>Dashboard-uri, portale client, platforme interne — rapide și sigure.</p>
+        <span class="bento-link">Detalii →</span>
+      </a>
+
+      <a class="bento-card" data-reveal-stagger href="/servicii/saas-app-development">
+        <div class="bento-card-top">
+          <div class="bento-ico-sm">☁️</div>
+          <span class="badge badge-hot">Top</span>
+        </div>
+        <h3>Platforme <span class="accent">SaaS</span></h3>
+        <p>De la MVP la produs complet: abonamente, billing și scalare automată.</p>
+        <span class="bento-link">Detalii →</span>
+      </a>
+    </div>
+
+    <div class="svc-all" data-reveal>
+      <a class="btn btn-ghost" href="/ce-putem-oferi">Vezi toate cele 9 servicii →</a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="wrap">
+    <header class="process-head" data-reveal>
+      <h2>Cum lucrăm</h2>
+      <p>Trei pași simpli de la idee la produs funcțional.</p>
+    </header>
+
+    <div class="process-grid">
+      <div class="process-step" data-reveal-stagger>
+        <div class="process-num">01</div>
+        <h3>Discuție & Analiză</h3>
+        <p>Înțelegem obiectivele, analizăm nevoia și definim un plan clar cu timeline și buget.</p>
       </div>
-
-      <div class="matrix-grid">
-        <!-- Strategy Column -->
-        <div class="matrix-col">
-          <div class="matrix-col-header">
-            <div class="matrix-pill font-tech">STRATEGIE</div>
-          </div>
-          <div class="matrix-items">
-            <div class="matrix-item">
-              <span class="matrix-icon">📋</span>
-              <span>Audit Tehnic</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">🏗️</span>
-              <span>Design Arhitectură</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">🗺️</span>
-              <span>Roadmap Produs</span>
-            </div>
-          </div>
-          <div class="matrix-desc">
-            Reducerea riscului tehnic înainte de dezvoltare.
-          </div>
-        </div>
-
-        <div class="matrix-divider"></div>
-
-        <!-- Engineering Column -->
-        <div class="matrix-col">
-          <div class="matrix-col-header">
-            <div class="matrix-pill font-tech">INGINERIE</div>
-          </div>
-          <div class="matrix-items">
-            <div class="matrix-item">
-              <span class="matrix-icon">💻</span>
-              <span>Aplicații Web</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">☁️</span>
-              <span>Platforme SaaS</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">🔗</span>
-              <span>Integrări API</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">🤖</span>
-              <span>Sisteme AI</span>
-            </div>
-          </div>
-          <div class="matrix-desc">
-            Construim sisteme scalabile, pregătite pentru producție.
-          </div>
-        </div>
-
-        <div class="matrix-divider"></div>
-
-        <!-- Scale Column -->
-        <div class="matrix-col">
-          <div class="matrix-col-header">
-            <div class="matrix-pill font-tech">SCALARE</div>
-          </div>
-          <div class="matrix-items">
-            <div class="matrix-item">
-              <span class="matrix-icon">✓</span>
-              <span>Automatizare QA</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">⚙️</span>
-              <span>DevOps & CI/CD</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">⚡</span>
-              <span>Optimizare Performanță</span>
-            </div>
-            <div class="matrix-item">
-              <span class="matrix-icon">📊</span>
-              <span>Analiză & Monitorizare</span>
-            </div>
-          </div>
-          <div class="matrix-desc">
-            Asigurăm stabilitate și creștere sustenabilă.
-          </div>
-        </div>
+      <div class="process-step" data-reveal-stagger>
+        <div class="process-num">02</div>
+        <h3>Design & Dezvoltare</h3>
+        <p>Construim iterativ, cu demo-uri frecvente. Vezi progresul în timp real, feedback la fiecare sprint.</p>
+      </div>
+      <div class="process-step" data-reveal-stagger>
+        <div class="process-num">03</div>
+        <h3>Lansare & Suport</h3>
+        <p>Testăm, lansăm și monitorizăm. Asigurăm mentenanță și optimizări continue post-lansare.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- About Section: Split Layout with Code Terminal -->
-<section class="section about-section" id="cine-suntem">
-  <div class="container about-grid">
-    <!-- Left Column: Text Content -->
-    <div class="hero-left">
-      <div class="matrix-badge about-badge">Partener Tehnic</div>
-      <h2 class="about-title">
-        Software Scalabil.<br>Arhitectură Robustă.
-      </h2>
-      <p class="hero-sub">
-        <strong><span class="acl-orange">ACL</span> Smart Software</strong> construiește sisteme digitale personalizate, orientate pe performanță și stabilitate. 
-        Livrăm soluții end-to-end — de la discovery și arhitectură, la execuție, testare și mentenanță — folosind tehnologii moderne și procese Agile.
-      </p>
-      
-      <div class="hero-ctas about-ctas">
-        <button class="btn btn-primary" data-modal-trigger">Haide să discutăm →</button>
-        <a class="btn btn-ghost" href="/portofoliu">Vezi Portofoliu</a>
-      </div>
-    </div>
-
-    <!-- Right Column: Animated Code Terminal -->
-    <div class="anim-wrap about-anim" aria-hidden="true">
-      <div class="about-orb"></div>
-      
-      <div class="about-terminal" data-reveal>
-        <div class="about-terminal-bar">
-          <div class="about-terminal-dots">
-            <span class="about-dot about-dot-red"></span>
-            <span class="about-dot about-dot-yellow"></span>
-            <span class="about-dot about-dot-green"></span>
-          </div>
-          <span class="font-tech about-terminal-title">Architecture.ts</span>
-        </div>
-        
-        <pre class="terminal-body about-terminal-body"><code class="font-tech scrolling-content" style="color: #e5e7eb; display: block; tab-size: 2;">
-<span style="color: #c084fc;">interface</span> <span style="color: #fbbf24;">ScalableSystem</span> {
-  security: <span style="color: #60a5fa;">SecurityLevel</span>;
-  performance: <span style="color: #60a5fa;">Metric</span>[];
-  uptime: <span style="color: #60a5fa;">number</span>;
-}
-
-<span style="color: #c084fc;">class</span> <span style="color: #fbbf24;">EnterpriseCore</span> <span style="color: #c084fc;">implements</span> <span style="color: #fbbf24;">ScalableSystem</span> {
-  <span style="color: #c084fc;">private</span> services: <span style="color: #60a5fa;">ServiceContainer</span>;
-
-  <span style="color: #9ca3af;">// Arhitectură optimizată pentru trafic intens</span>
-  <span style="color: #c084fc;">public async</span> <span style="color: #60a5fa;">deploy</span>(): <span style="color: #fbbf24;">Promise</span>&lt;<span style="color: #fbbf24;">void</span>&gt; {
-    <span style="color: #c084fc;">await</span> <span style="color: #fbbf24;">this</span>.loadBalancer.init();
-    <span style="color: #c084fc;">await</span> <span style="color: #fbbf24;">this</span>.cacheLayer.warmup();
-    <span style="color: #c084fc;">return</span> <span style="color: #fbbf24;">this</span>.monitorMetrics();
-  }
-
-  <span style="color: #c084fc;">private</span> <span style="color: #60a5fa;">optimize</span>(resource: <span style="color: #fbbf24;">Resource</span>): <span style="color: #fbbf24;">void</span> {
-    <span style="color: #9ca3af;">// Auto-scaling logic</span>
-    <span style="color: #c084fc;">if</span> (resource.load &gt; <span style="color: #a78bfa;">0.8</span>) {
-      <span style="color: #fbbf24;">this</span>.cluster.expand();
-    }
-  }
-}
-</code></pre>
-      </div>
-    </div>
-  </div>
-</section>
-
-<style>
-  @keyframes scrollCode {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20%); }
-    100% { transform: translateY(0); }
-  }
-  .scrolling-content {
-    animation: scrollCode 10s ease-in-out infinite;
-  }
-</style>
-<!-- Trust/Stats Section: 4-Column Grid with Hover Effects -->
-<section class="trust-section" aria-label="Ce ne recomandă">
-  <div class="container">
-    <div class="trust-head" data-reveal>
-      <div class="service-pill">Ce ne recomandă</div>
-      <h2>Rezultatele livrate și felul în care lucrăm</h2>
-      <p class="muted">Combinăm execuție tehnică solidă cu comunicare clară, termene asumate și focus pe impact real în business.</p>
-    </div>
-
-    <div class="trust-grid">
-      <article class="trust-card" data-reveal-stagger>
-        <div class="trust-value">95%+</div>
-        <div class="trust-label">Scor de satisfacție la predare</div>
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <header class="stats-head" data-reveal>
+      <h2>De ce să lucrezi cu noi</h2>
+      <p>Suntem o echipă tânără, dar fiecare proiect livrat vorbește de la sine.</p>
+    </header>
+    <div class="stats-grid">
+      <article class="stat" data-reveal-stagger>
+        <div class="stat-val">&lt;2 săpt</div>
+        <div class="stat-label">Lansare MVP</div>
+        <div class="stat-ctx">De la confirmare la prima versiune</div>
       </article>
-      <article class="trust-card" data-reveal-stagger>
-        <div class="trust-value">24h</div>
-        <div class="trust-label">Timp mediu de răspuns la solicitări</div>
+      <article class="stat" data-reveal-stagger>
+        <div class="stat-val">100%</div>
+        <div class="stat-label">Cod cu documentație</div>
+        <div class="stat-ctx">Predat curat, documentat, gata de extins</div>
       </article>
-      <article class="trust-card" data-reveal-stagger>
-        <div class="trust-value">100%</div>
-        <div class="trust-label">Cod predat cu documentație și handover</div>
+      <article class="stat" data-reveal-stagger>
+        <div class="stat-val">End-to-end</div>
+        <div class="stat-label">De la analiză la lansare</div>
+        <div class="stat-ctx">Un singur partener, tot procesul</div>
       </article>
-      <article class="trust-card" data-reveal-stagger>
-        <div class="trust-value">End-to-end</div>
-        <div class="trust-label">De la analiză la lansare și suport</div>
+      <article class="stat" data-reveal-stagger>
+        <div class="stat-val">9</div>
+        <div class="stat-label">Servicii digitale</div>
+        <div class="stat-ctx">De la site-uri la SaaS complet</div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- Services Section: 2-Column Alternating Grid (Not Standard Cards) -->
-<section class="section" id="serviciile-noastre">
-  <div class="container">
-    <div class="section-head" style="text-align: center;">
-      <div class="service-pill">Servicii &amp; expertiză</div>
-      <h2 style="border: none; padding: 0; margin: var(--space-4) 0 var(--space-3);">
-        Ce oferim
-      </h2>
-      <p class="muted">
-        De la aplicații custom și platforme SaaS la integrare API și chatboți AI, acoperim cap‑coadă
-        ciclul de dezvoltare software.
-      </p>
+<!-- FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <header class="faq-head" data-reveal>
+      <h2>Întrebări frecvente</h2>
+      <p>Răspunsuri rapide la cele mai comune întrebări despre procesul nostru de lucru.</p>
+    </header>
+
+    <div class="faq-list">
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Cât durează dezvoltarea unui proiect?</summary>
+        <div class="faq-a"><p>Depinde de complexitate: un site de prezentare poate fi gata în 1–2 săptămâni, o aplicație web în 4–8 săptămâni, iar o platformă SaaS complexă în 3–6 luni. La fiecare proiect oferim un timeline realist în faza de analiză.</p></div>
+      </details>
+
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Cât costă un proiect software?</summary>
+        <div class="faq-a"><p>Prețul variază în funcție de cerințe. Un site web pornește de la 500 EUR, o aplicație web de la 2.000 EUR, iar proiectele SaaS de la 5.000 EUR. Solicită o estimare gratuită și îți pregătim o ofertă detaliată.</p></div>
+      </details>
+
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Oferiți suport și mentenanță după lansare?</summary>
+        <div class="faq-a"><p>Da! Fiecare proiect include o perioadă de suport gratuit post-lansare. Oferim și planuri de mentenanță lunare care includ actualizări, monitorizare și optimizări continue.</p></div>
+      </details>
+
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Ce tehnologii folosiți?</summary>
+        <div class="faq-a"><p>Alegem stack-ul potrivit pentru fiecare proiect: React, Next.js, Node.js, PHP, Python, PostgreSQL, MongoDB, AWS, Docker. Nu avem o soluție „one-size-fits-all" — adaptăm tehnologia la nevoile reale.</p></div>
+      </details>
+
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Pot vedea progresul în timp real?</summary>
+        <div class="faq-a"><p>Absolut. Lucrăm în sprint-uri scurte (1–2 săptămâni) cu demo-uri regulate. Ai acces la un mediu de staging unde poți testa funcționalitățile pe măsură ce le implementăm.</p></div>
+      </details>
+
+      <details class="faq-item" data-reveal-stagger>
+        <summary class="faq-q">Lucrați și cu companii din afara României?</summary>
+        <div class="faq-a"><p>Da, avem experiență cu clienți din Europa și nu numai. Comunicăm fluent în română și engleză, iar procesul de lucru este complet remote-friendly.</p></div>
+      </details>
     </div>
+  </div>
+</section>
 
-    <div class="svc-rail">
-      <!-- Service Cards: Icon + Content Layout -->
-      <a class="svc-row" data-reveal href="/servicii/custom-software-dev">
-        <div class="svc-icon"><?= htmlspecialchars($services['custom-software-dev']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Dezvoltare <span class="acl-orange">software</span> la comandă</h3>
-          </div>
-          <p class="svc-desc">Proiectăm și dezvoltăm aplicații custom adaptate proceselor interne și obiectivelor de business.</p>
-          <div class="svc-bullets">
-            <span>Analiză funcțională și definire clară a cerințelor</span>
-            <span>Arhitectură scalabilă și securizată</span>
-            <span>Dezvoltare backend &amp; frontend</span>
-            <span>Modernizare și refactorizare aplicații existente</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/custom-web-app">
-        <div class="svc-icon"><?= htmlspecialchars($services['custom-web-app']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Aplicații <span class="acl-orange">web</span> personalizate</h3>
-          </div>
-          <p class="svc-desc">Construim aplicații web rapide, scalabile și optimizate pentru conversie.</p>
-          <div class="svc-bullets">
-            <span>Platforme web complexe: dashboard-uri, sisteme interne, portaluri clienți</span>
-            <span>Aplicații orientate pe UX și performanță</span>
-            <span>Arhitecturi moderne (SPA, API-first)</span>
-            <span>Optimizare pentru viteză și scalare</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/website-build">
-        <div class="svc-icon"><?= htmlspecialchars($services['website-build']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Dezvoltare site <span class="acl-orange">web</span></h3>
-            <span class="badge-pill most">Cel mai solicitat</span>
-          </div>
-          <p class="svc-desc">Creăm site-uri moderne, responsive și ușor de administrat.</p>
-          <div class="svc-bullets">
-            <span>Website-uri de prezentare și pagini corporate</span>
-            <span>Landing page-uri optimizate pentru conversie</span>
-            <span>CMS personalizat sau integrare cu soluții existente</span>
-            <span>Optimizare SEO tehnică și performanță</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/ecommerce-store">
-        <div class="svc-icon"><?= htmlspecialchars($services['ecommerce-store']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Creare magazine <span class="acl-orange">online</span></h3>
-            <span class="badge-pill popular">Popular</span>
-          </div>
-          <p class="svc-desc">Dezvoltăm magazine online optimizate pentru vânzări și vizibilitate.</p>
-          <div class="svc-bullets">
-            <span>Implementare platforme e-commerce</span>
-            <span>Integrare plăți online și procesatori de plăți</span>
-            <span>Automatizări pentru stocuri, livrare și facturare</span>
-            <span>Optimizare UX pentru creșterea ratei de conversie</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/saas-app-development">
-        <div class="svc-icon"><?= htmlspecialchars($services['saas-app-development']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Aplicații <span class="acl-orange">SaaS</span></h3>
-            <span class="badge-pill most">Cel mai solicitat</span>
-          </div>
-          <p class="svc-desc">Transformăm idei în produse SaaS scalabile, de la MVP la platforme mature.</p>
-          <div class="svc-bullets">
-            <span>Arhitectură multi-tenant și infrastructură cloud</span>
-            <span>Sisteme de abonamente și facturare recurentă</span>
-            <span>Panouri de administrare și analitice</span>
-            <span>Securitate, scalare și mentenanță continuă</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/qa-testing">
-        <div class="svc-icon"><?= htmlspecialchars($services['qa-testing']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Testare <span class="acl-orange">QA</span></h3>
-            <span class="badge-pill new">Nou</span>
-          </div>
-          <p class="svc-desc">Asigurăm calitate constantă prin procese riguroase de testare manuală și automată.</p>
-          <div class="svc-bullets">
-            <span>Testare funcțională și de regresie</span>
-            <span>Automatizare teste (unit, integrare, end‑to‑end)</span>
-            <span>Testare de performanță și securitate</span>
-            <span>Documentare și raportare detaliată</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/api-integration">
-        <div class="svc-icon"><?= htmlspecialchars($services['api-integration']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Integrare <span class="acl-orange">API</span></h3>
-            <span class="badge-pill new">Nou</span>
-          </div>
-          <p class="svc-desc">Conectăm aplicațiile tale cu ecosisteme externe pentru eficiență operațională.</p>
-          <div class="svc-bullets">
-            <span>Integrare cu sisteme de plăți</span>
-            <span>CRM, ERP și platforme de marketing</span>
-            <span>Integrare servicii AI și automatizări</span>
-            <span>Sincronizare logistică și procesare date</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/consulting-architecture">
-        <div class="svc-icon"><?= htmlspecialchars($services['consulting-architecture']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Consultanță &amp; <span class="acl-orange">arhitectură</span></h3>
-          </div>
-          <p class="svc-desc">Oferim direcție tehnică solidă pentru proiecte noi sau existente.</p>
-          <div class="svc-bullets">
-            <span>Audit tehnic și evaluare infrastructură</span>
-            <span>Design arhitectural și alegere stack tehnologic</span>
-            <span>Definire roadmap de produs</span>
-            <span>Optimizare performanță și costuri</span>
-          </div>
-        </div>
-      </a>
-
-      <a class="svc-row" data-reveal href="/servicii/ai-chatbots">
-        <div class="svc-icon"><?= htmlspecialchars($services['ai-chatbots']['icon']) ?></div>
-        <div class="svc-body">
-          <div class="svc-head">
-            <h3 class="svc-title">Chatboți <span class="acl-orange">AI</span></h3>
-            <span class="badge-pill most">Cel mai solicitat</span>
-          </div>
-          <p class="svc-desc">Dezvoltăm chatboți inteligenți pentru suport, vânzări și automatizare procese.</p>
-          <div class="svc-bullets">
-            <span>Implementare chatboți conversaționali personalizați</span>
-            <span>Integrare cu website-uri, aplicații și CRM</span>
-            <span>Automatizare suport clienți și procese interne</span>
-            <span>Antrenare modele și optimizare fluxuri conversaționale</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
+<!-- CTA FINAL -->
+<section class="cta-band">
+  <div class="wrap" data-reveal>
+    <h2>Hai să construim împreună</h2>
+    <p>Spune-ne despre proiectul tău și primești o estimare gratuită în 24 de ore.</p>
+    <button class="btn btn-primary" data-modal-trigger>Solicită estimare gratuită →</button>
   </div>
 </section>
