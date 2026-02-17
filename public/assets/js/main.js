@@ -44,22 +44,38 @@
   const burger = document.getElementById('burger');
   const nav = document.getElementById('nav');
   if(burger && nav){
+    const closeNav = () => {
+      nav.classList.remove('open');
+      burger.classList.remove('active');
+      burger.setAttribute('aria-expanded','false');
+      document.body.classList.remove('nav-open');
+      if(header) header.classList.remove('nav-open');
+    };
+    const setNavOpen = (open) => {
+      document.body.classList.toggle('nav-open', open);
+      if(header) header.classList.toggle('nav-open', open);
+    };
+    const navCloseBtn = document.getElementById('navClose');
+    if(navCloseBtn) navCloseBtn.addEventListener('click', closeNav);
     burger.addEventListener('click', () => {
       const open = nav.classList.toggle('open');
       burger.classList.toggle('active', open);
       burger.setAttribute('aria-expanded', open);
+      setNavOpen(open);
     });
     document.addEventListener('click', e => {
       if(!nav.contains(e.target) && !burger.contains(e.target)){
         nav.classList.remove('open');
         burger.classList.remove('active');
         burger.setAttribute('aria-expanded','false');
+        setNavOpen(false);
       }
     });
     nav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => {
       nav.classList.remove('open');
       burger.classList.remove('active');
       burger.setAttribute('aria-expanded','false');
+      setNavOpen(false);
     }));
   }
 

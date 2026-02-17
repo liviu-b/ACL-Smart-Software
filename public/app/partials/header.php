@@ -91,6 +91,7 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
       <div class="nav-mob-head">
         <img class="brand-logo" src="/assets/img/logo.png" alt="ACL Smart Software">
         <span class="nav-mob-title"><strong class="accent">ACL</strong> Smart Software</span>
+        <button class="nav-close" id="navClose" aria-label="Închide meniu" type="button">✕</button>
       </div>
 
       <div class="nav-mob-links">
