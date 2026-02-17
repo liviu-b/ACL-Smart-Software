@@ -3,15 +3,17 @@ $pageTitle = 'De ce ai nevoie de un site web profesional în 2025 | ACL Smart So
 $pageDesc  = 'Un site web profesional este fundația prezenței tale digitale. Află de ce contează și ce impact real are.';
 ?>
 <!-- Blog Article -->
-<section class="blog-hero">
+<section class="blog-hero blog-hero--article">
   <div class="wrap">
     <a class="blog-back" href="/blog">← Înapoi la blog</a>
-    <h1 data-reveal>De ce ai nevoie de un site web profesional în 2025</h1>
-    <div class="blog-article-meta" data-reveal>
+    <div class="blog-article-badge" data-reveal>
+      <span class="badge badge-hot">Popular</span>
       <span class="blog-date">15 Ianuarie 2025</span>
       <span>·</span>
       <span>5 min citire</span>
     </div>
+    <h1 data-reveal>De ce ai nevoie de un site web profesional în 2025</h1>
+    <p class="blog-hero-sub" data-reveal>Un site web nu mai e un lux — este fundația prezenței tale digitale.</p>
   </div>
 </section>
 

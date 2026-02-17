@@ -128,13 +128,13 @@
       </article>
     </div>
 
-    <div class="pf-bottom-cta" data-reveal>
-      <div class="pf-bottom-inner">
-        <div class="pf-bottom-icon">🚀</div>
-        <h3>Ai un proiect în minte?</h3>
-        <p>Portofoliul nostru crește constant. Următorul proiect de aici ar putea fi al tău.</p>
-        <button class="btn btn-primary" data-modal-trigger>Hai să discutăm →</button>
+    <a class="svc-cta-card" data-reveal href="/ce-putem-oferi">
+      <div class="svc-cta-text">
+        <span class="svc-cta-badge">9 servicii digitale</span>
+        <h3>Ai un proiect în minte? Descoperă ce putem construi pentru tine</h3>
+        <p>De la site-uri de prezentare la platforme SaaS complexe — explorează toate serviciile noastre și vezi cum putem transforma ideea ta în realitate.</p>
       </div>
-    </div>
+      <span class="svc-cta-arrow">→</span>
+    </a>
   </div>
 </section>

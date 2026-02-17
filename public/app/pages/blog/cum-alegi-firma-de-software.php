@@ -3,15 +3,17 @@ $pageTitle = 'Cum alegi firma potrivită de dezvoltare software | ACL Smart Soft
 $pageDesc  = 'Criterii clare pentru a evalua o firmă de software: portofoliu, tehnologii, comunicare și suport post-lansare.';
 ?>
 <!-- Blog Article -->
-<section class="blog-hero">
+<section class="blog-hero blog-hero--article">
   <div class="wrap">
     <a class="blog-back" href="/blog">← Înapoi la blog</a>
-    <h1 data-reveal>Cum alegi firma potrivită de dezvoltare software</h1>
-    <div class="blog-article-meta" data-reveal>
+    <div class="blog-article-badge" data-reveal>
+      <span class="badge badge-pop">Ghid</span>
       <span class="blog-date">28 Februarie 2025</span>
       <span>·</span>
       <span>7 min citire</span>
     </div>
+    <h1 data-reveal>Cum alegi firma potrivită de dezvoltare software</h1>
+    <p class="blog-hero-sub" data-reveal>Criterii clare ca să faci alegerea corectă din prima.</p>
   </div>
 </section>
 

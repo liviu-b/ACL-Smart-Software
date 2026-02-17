@@ -3,15 +3,17 @@ $pageTitle = 'Ghid complet: Cum să lansezi un MVP în mai puțin de 2 săptăm�
 $pageDesc  = 'Pașii practici pentru a transforma o idee într-un produs funcțional — rapid, eficient și cu buget controlat.';
 ?>
 <!-- Blog Article -->
-<section class="blog-hero">
+<section class="blog-hero blog-hero--article">
   <div class="wrap">
     <a class="blog-back" href="/blog">← Înapoi la blog</a>
-    <h1 data-reveal>Ghid complet: Cum să lansezi un MVP în mai puțin de 2 săptămâni</h1>
-    <div class="blog-article-meta" data-reveal>
+    <div class="blog-article-badge" data-reveal>
+      <span class="badge badge-new">Ghid</span>
       <span class="blog-date">10 Martie 2025</span>
       <span>·</span>
       <span>6 min citire</span>
     </div>
+    <h1 data-reveal>Ghid complet: Cum să lansezi un MVP în mai puțin de 2 săptămâni</h1>
+    <p class="blog-hero-sub" data-reveal>De la idee la produs funcțional — rapid, eficient și cu buget controlat.</p>
   </div>
 </section>
 
