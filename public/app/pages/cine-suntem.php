@@ -8,7 +8,7 @@
   <canvas></canvas>
 
   <div class="wrap">
-    <h1 data-reveal>Nu scriem doar cod. Construim produse care cresc business-uri.</h1>
+    <h1 data-reveal>Nu scriem doar <span class="glitch" data-text="cod">cod</span>. Construim produse care cresc <span class="glitch" data-text="business">business</span>-uri.</h1>
     <p data-reveal><strong><span class="accent">ACL</span> Smart Software</strong> livrează platforme digitale orientate pe rezultate — lansare rapidă, conversie mai bună, operațiuni stabile.</p>
     <div class="hero-rotate" data-reveal>
       <span class="muted">Construim:</span>

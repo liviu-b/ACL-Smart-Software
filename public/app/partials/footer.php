@@ -4,8 +4,8 @@
   <div class="wrap footer-grid">
     <div>
       <div class="footer-brand">
-        <span class="brand-mark">&lt;/&gt;</span>
-        <span><span class="accent">ACL</span> Smart Software</span>
+        <img class="brand-logo" src="/assets/img/logo.png" alt="ACL Smart Software">
+        <span class="brand-text"><strong class="accent">ACL</strong> Smart Software</span>
       </div>
       <p class="muted">Nu scriem doar cod.<br>Construim produse care cresc business-uri.</p>
     </div>

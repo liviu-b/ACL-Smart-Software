@@ -33,7 +33,7 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
   <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle) ?>">
   <meta name="twitter:description" content="<?= htmlspecialchars($pageDesc) ?>">
 
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
   <meta name="google-site-verification" content="googlebf9aba8281af9a2c.html">
 
   <!-- Preload fonts -->
@@ -52,7 +52,7 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
     "@type": "ProfessionalService",
     "name": "ACL Smart Software",
     "url": "https://aclsmartsoftware.ro",
-    "logo": "https://aclsmartsoftware.ro/favicon.svg",
+    "logo": "https://aclsmartsoftware.ro/assets/img/favicon.ico",
     "description": "Dezvoltăm software personalizat, aplicații web, platforme SaaS și magazine online.",
     "telephone": "+40758154490",
     "email": "acl-smartsoftware@outlook.com",
@@ -83,14 +83,14 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
 <header class="header<?= $hasHero ? ' header--hero' : '' ?>">
   <div class="wrap">
     <a class="brand" href="/">
-      <span class="brand-mark">&lt;/&gt;</span>
-      <span><span class="accent">ACL</span> Smart Software</span>
+      <img class="brand-logo" src="/assets/img/logo.png" alt="ACL Smart Software">
+      <span class="brand-text"><strong class="accent">ACL</strong> Smart Software</span>
     </a>
 
     <nav class="nav" id="nav">
       <div class="nav-mob-head">
-        <span class="brand-mark">&lt;/&gt;</span>
-        <span class="nav-mob-title"><span class="accent">ACL</span> Smart Software</span>
+        <img class="brand-logo" src="/assets/img/logo.png" alt="ACL Smart Software">
+        <span class="nav-mob-title"><strong class="accent">ACL</strong> Smart Software</span>
       </div>
 
       <div class="nav-mob-links">

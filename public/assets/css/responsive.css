@@ -56,7 +56,7 @@
     padding:20px 24px;
     border-bottom:1px solid rgba(255,255,255,.06);
   }
-  .nav-mob-head .brand-mark { font-size:.9rem; }
+  .nav-mob-head .brand-logo { width:28px; height:28px; }
   .nav-mob-title { font-weight:700; font-size:1.1rem; color:#fff; }
 
   .nav-mob-links {
@@ -253,7 +253,7 @@
   .wrap { padding:0 16px; }
   section { padding:56px 0; }
 
-  .brand-mark { display:none; }
+  .brand-logo { width:28px; height:28px; }
   .stats-grid { grid-template-columns:1fr 1fr; gap:12px; }
   .stat { padding:24px 16px; }
   .stat-val { font-size:1.6rem; }

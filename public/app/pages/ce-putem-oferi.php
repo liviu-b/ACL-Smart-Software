@@ -2,7 +2,6 @@
 <section class="offer-hero">
   <div class="wrap">
     <div class="offer-intro" data-reveal>
-      <span class="offer-tag">Ce putem oferi</span>
       <h1>Totul sub un singur acoperiș digital</h1>
       <p class="muted">De la primele linii de cod la un produs complet — fiecare serviciu e construit pentru rezultate reale, livrare predictibilă și scalare fără blocaje.</p>
     </div>
