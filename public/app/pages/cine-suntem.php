@@ -7,6 +7,27 @@
   </div>
   <canvas></canvas>
 
+  <!-- Floating terminal with section nav -->
+  <nav class="hero-term" id="secNav">
+    <div class="hero-term-bar"><i></i><i></i><i></i><span>navigate.sh</span></div>
+    <div class="hero-term-body">
+      <span class="hero-term-line dim">$ ls sections/</span>
+      <a class="hero-term-link" href="#ce-construim" data-section="ce-construim">
+        <span class="hero-term-prompt">❯</span> Ce construim
+      </a>
+      <a class="hero-term-link" href="#cum-lucram" data-section="cum-lucram">
+        <span class="hero-term-prompt">❯</span> Cum lucrăm
+      </a>
+      <a class="hero-term-link" href="#de-ce-noi" data-section="de-ce-noi">
+        <span class="hero-term-prompt">❯</span> De ce noi
+      </a>
+      <a class="hero-term-link" href="#intrebari" data-section="intrebari">
+        <span class="hero-term-prompt">❯</span> Întrebări
+      </a>
+      <span class="hero-term-cursor"></span>
+    </div>
+  </nav>
+
   <div class="wrap">
     <h1 data-reveal>Nu scriem doar <span class="glitch" data-text="cod">cod</span>. Construim produse care cresc <span class="glitch" data-text="business">business</span>-uri.</h1>
     <p data-reveal><strong><span class="accent">ACL</span> Smart Software</strong> livrează platforme digitale orientate pe rezultate — lansare rapidă, conversie mai bună, operațiuni stabile.</p>
@@ -26,25 +47,7 @@
   </div>
 </section>
 
-<!-- SECTION NAV -->
-<nav class="sec-nav" id="secNav">
-  <a class="sec-nav-item" href="#ce-construim" data-section="ce-construim">
-    <span class="sec-nav-dot"></span>
-    <span class="sec-nav-label">Ce construim</span>
-  </a>
-  <a class="sec-nav-item" href="#cum-lucram" data-section="cum-lucram">
-    <span class="sec-nav-dot"></span>
-    <span class="sec-nav-label">Cum lucrăm</span>
-  </a>
-  <a class="sec-nav-item" href="#de-ce-noi" data-section="de-ce-noi">
-    <span class="sec-nav-dot"></span>
-    <span class="sec-nav-label">De ce noi</span>
-  </a>
-  <a class="sec-nav-item" href="#intrebari" data-section="intrebari">
-    <span class="sec-nav-dot"></span>
-    <span class="sec-nav-label">Întrebări</span>
-  </a>
-</nav>
+<!-- SERVICES (Bento Grid) -->
 
 <!-- SERVICES (Bento Grid) -->
 <section id="ce-construim">

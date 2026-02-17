@@ -233,26 +233,16 @@
     btt.addEventListener('click', () => window.scrollTo({top:0,behavior:'smooth'}));
   }
 
-  // ── Section nav scroll-spy ──
+  // ── Section nav (in-hero terminal) ──
   const secNav = document.getElementById('secNav');
   if(secNav){
-    const items = secNav.querySelectorAll('.sec-nav-item');
+    const items = secNav.querySelectorAll('.hero-term-link');
     const sectionIds = Array.from(items).map(i => i.dataset.section);
     const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
-    // Show/hide based on scroll position (visible after hero)
-    const heroEl = document.querySelector('.hero');
-    const ctaBand = document.querySelector('.cta-band');
-
-    const updateNav = () => {
+    // Update active on scroll
+    const updateActive = () => {
       const sy = scrollY;
-      const heroBottom = heroEl ? heroEl.offsetTop + heroEl.offsetHeight - 200 : 300;
-      const ctaTop = ctaBand ? ctaBand.offsetTop - window.innerHeight / 2 : Infinity;
-
-      // Show only between hero and CTA
-      secNav.classList.toggle('visible', sy > heroBottom && sy < ctaTop);
-
-      // Find active section
       let activeId = sectionIds[0];
       for(const sec of sections){
         if(sec.offsetTop - window.innerHeight * 0.4 <= sy) activeId = sec.id;
@@ -261,9 +251,8 @@
         item.classList.toggle('active', item.dataset.section === activeId);
       });
     };
-
-    updateNav();
-    window.addEventListener('scroll', updateNav, {passive:true});
+    updateActive();
+    window.addEventListener('scroll', updateActive, {passive:true});
 
     // Smooth scroll on click
     items.forEach(item => {
