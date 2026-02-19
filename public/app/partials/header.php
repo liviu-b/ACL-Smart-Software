@@ -8,7 +8,7 @@ $pageDesc  = $pageDesc  ?? 'Dezvoltăm software personalizat, aplicații web, pl
 $pageOg    = $pageOg    ?? [];
 $ogType    = $pageOg['type'] ?? 'website';
 $ogImage   = $pageOg['image'] ?? '/assets/img/og-default.png';
-$canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'aclsmartsoftware.ro') . $cur;
+$canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'acl-smartsoftware.ro') . $cur;
 ?>
 <!doctype html>
 <html lang="ro">
