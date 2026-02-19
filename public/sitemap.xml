@@ -1,116 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://aclsmartsoftware.ro/</loc>
+    <loc>https://acl-smartsoftware.ro/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/ce-putem-oferi</loc>
+    <loc>https://acl-smartsoftware.ro/ce-putem-oferi</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii</loc>
+    <loc>https://acl-smartsoftware.ro/servicii</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/portofoliu</loc>
+    <loc>https://acl-smartsoftware.ro/portofoliu</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog</loc>
+    <loc>https://acl-smartsoftware.ro/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/termeni-si-conditii</loc>
+    <loc>https://acl-smartsoftware.ro/termeni-si-conditii</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/gdpr</loc>
+    <loc>https://acl-smartsoftware.ro/gdpr</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
   <!-- Service detail pages -->
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/custom-software-dev</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/custom-software-dev</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/custom-web-app</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/custom-web-app</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/website-build</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/website-build</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/ecommerce-store</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/ecommerce-store</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/saas-app-development</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/saas-app-development</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/qa-testing</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/qa-testing</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/api-integration</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/api-integration</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/consulting-architecture</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/consulting-architecture</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/servicii/ai-chatbots</loc>
+    <loc>https://acl-smartsoftware.ro/servicii/ai-chatbots</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- Blog articles -->
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/automatizare-business-software</loc>
+    <loc>https://acl-smartsoftware.ro/blog/automatizare-business-software</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/cat-costa-aplicatie-web-2025</loc>
+    <loc>https://acl-smartsoftware.ro/blog/cat-costa-aplicatie-web-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/cum-alegi-firma-de-software</loc>
+    <loc>https://acl-smartsoftware.ro/blog/cum-alegi-firma-de-software</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/de-ce-ai-nevoie-de-un-site-profesional</loc>
+    <loc>https://acl-smartsoftware.ro/blog/de-ce-ai-nevoie-de-un-site-profesional</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/securitate-web-ghid-esential</loc>
+    <loc>https://acl-smartsoftware.ro/blog/securitate-web-ghid-esential</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://aclsmartsoftware.ro/blog/tendinte-web-development-2025</loc>
+    <loc>https://acl-smartsoftware.ro/blog/tendinte-web-development-2025</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
