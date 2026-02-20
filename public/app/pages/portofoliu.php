@@ -9,7 +9,6 @@
 
   <div class="wrap">
     <div class="hero-content" data-reveal>
-      <span class="badge badge-hot">Portofoliu</span>
       <h1>Proiecte reale. Rezultate măsurabile.</h1>
       <p>Fiecare proiect pe care îl livrăm e construit cu atenție la detalii, performanță și obiectivele de business ale clientului.</p>
     </div>
