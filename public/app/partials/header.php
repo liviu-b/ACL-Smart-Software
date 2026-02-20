@@ -7,16 +7,11 @@ $pageTitle = $pageTitle ?? 'ACL Smart Software — Soluții Digitale Personaliza
 $pageDesc  = $pageDesc  ?? 'Dezvoltăm software personalizat, aplicații web, platforme SaaS și magazine online.';
 $pageOg    = $pageOg    ?? [];
 $ogType    = $pageOg['type'] ?? 'website';
-<<<<<<< HEAD
-$ogImage   = $pageOg['image'] ?? '/assets/img/og-default.png';
-$canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'acl-smartsoftware.ro') . $cur;
-=======
 $canonicalBase = 'https://acl-smartsoftware.ro';
 $ogImage       = $pageOg['image'] ?? '/assets/img/og-default.png';
 $canonical     = $canonicalBase . ($cur === '/' ? '/' : $cur);
 $ogImageAbs    = preg_match('#^https?://#i', $ogImage) ? $ogImage : $canonicalBase . '/' . ltrim($ogImage, '/');
 $twitterImage  = $pageOg['twitter_image'] ?? $ogImageAbs;
->>>>>>> 320fa68 (Enhance SEO and site structure: update .htaccess for HTTPS redirection, modify sitemap.xml for service URLs, and add robots.txt for search engine indexing)
 ?>
 <!doctype html>
 <html lang="ro">

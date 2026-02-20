@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
 
-<<<<<<< HEAD
 Sitemap: https://acl-smartsoftware.ro/sitemap.xml
-=======
-Sitemap: https://acl-smartsoftware.ro/sitemap.xml
->>>>>>> 320fa68 (Enhance SEO and site structure: update .htaccess for HTTPS redirection, modify sitemap.xml for service URLs, and add robots.txt for search engine indexing)
