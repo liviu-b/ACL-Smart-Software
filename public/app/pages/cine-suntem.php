@@ -71,7 +71,7 @@
         </div>
       </a>
 
-      <a class="zigzag-row" data-reveal href="/servicii/software-development">
+      <a class="zigzag-row" data-reveal href="/servicii/custom-software-dev">
         <div class="zigzag-visual">
           <span class="zigzag-num">02</span>
           <span class="zigzag-ico">⚙️</span>

@@ -7,8 +7,16 @@ $pageTitle = $pageTitle ?? 'ACL Smart Software — Soluții Digitale Personaliza
 $pageDesc  = $pageDesc  ?? 'Dezvoltăm software personalizat, aplicații web, platforme SaaS și magazine online.';
 $pageOg    = $pageOg    ?? [];
 $ogType    = $pageOg['type'] ?? 'website';
+<<<<<<< HEAD
 $ogImage   = $pageOg['image'] ?? '/assets/img/og-default.png';
 $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . ($_SERVER['HTTP_HOST'] ?? 'acl-smartsoftware.ro') . $cur;
+=======
+$canonicalBase = 'https://acl-smartsoftware.ro';
+$ogImage       = $pageOg['image'] ?? '/assets/img/og-default.png';
+$canonical     = $canonicalBase . ($cur === '/' ? '/' : $cur);
+$ogImageAbs    = preg_match('#^https?://#i', $ogImage) ? $ogImage : $canonicalBase . '/' . ltrim($ogImage, '/');
+$twitterImage  = $pageOg['twitter_image'] ?? $ogImageAbs;
+>>>>>>> 320fa68 (Enhance SEO and site structure: update .htaccess for HTTPS redirection, modify sitemap.xml for service URLs, and add robots.txt for search engine indexing)
 ?>
 <!doctype html>
 <html lang="ro">
@@ -24,7 +32,8 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
   <meta property="og:description" content="<?= htmlspecialchars($pageDesc) ?>">
   <meta property="og:type" content="<?= $ogType ?>">
   <meta property="og:url" content="<?= htmlspecialchars($canonical) ?>">
-  <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
+  <meta property="og:image" content="<?= htmlspecialchars($ogImageAbs) ?>">
+  <meta property="og:image:secure_url" content="<?= htmlspecialchars($ogImageAbs) ?>">
   <meta property="og:locale" content="ro_RO">
   <meta property="og:site_name" content="ACL Smart Software">
 
@@ -32,9 +41,10 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle) ?>">
   <meta name="twitter:description" content="<?= htmlspecialchars($pageDesc) ?>">
+  <meta name="twitter:image" content="<?= htmlspecialchars($twitterImage) ?>">
 
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-  <meta name="google-site-verification" content="googlebf9aba8281af9a2c.html">
+  <meta name="google-site-verification" content="googlebf9aba8281af9a2c">
 
   <!-- Preload fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -102,6 +112,10 @@ $canonical = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' :
             Ce oferim <span class="chev">▾</span>
           </button>
           <div class="dropdown-menu">
+            <a class="dropdown-item" href="/servicii">
+              <span class="ico">📂</span>
+              Toate serviciile
+            </a>
             <?php foreach($services as $slug=>$s): ?>
             <a class="dropdown-item" href="/servicii/<?= htmlspecialchars($slug) ?>">
               <span class="ico"><?= $s['icon'] ?></span>
