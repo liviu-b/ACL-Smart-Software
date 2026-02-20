@@ -107,10 +107,6 @@ $twitterImage  = $pageOg['twitter_image'] ?? $ogImageAbs;
             Ce oferim <span class="chev">▾</span>
           </button>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="/servicii">
-              <span class="ico">📂</span>
-              Toate serviciile
-            </a>
             <?php foreach($services as $slug=>$s): ?>
             <a class="dropdown-item" href="/servicii/<?= htmlspecialchars($slug) ?>">
               <span class="ico"><?= $s['icon'] ?></span>
