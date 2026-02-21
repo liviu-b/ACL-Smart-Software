@@ -143,10 +143,71 @@ $extras = [
   ],
 ];
 
+$sectionCopy = [
+  'custom-software-dev' => [
+    'timelineTitle' => 'Ce include concret dezvoltarea software la comandă',
+    'timelineText'  => 'Mai jos vezi cele 3 componente esențiale pe care le livrăm în proiect: ce construim efectiv, cum desfășurăm implementarea și ce primești la final. Informațiile sunt formulate ca să înțelegi clar rezultatele practice pentru operațiunile companiei.',
+    'fitTitle'      => 'Pentru cine este potrivit acest serviciu',
+    'fitText'       => 'Lista de mai jos nu este generală. Arată exact tipul de companie și contextul în care dezvoltarea software personalizată aduce rezultate măsurabile: timp salvat, mai puține erori și procese mai bine controlate.',
+  ],
+  'custom-web-app' => [
+    'timelineTitle' => 'Ce primești într-un proiect de aplicație web',
+    'timelineText'  => 'Secțiunile 01, 02 și 03 explică pe scurt dar concret: ce fel de aplicație construim, ce pași tehnici includem și ce nivel de securitate și mentenabilitate asigurăm după lansare.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de aplicații web',
+    'fitText'       => 'Aici găsești cazuri reale de utilizare, nu formulări vagi. Dacă te regăsești în una dintre situațiile de mai jos, serviciul este potrivit pentru digitalizare, scalare și eficiență operațională.',
+  ],
+  'website-build' => [
+    'timelineTitle' => 'Ce include concret dezvoltarea unui site web',
+    'timelineText'  => 'Cele 3 secțiuni explică exact ce se livrează: structură și conținut orientat SEO, implementare tehnică pentru viteză și stabilitate, plus mentenanță pentru creștere constantă în timp.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de dezvoltare website',
+    'fitText'       => 'Mai jos vezi tipurile de business pentru care un site bine construit aduce impact direct: vizibilitate în Google, credibilitate și mai multe cereri de ofertă relevante.',
+  ],
+  'ecommerce-store' => [
+    'timelineTitle' => 'Ce include concret un magazin online performant',
+    'timelineText'  => 'În secțiunile 01, 02 și 03 descriem clar livrabilele proiectului eCommerce: platforma de vânzare, integrările operaționale și optimizările de conversie care cresc venitul per vizitator.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de magazin online',
+    'fitText'       => 'Această secțiune explică precis ce tip de business obține valoare reală dintr-un magazin online personalizat: control pe vânzări, fluxuri automate și costuri operaționale mai mici.',
+  ],
+  'saas-app-development' => [
+    'timelineTitle' => 'Ce include concret dezvoltarea unei platforme SaaS',
+    'timelineText'  => 'Mai jos este structura practică a proiectului: construcția produsului, arhitectura multi-tenant și procesul de livrare continuă. Scopul este clar: lansare rapidă și scalare fără refaceri costisitoare.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de dezvoltare SaaS',
+    'fitText'       => 'Lista de mai jos te ajută să verifici rapid dacă modelul tău de business se potrivește cu un produs SaaS. Sunt descrise situații concrete în care investiția are randament și poate fi scalată.',
+  ],
+  'qa-testing' => [
+    'timelineTitle' => 'Ce include concret serviciul de testare QA',
+    'timelineText'  => 'Secțiunile 01–03 arată exact cum abordăm calitatea: ce testăm, cum prioritizăm riscurile și cum integrăm automatizarea în livrare. Obiectivul este reducerea bug-urilor care ajung în producție.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de QA testing',
+    'fitText'       => 'Aici este descris clar când are sens externalizarea QA sau extinderea automatizării. Dacă te regăsești în exemplele de mai jos, poți îmbunătăți stabilitatea produsului fără blocaje de release.',
+  ],
+  'api-integration' => [
+    'timelineTitle' => 'Ce include concret serviciul de integrare API',
+    'timelineText'  => 'Mai jos vezi concret ce livrăm într-o integrare: conectarea sistemelor, hardening-ul fluxurilor și migrarea controlată de la soluții vechi. Accentul este pe date corecte și procese automate fiabile.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de integrare API',
+    'fitText'       => 'Secțiunea de mai jos explică exact tipul de companii care beneficiază de integrare API: organizații cu multe sisteme, procese fragmentate și nevoia de sincronizare fără intervenție manuală.',
+  ],
+  'consulting-architecture' => [
+    'timelineTitle' => 'Ce include concret consultanța de arhitectură software',
+    'timelineText'  => 'În cele 3 puncte de mai jos explicăm clar livrabilele: audit tehnic, direcție arhitecturală și suport practic de implementare. Scopul este să iei decizii tehnice corecte, cu risc redus și impact real.',
+    'fitTitle'      => 'Pentru cine este potrivită consultanța tehnică',
+    'fitText'       => 'Aici identifici rapid dacă această consultanță este relevantă pentru etapa în care se află produsul tău: validare decizii, scalare, reducere datorie tehnică sau plan de refactorizare.',
+  ],
+  'ai-chatbots' => [
+    'timelineTitle' => 'Ce include concret dezvoltarea de chatboți AI',
+    'timelineText'  => 'Secțiunile 01, 02 și 03 descriu practic ce construim: chatbotul, tehnologia de bază și optimizarea continuă după lansare. Accentul este pe răspunsuri utile, reducerea tichetele repetitive și calificare mai bună a lead-urilor.',
+    'fitTitle'      => 'Pentru cine este potrivit serviciul de chatboți AI',
+    'fitText'       => 'Lista de mai jos arată clar în ce contexte chatboții AI produc rezultate vizibile: suport mai rapid, costuri mai mici și experiență mai bună pentru utilizatori pe canalele principale.',
+  ],
+];
+
 $intro  = $extras[$viewKey]['intro']  ?? '';
 $blocks = $extras[$viewKey]['blocks'] ?? [];
 $fit    = $extras[$viewKey]['fit']    ?? [];
 $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery','Build & Launch','Suport continuu'];
+$timelineTitle = $sectionCopy[$viewKey]['timelineTitle'] ?? 'Ce include concret acest serviciu';
+$timelineText  = $sectionCopy[$viewKey]['timelineText']  ?? 'Mai jos găsești explicat clar ce livrăm, cum lucrăm și ce rezultate primești în practică.';
+$fitTitle      = $sectionCopy[$viewKey]['fitTitle']      ?? 'Pentru cine este potrivit acest serviciu';
+$fitText       = $sectionCopy[$viewKey]['fitText']       ?? 'Această secțiune explică pe scurt ce tip de companie și ce context de business se potrivește acestui serviciu.';
 ?>
 
 <!-- Service Hero -->
@@ -175,7 +236,8 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery','Build & Launch','
 <section class="timeline">
   <div class="wrap">
     <div class="timeline-head" data-reveal>
-
+      <h2><?= htmlspecialchars($timelineTitle) ?></h2>
+      <p><?= htmlspecialchars($timelineText) ?></p>
     </div>
     <div class="timeline-steps">
       <?php $n=1; foreach($blocks as $b): ?>
@@ -197,7 +259,8 @@ $pills  = $extras[$viewKey]['pills']  ?? ['Audit & Discovery','Build & Launch','
 <section>
   <div class="wrap">
     <div class="fit-head" data-reveal>
-
+      <h2><?= htmlspecialchars($fitTitle) ?></h2>
+      <p><?= htmlspecialchars($fitText) ?></p>
     </div>
     <div class="fit-list">
       <?php foreach($fit as $f): ?>
