@@ -10,6 +10,45 @@
   <div class="wrap">
     <div class="blog-grid">
 
+      <a class="blog-card" href="/blog/tendinte-web-development-2026" data-reveal-stagger>
+        <div class="blog-card-img">🚀</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">18 Februarie 2026</span>
+            <span class="badge badge-hot">Tendințe</span>
+          </div>
+          <h3>Tendințe Web Development 2026: Baseline, AI și Performance</h3>
+          <p>Ce se schimbă în 2026 pentru site-uri și aplicații web: compatibilitate mai bună, performanță mai predictibilă și integrare AI cu impact real.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="/blog/interop-2026-pentru-business" data-reveal-stagger>
+        <div class="blog-card-img">🧭</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">12 Februarie 2026</span>
+            <span class="badge badge-new">Frontend</span>
+          </div>
+          <h3>Interop 2026: Ce înseamnă pentru site-ul și aplicația ta</h3>
+          <p>De ce contează Interop 2026 pentru business: mai puține probleme cross-browser, release-uri mai rapide și experiență mai stabilă pentru utilizatori.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
+      <a class="blog-card" href="/blog/nextjs-2026-performanta-securitate" data-reveal-stagger>
+        <div class="blog-card-img">⚙️</div>
+        <div class="blog-card-body">
+          <div class="blog-card-meta">
+            <span class="blog-date">3 Februarie 2026</span>
+            <span class="badge badge-pop">Tech</span>
+          </div>
+          <h3>Next.js în 2026: Performanță, securitate și livrare mai rapidă</h3>
+          <p>Update-urile Next.js din 2026 explicate pe înțelesul business-ului: ce impact au în SEO, viteză de dezvoltare și reducerea riscurilor tehnice.</p>
+          <span class="blog-read">Citește articolul →</span>
+        </div>
+      </a>
+
       <a class="blog-card" href="/blog/automatizare-business-software" data-reveal-stagger>
         <div class="blog-card-img">⚡</div>
         <div class="blog-card-body">
